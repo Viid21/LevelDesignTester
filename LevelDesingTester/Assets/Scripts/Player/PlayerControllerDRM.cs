@@ -38,6 +38,11 @@ public class PlayerControllerDRM : MonoBehaviour
     public Transform spawnClones;
     public string shaderVarRef;
 
+    Vector3 lastPosition;
+
+
+
+
     private void Awake()
     {
         //ASIGNO LAS REFERENCIAS A LOS COMPONENTES
@@ -103,8 +108,20 @@ public class PlayerControllerDRM : MonoBehaviour
 
         /*anim.SetFloat("DirectionX", move.ReadValue<Vector2>().x * rotation.x);
         anim.SetFloat("DirectionY", move.ReadValue<Vector2>().y * rotation.y);*/
-        anim.SetFloat("DirectionX", transform.Find("LookAt").forward.x * rotation.x);
-        anim.SetFloat("DirectionY", transform.Find("LookAt").forward.z * rotation.y);
+
+        Vector3 actualPosition = transform.position;
+        float x = actualPosition.x - lastPosition.x;
+        if (x > 0)
+        {
+            x = 1;
+        }else if (x < 0)
+        {
+            x = -1;
+        }
+        anim.SetFloat("DirectionX", x * mouseWorldPosition.x);
+        //anim.SetFloat("DirectionY", h);
+        lastPosition = actualPosition;
+        Debug.Log(mouseWorldPosition.x);
 
 
         Mouse.current.WarpCursorPosition(Mouse.current.position.ReadValue() + look.ReadValue<Vector2>());
