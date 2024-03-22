@@ -2,7 +2,6 @@ using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.UIElements.Experimental;
 
 public class PlayerControllerDRM : MonoBehaviour
 {
@@ -38,10 +37,10 @@ public class PlayerControllerDRM : MonoBehaviour
     public Transform spawnClones;
     public string shaderVarRef;
 
-    Vector3 lastPosition;
+    [SerializeField] LayerMask terrainLayerMask = new LayerMask();
+    [SerializeField] Transform aimTransform, lastPosition;
 
-
-
+    GameObject objPivot;
 
     private void Awake()
     {
@@ -65,16 +64,45 @@ public class PlayerControllerDRM : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        objPivot = new GameObject("DummyPivotRifle");
+        objPivot.transform.parent = transform;
         speed = walkSpeed;
     }
 
     // Update is called once per frame
     void Update()
     {
+        //Stunned
+
         if (stunned == true)
         {
             return;//PARO LA EJECUCIÓN DEL RESTO DE LA FUNCIÓN Y DEJA DE HACER EL UPDATE
         }
+
+        //TargetAim
+                
+        objPivot.transform.LookAt(aimTransform);
+
+        Ray ray = Camera.main.ScreenPointToRay(Mouse.current.position.ReadValue());
+        if (Physics.Raycast(ray, out RaycastHit raycastHit, 999f, terrainLayerMask))
+        {
+            aimTransform.position = raycastHit.point;
+        }
+
+        float pivotRotY = objPivot.transform.localRotation.y;
+
+        if (pivotRotY > .45f)
+        {
+            transform.Rotate(0f, Mathf.Lerp(pivotRotY, 1, Time.deltaTime * 5f), 0f);
+        }
+
+        if (pivotRotY < -.45f)
+        {
+            transform.Rotate(0f, Mathf.Lerp(pivotRotY, -1, Time.deltaTime * 5f), 0f);
+        }
+
+        //Crouch
+
         if (crouch.triggered)
         {
             crouched = !crouched; //si crouched es false !crouched = true en cambio si crouched es true !crouched = false
@@ -83,6 +111,8 @@ public class PlayerControllerDRM : MonoBehaviour
 
         grounded = Physics.Raycast(transform.position, Vector3.down, 0.1f);
 
+        //Run
+        //Falta hacer un lerp para que no sea tan repentino el cambio !!!
         if (run.IsPressed())
         {
             speed = runSpeed;
@@ -92,25 +122,29 @@ public class PlayerControllerDRM : MonoBehaviour
             speed = walkSpeed;
         }
 
-        //ME QUEDO CON LOS VALORES DEL INPUT ACTION DE MOVE Y LOS JUNTO EN UN VECTOR PARA MOVERME SOBRE EL PLANO XZ
+        //Movement
+
         inputMovement = new Vector3(move.ReadValue<Vector2>().x, 0, move.ReadValue<Vector2>().y);
         finalMovement = new Vector3(inputMovement.x, finalMovement.y, inputMovement.z);
         animSpeed = (speed / runSpeed) * inputMovement.magnitude;
         anim.SetFloat("speed", animSpeed);
 
-        zDistance = transform.position.z - Camera.main.transform.position.z;
+        controller.Move(finalMovement * speed * Time.deltaTime);
+
+        /*zDistance = transform.position.z - Camera.main.transform.position.z;
         zDistance *= zDistanceFactor; // zDistance = zDistance * zDistanceFactor;
         mouseWorldPosition = new Vector3(Mouse.current.position.ReadValue().x, Mouse.current.position.ReadValue().y, zDistance);
         mouseWorldPosition = Camera.main.ScreenToWorldPoint(mouseWorldPosition);
         mouseWorldPosition.y = transform.position.y;
         rotation = Quaternion.LookRotation(mouseWorldPosition - transform.position);
-        transform.rotation = Quaternion.Slerp(transform.rotation, rotation, rotationSpeed * Time.deltaTime);
+        transform.rotation = Quaternion.Slerp(transform.rotation, rotation, rotationSpeed * Time.deltaTime);*/
 
         /*anim.SetFloat("DirectionX", move.ReadValue<Vector2>().x * rotation.x);
         anim.SetFloat("DirectionY", move.ReadValue<Vector2>().y * rotation.y);*/
 
-        Vector3 actualPosition = transform.position;
-        float x = actualPosition.x - lastPosition.x;
+        /*Vector3 actualPosition = transform.position;
+        float x = actualPosition.x - lastPosition.position.x;
+        float z = actualPosition.z - lastPosition.position.z;
         if (x > 0)
         {
             x = 1;
@@ -118,13 +152,25 @@ public class PlayerControllerDRM : MonoBehaviour
         {
             x = -1;
         }
-        anim.SetFloat("DirectionX", x * mouseWorldPosition.x);
-        //anim.SetFloat("DirectionY", h);
-        lastPosition = actualPosition;
-        Debug.Log(mouseWorldPosition.x);
+        if (z > 0)
+        {
+            z = 1;
+        }
+        else if (z < 0)
+        {
+            z = -1;
+        }
+        anim.SetFloat("DirectionX", x * aimTransform.position.x);
+        anim.SetFloat("DirectionY", z * aimTransform.position.z);
+
+        lastPosition.position = actualPosition;*/
 
 
-        Mouse.current.WarpCursorPosition(Mouse.current.position.ReadValue() + look.ReadValue<Vector2>());
+        /*Mouse.current.WarpCursorPosition(Mouse.current.position.ReadValue() + look.ReadValue<Vector2>());*/
+
+
+
+        //Jump
 
         if (jump.triggered && !crouched && grounded)
         {
@@ -140,6 +186,8 @@ public class PlayerControllerDRM : MonoBehaviour
         finalMovement.x /= 1 + dragForce.x * Time.deltaTime;
         finalMovement.z /= 1 + dragForce.z * Time.deltaTime;
 
+        //Dash
+
         if (dashing)
         {
             if (Mathf.Abs(finalMovement.x) <= 1 && Mathf.Abs(finalMovement.z) <= 1)
@@ -148,6 +196,9 @@ public class PlayerControllerDRM : MonoBehaviour
                 anim.SetBool("dash", false);
             }
         }
+
+        //Landing
+
         if (grounded && finalMovement.y < 0)
         {
             finalMovement.y = -Mathf.Epsilon; //EPSILON = UN FLOAT CASI 0 PERO NO ES 0
@@ -157,8 +208,6 @@ public class PlayerControllerDRM : MonoBehaviour
             //SI NO ESTOY TOCANDO EL SUELO HAGO QUE VAYA BAJANDO EN Y SEGÚN LA VELOCIDAD
             finalMovement.y += gravity * Time.deltaTime;
         }
-
-        controller.Move(finalMovement * speed * Time.deltaTime);        
 
         IEnumerator ActivateTrail(float timeActive)
         {
@@ -208,7 +257,7 @@ public class PlayerControllerDRM : MonoBehaviour
         return crouched;
     }
     public void Damage(float damage)
-    {        
+    {
         if (stunned == true)
         {
             return;
