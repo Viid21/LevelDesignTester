@@ -5,7 +5,6 @@ public class HumanoidIkController : MonoBehaviour
 {
     Animator anim;
     public bool iKActive = false;
-    public bool ikOnlyHead = false;
     public Transform objTarget, objRifleTarget;
     public float lookWeight;
     public float desireDist = 2.6f;
@@ -46,15 +45,8 @@ public class HumanoidIkController : MonoBehaviour
             {
                 if (objTarget != null)
                 {
-                    if (ikOnlyHead == true)
-                    {
-                        anim.SetLookAtWeight(lookWeight);
-                        anim.SetLookAtPosition(objTarget.position);
-                    }else
-                    {
-                        anim.SetLookAtWeight(1,1);
-                        anim.SetLookAtPosition(new Vector3(objRifleTarget.position.x, objPivot.transform.position.y, objRifleTarget.position.z));
-                    }                    
+                    anim.SetLookAtWeight(lookWeight);
+                    anim.SetLookAtPosition(objTarget.position);
                 }
             }
             else

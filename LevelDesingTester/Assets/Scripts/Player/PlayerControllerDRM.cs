@@ -8,7 +8,7 @@ public class PlayerControllerDRM : MonoBehaviour
     CharacterController controller;
     Animator anim;
     PlayerInput playerInput;
-    InputAction move, run, look, crouch, jump, dash;
+    InputAction move, run, look, crouch, jump, dash, shoot;
     bool crouched, grounded, dashing;
     Quaternion rotation;
 
@@ -17,6 +17,7 @@ public class PlayerControllerDRM : MonoBehaviour
     float speed, walkSpeed, runSpeed, rotationSpeed, zDistance;
     [SerializeField, Range(1, 1.5f)]
     float zDistanceFactor = 1.1f;
+    public bool aimming;
 
     Vector3 inputMovement;
     Vector3 finalMovement;
@@ -42,6 +43,8 @@ public class PlayerControllerDRM : MonoBehaviour
 
     GameObject objPivot;
 
+    [SerializeField] GameObject bulletPrefab;
+
     private void Awake()
     {
         //ASIGNO LAS REFERENCIAS A LOS COMPONENTES
@@ -55,6 +58,7 @@ public class PlayerControllerDRM : MonoBehaviour
         crouch = playerInput.currentActionMap["Crouch"];
         jump = playerInput.currentActionMap["Jump"];
         dash = playerInput.currentActionMap["Dash"];
+        shoot = playerInput.currentActionMap["Shoot"];
     }
     private void OnEnable()
     {
@@ -77,28 +81,6 @@ public class PlayerControllerDRM : MonoBehaviour
         if (stunned == true)
         {
             return;//PARO LA EJECUCIÓN DEL RESTO DE LA FUNCIÓN Y DEJA DE HACER EL UPDATE
-        }
-
-        //TargetAim
-                
-        objPivot.transform.LookAt(aimTransform);
-
-        Ray ray = Camera.main.ScreenPointToRay(Mouse.current.position.ReadValue());
-        if (Physics.Raycast(ray, out RaycastHit raycastHit, 999f, terrainLayerMask))
-        {
-            aimTransform.position = raycastHit.point;
-        }
-
-        float pivotRotY = objPivot.transform.localRotation.y;
-
-        if (pivotRotY > .45f)
-        {
-            transform.Rotate(0f, Mathf.Lerp(pivotRotY, 1, Time.deltaTime * 5f), 0f);
-        }
-
-        if (pivotRotY < -.45f)
-        {
-            transform.Rotate(0f, Mathf.Lerp(pivotRotY, -1, Time.deltaTime * 5f), 0f);
         }
 
         //Crouch
@@ -131,44 +113,31 @@ public class PlayerControllerDRM : MonoBehaviour
 
         controller.Move(finalMovement * speed * Time.deltaTime);
 
-        /*zDistance = transform.position.z - Camera.main.transform.position.z;
-        zDistance *= zDistanceFactor; // zDistance = zDistance * zDistanceFactor;
-        mouseWorldPosition = new Vector3(Mouse.current.position.ReadValue().x, Mouse.current.position.ReadValue().y, zDistance);
-        mouseWorldPosition = Camera.main.ScreenToWorldPoint(mouseWorldPosition);
-        mouseWorldPosition.y = transform.position.y;
-        rotation = Quaternion.LookRotation(mouseWorldPosition - transform.position);
-        transform.rotation = Quaternion.Slerp(transform.rotation, rotation, rotationSpeed * Time.deltaTime);*/
+        //Player animations
 
-        /*anim.SetFloat("DirectionX", move.ReadValue<Vector2>().x * rotation.x);
-        anim.SetFloat("DirectionY", move.ReadValue<Vector2>().y * rotation.y);*/
+        anim.SetFloat("DirectionX", inputMovement.x);
+        anim.SetFloat("DirectionY", inputMovement.z);
 
-        /*Vector3 actualPosition = transform.position;
-        float x = actualPosition.x - lastPosition.position.x;
-        float z = actualPosition.z - lastPosition.position.z;
-        if (x > 0)
+        //Player rotation
+        if (aimming)
         {
-            x = 1;
-        }else if (x < 0)
-        {
-            x = -1;
+            zDistance = transform.position.z - Camera.main.transform.position.z;
+            zDistance *= zDistanceFactor; // zDistance = zDistance * zDistanceFactor;
+            mouseWorldPosition = new Vector3(Mouse.current.position.ReadValue().x, Mouse.current.position.ReadValue().y, zDistance);
+            mouseWorldPosition = Camera.main.ScreenToWorldPoint(mouseWorldPosition);
+            mouseWorldPosition.y = transform.position.y;
+            rotation = Quaternion.LookRotation(mouseWorldPosition - transform.position);
+            transform.rotation = Quaternion.Slerp(transform.rotation, rotation, rotationSpeed * Time.deltaTime);
         }
-        if (z > 0)
+        else
         {
-            z = 1;
-        }
-        else if (z < 0)
-        {
-            z = -1;
-        }
-        anim.SetFloat("DirectionX", x * aimTransform.position.x);
-        anim.SetFloat("DirectionY", z * aimTransform.position.z);
+            if (inputMovement.magnitude != 0)
+            {
+                rotation = Quaternion.LookRotation(inputMovement);
+                transform.rotation = Quaternion.Slerp(transform.rotation, rotation, rotationSpeed * Time.deltaTime);
 
-        lastPosition.position = actualPosition;*/
-
-
-        /*Mouse.current.WarpCursorPosition(Mouse.current.position.ReadValue() + look.ReadValue<Vector2>());*/
-
-
+            }
+        }    
 
         //Jump
 
@@ -208,6 +177,15 @@ public class PlayerControllerDRM : MonoBehaviour
             //SI NO ESTOY TOCANDO EL SUELO HAGO QUE VAYA BAJANDO EN Y SEGÚN LA VELOCIDAD
             finalMovement.y += gravity * Time.deltaTime;
         }
+
+        //Attack
+        
+        if (shoot.triggered && grounded)
+        {
+            Instantiate(bulletPrefab, transform.Find("SpawnBullet").position, transform.rotation);
+        }
+
+        //bullet.get
 
         IEnumerator ActivateTrail(float timeActive)
         {
