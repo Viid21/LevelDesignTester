@@ -10,6 +10,9 @@ public class AlternateBakedLight : MonoBehaviour
     [SerializeField]
     public int[] linkedLightProbes;
 
+    public float pasado = 0f;
+    public float final = 30f;
+
     private AlternativeLightsManager manager;
 
     private void Start()
@@ -19,6 +22,19 @@ public class AlternateBakedLight : MonoBehaviour
 
         //Set lightprobe and lightmap at start of game
         ChangeLightState(currentLightState);
+    }
+
+
+    void Update()
+    {
+        pasado += Time.deltaTime;
+
+    
+     if (pasado > final) 
+     {
+        OnLeftClick();
+        pasado = 0f;
+     }
     }
 
     //Call the Manager script to change the linked lightprobes and then changes the objects lightmap texture locally
@@ -36,9 +52,10 @@ public class AlternateBakedLight : MonoBehaviour
     }
 
     #region Intraction
-    private void OnMouseDown()
+    private void OnLeftClick()
     {
         ToggleLights();
+        Debug.Log("tu prima");
     }
 
     public void ToggleLights()

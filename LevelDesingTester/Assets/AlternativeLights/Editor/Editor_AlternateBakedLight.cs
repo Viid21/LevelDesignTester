@@ -144,20 +144,17 @@ public class Editor_AlternateBakedLight : Editor
                 if (myTarget.tempList.Contains(i))
                 {
                     Handles.color = Color.yellow;
-                    //Handles.DrawSphere(0, probes_Pos[i], Quaternion.identity, .6f);
                 }
                 //Is not in linked group - Red
                 else
                 {
                     Handles.color = Color.red;
-                    //Handles.DrawSphere(0, probes_Pos[i], Quaternion.identity, .55f);
                 }
                 //Blue In selection Range - Green
                 if (Vector3.Distance(probes_Pos[i], positionHandle) < selectRange)
                 {
                     Handles.color = Color.green;
                     myTarget.inRangeProbes.Add(i);
-                    //Handles.DrawSphere(0, probes_Pos[i], Quaternion.identity, .4f);
                 }
             }
         }
@@ -169,7 +166,6 @@ public class Editor_AlternateBakedLight : Editor
                 Handles.color = Color.yellow;
                 for (int i = 0; i < myTarget.tempList.Count; i++)
                 {
-                    //Handles.DrawSphere(0, probes_Pos[myTarget.tempList[i]], Quaternion.identity, .2f);
                 }
             }
         }

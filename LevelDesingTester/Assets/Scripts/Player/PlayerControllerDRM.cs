@@ -2,14 +2,13 @@ using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.UIElements.Experimental;
 
 public class PlayerControllerDRM : MonoBehaviour
 {
     CharacterController controller;
     Animator anim;
     PlayerInput playerInput;
-    InputAction move, run, look, crouch, jump, dash;
+    InputAction move, run, look, crouch, jump, dash, shoot;
     bool crouched, grounded, dashing;
     Quaternion rotation;
 
@@ -18,6 +17,7 @@ public class PlayerControllerDRM : MonoBehaviour
     float speed, walkSpeed, runSpeed, rotationSpeed, zDistance;
     [SerializeField, Range(1, 1.5f)]
     float zDistanceFactor = 1.1f;
+    public bool aimming;
 
     Vector3 inputMovement;
     Vector3 finalMovement;
@@ -38,10 +38,12 @@ public class PlayerControllerDRM : MonoBehaviour
     public Transform spawnClones;
     public string shaderVarRef;
 
-    Vector3 lastPosition;
+    [SerializeField] LayerMask terrainLayerMask = new LayerMask();
+    [SerializeField] Transform aimTransform, lastPosition;
 
+    GameObject objPivot;
 
-
+    [SerializeField] GameObject bulletPrefab;
 
     private void Awake()
     {
@@ -56,6 +58,7 @@ public class PlayerControllerDRM : MonoBehaviour
         crouch = playerInput.currentActionMap["Crouch"];
         jump = playerInput.currentActionMap["Jump"];
         dash = playerInput.currentActionMap["Dash"];
+        shoot = playerInput.currentActionMap["Shoot"];
     }
     private void OnEnable()
     {
@@ -65,16 +68,23 @@ public class PlayerControllerDRM : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        objPivot = new GameObject("DummyPivotRifle");
+        objPivot.transform.parent = transform;
         speed = walkSpeed;
     }
 
     // Update is called once per frame
     void Update()
     {
+        //Stunned
+
         if (stunned == true)
         {
             return;//PARO LA EJECUCIÓN DEL RESTO DE LA FUNCIÓN Y DEJA DE HACER EL UPDATE
         }
+
+        //Crouch
+
         if (crouch.triggered)
         {
             crouched = !crouched; //si crouched es false !crouched = true en cambio si crouched es true !crouched = false
@@ -83,6 +93,8 @@ public class PlayerControllerDRM : MonoBehaviour
 
         grounded = Physics.Raycast(transform.position, Vector3.down, 0.1f);
 
+        //Run
+        //Falta hacer un lerp para que no sea tan repentino el cambio !!!
         if (run.IsPressed())
         {
             speed = runSpeed;
@@ -92,39 +104,42 @@ public class PlayerControllerDRM : MonoBehaviour
             speed = walkSpeed;
         }
 
-        //ME QUEDO CON LOS VALORES DEL INPUT ACTION DE MOVE Y LOS JUNTO EN UN VECTOR PARA MOVERME SOBRE EL PLANO XZ
+        //Movement
+
         inputMovement = new Vector3(move.ReadValue<Vector2>().x, 0, move.ReadValue<Vector2>().y);
         finalMovement = new Vector3(inputMovement.x, finalMovement.y, inputMovement.z);
         animSpeed = (speed / runSpeed) * inputMovement.magnitude;
         anim.SetFloat("speed", animSpeed);
 
-        zDistance = transform.position.z - Camera.main.transform.position.z;
-        zDistance *= zDistanceFactor; // zDistance = zDistance * zDistanceFactor;
-        mouseWorldPosition = new Vector3(Mouse.current.position.ReadValue().x, Mouse.current.position.ReadValue().y, zDistance);
-        mouseWorldPosition = Camera.main.ScreenToWorldPoint(mouseWorldPosition);
-        mouseWorldPosition.y = transform.position.y;
-        rotation = Quaternion.LookRotation(mouseWorldPosition - transform.position);
-        transform.rotation = Quaternion.Slerp(transform.rotation, rotation, rotationSpeed * Time.deltaTime);
+        controller.Move(finalMovement * speed * Time.deltaTime);
 
-        /*anim.SetFloat("DirectionX", move.ReadValue<Vector2>().x * rotation.x);
-        anim.SetFloat("DirectionY", move.ReadValue<Vector2>().y * rotation.y);*/
+        //Player animations
 
-        Vector3 actualPosition = transform.position;
-        float x = actualPosition.x - lastPosition.x;
-        if (x > 0)
+        anim.SetFloat("DirectionX", inputMovement.x);
+        anim.SetFloat("DirectionY", inputMovement.z);
+
+        //Player rotation
+        if (aimming)
         {
-            x = 1;
-        }else if (x < 0)
-        {
-            x = -1;
+            zDistance = transform.position.z - Camera.main.transform.position.z;
+            zDistance *= zDistanceFactor; // zDistance = zDistance * zDistanceFactor;
+            mouseWorldPosition = new Vector3(Mouse.current.position.ReadValue().x, Mouse.current.position.ReadValue().y, zDistance);
+            mouseWorldPosition = Camera.main.ScreenToWorldPoint(mouseWorldPosition);
+            mouseWorldPosition.y = transform.position.y;
+            rotation = Quaternion.LookRotation(mouseWorldPosition - transform.position);
+            transform.rotation = Quaternion.Slerp(transform.rotation, rotation, rotationSpeed * Time.deltaTime);
         }
-        anim.SetFloat("DirectionX", x * mouseWorldPosition.x);
-        //anim.SetFloat("DirectionY", h);
-        lastPosition = actualPosition;
-        Debug.Log(mouseWorldPosition.x);
+        else
+        {
+            if (inputMovement.magnitude != 0)
+            {
+                rotation = Quaternion.LookRotation(inputMovement);
+                transform.rotation = Quaternion.Slerp(transform.rotation, rotation, rotationSpeed * Time.deltaTime);
 
+            }
+        }    
 
-        Mouse.current.WarpCursorPosition(Mouse.current.position.ReadValue() + look.ReadValue<Vector2>());
+        //Jump
 
         if (jump.triggered && !crouched && grounded)
         {
@@ -140,6 +155,8 @@ public class PlayerControllerDRM : MonoBehaviour
         finalMovement.x /= 1 + dragForce.x * Time.deltaTime;
         finalMovement.z /= 1 + dragForce.z * Time.deltaTime;
 
+        //Dash
+
         if (dashing)
         {
             if (Mathf.Abs(finalMovement.x) <= 1 && Mathf.Abs(finalMovement.z) <= 1)
@@ -148,6 +165,9 @@ public class PlayerControllerDRM : MonoBehaviour
                 anim.SetBool("dash", false);
             }
         }
+
+        //Landing
+
         if (grounded && finalMovement.y < 0)
         {
             finalMovement.y = -Mathf.Epsilon; //EPSILON = UN FLOAT CASI 0 PERO NO ES 0
@@ -158,7 +178,14 @@ public class PlayerControllerDRM : MonoBehaviour
             finalMovement.y += gravity * Time.deltaTime;
         }
 
-        controller.Move(finalMovement * speed * Time.deltaTime);        
+        //Attack
+        
+        if (shoot.triggered && grounded)
+        {
+            Instantiate(bulletPrefab, transform.Find("SpawnBullet").position, transform.rotation);
+        }
+
+        //bullet.get
 
         IEnumerator ActivateTrail(float timeActive)
         {
@@ -208,7 +235,7 @@ public class PlayerControllerDRM : MonoBehaviour
         return crouched;
     }
     public void Damage(float damage)
-    {        
+    {
         if (stunned == true)
         {
             return;
