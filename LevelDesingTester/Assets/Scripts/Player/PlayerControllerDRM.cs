@@ -114,9 +114,16 @@ public class PlayerControllerDRM : MonoBehaviour
         controller.Move(finalMovement * speed * Time.deltaTime);
 
         //Player animations
-
-        anim.SetFloat("DirectionX", inputMovement.x);
-        anim.SetFloat("DirectionY", inputMovement.z);
+        if (aimming)
+        {
+            anim.SetFloat("DirectionX", inputMovement.x);
+            anim.SetFloat("DirectionY", inputMovement.z);
+        }else
+        {
+            anim.SetFloat("DirectionX", 0f);
+            anim.SetFloat("DirectionY", 1f);
+        }
+       
 
         //Player rotation
         if (aimming)
