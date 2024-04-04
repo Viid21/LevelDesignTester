@@ -25,8 +25,9 @@ public class PlayerControllerDRM : MonoBehaviour
     Vector3 dragForce;
     float animSpeed;
 
+    public float health;
     [SerializeField]
-    float jumpHeight = 3, gravity = -9.8f, dashDistance, health;
+    float jumpHeight = 3, gravity = -9.8f, dashDistance;
     bool stunned = false;
 
     public float activeTime = 2f;

@@ -1,12 +1,18 @@
+using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
-using UnityEngine.Events;
 
-public class Weapons : ScriptableObject
+
+public class WeaponsSO : ScriptableObject
 {
     [System.Serializable]
     public struct Info
     {
+        public enum E_WEAPONTYPE { PISTOL, SHOTGUN, RIFLE, ARCTHROWER, SNIPER }
+        [SerializeField]
+        private E_WEAPONTYPE weaponType;
+        public E_WEAPONTYPE WeaponType { get => weaponType; }
+
         public string name;
         public string description;
 
@@ -19,21 +25,26 @@ public class Weapons : ScriptableObject
     [Header("Weapon info")]
     public Info weaponInfo;
 
-    public UnityEvent hitEvent;
-
     public class Modifiers : ScriptableObject
     {
 
     }
+}
 
-    public void Initialize()
+public class Weapons : Projectile
+{
+    public WeaponsSO weaponsSO;
+    private void Start()
     {
-        hitEvent = new UnityEvent();
+        if (weaponsSO.weaponInfo.WeaponType == WeaponsSO.Info.E_WEAPONTYPE.PISTOL) 
+        {
+            
+        }
     }
 }
-public class HitEvent : UnityEvent<Weapons> { }
+
 #if UNITY_EDITOR
-[CustomEditor(typeof(Weapons))]
+[CustomEditor(typeof(WeaponsSO))]
 public class WeaponEditor : Editor
 {
     SerializedProperty m_WeaponInfoProperty;
@@ -41,13 +52,13 @@ public class WeaponEditor : Editor
     [MenuItem("Assets/Systems/NewWeapon", priority = 0)]
     public static void CreateNewWeapon()
     {
-        var weapons = CreateInstance<Weapons>();
+        var weapons = CreateInstance<WeaponsSO>();
 
-        ProjectWindowUtil.CreateAsset(weapons, "weapons.asset");
+        ProjectWindowUtil.CreateAsset(weapons, "NewWeapon.asset");
     }
     private void OnEnable()
     {
-        m_WeaponInfoProperty = serializedObject.FindProperty(nameof(Weapons.weaponInfo));
+        m_WeaponInfoProperty = serializedObject.FindProperty(nameof(WeaponsSO.weaponInfo));
     }
     public override void OnInspectorGUI()
     {
