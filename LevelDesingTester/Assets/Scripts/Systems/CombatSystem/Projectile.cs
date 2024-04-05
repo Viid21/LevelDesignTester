@@ -1,12 +1,15 @@
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 
 public abstract class Projectile : MonoBehaviour
 {
-    enum E_ATTACKMOVEMENT { FORWARD, PARABOLLIC }
+    public enum E_ATTACKMOVEMENT { FORWARD, PARABOLLIC }
     [SerializeField]
     private E_ATTACKMOVEMENT moveMode;
+    public abstract E_ATTACKMOVEMENT MoveMode { get; protected set; }
+
     enum E_DAMAGEMODE { DIRECT, REACTION }
     [SerializeField]
     private E_DAMAGEMODE damageMode;
@@ -20,6 +23,7 @@ public abstract class Projectile : MonoBehaviour
     protected List<string> avoidTags;
     private Collider col;
     private Rigidbody rb;
+    protected Mesh mesh;
 
     // Start is called before the first frame update
     void Start()
@@ -27,13 +31,9 @@ public abstract class Projectile : MonoBehaviour
         Destroy(gameObject, timeToDestroy);
         rb = GetComponent<Rigidbody>();
         col = GetComponent<Collider>();
+        mesh = GetComponent<Mesh>();
         hitEvent = new UnityEvent();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
+        SetWeaponType();
     }
     protected private void FixedUpdate()
     {
@@ -44,12 +44,9 @@ public abstract class Projectile : MonoBehaviour
             rb.AddForce(transform.forward * velocity);
         }
     }
-
-    public virtual float SyncVar()
+    public virtual void SetWeaponType()
     {
-        return damageReactionRadius;
-        return velocity;
-
+        
     }
 
     protected private void OnTriggerEnter(Collider other)
