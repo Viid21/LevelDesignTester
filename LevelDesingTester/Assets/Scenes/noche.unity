@@ -1,0 +1,6019 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!29 &1
+OcclusionCullingSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_OcclusionBakeSettings:
+    smallestOccluder: 5
+    smallestHole: 0.25
+    backfaceThreshold: 100
+  m_SceneGUID: 00000000000000000000000000000000
+  m_OcclusionCullingData: {fileID: 0}
+--- !u!104 &2
+RenderSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 9
+  m_Fog: 0
+  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_FogMode: 3
+  m_FogDensity: 0.01
+  m_LinearFogStart: 0
+  m_LinearFogEnd: 300
+  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
+  m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
+  m_AmbientIntensity: 1
+  m_AmbientMode: 0
+  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
+  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_HaloStrength: 0.5
+  m_FlareStrength: 1
+  m_FlareFadeSpeed: 3
+  m_HaloTexture: {fileID: 0}
+  m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
+  m_DefaultReflectionMode: 0
+  m_DefaultReflectionResolution: 128
+  m_ReflectionBounces: 1
+  m_ReflectionIntensity: 1
+  m_CustomReflection: {fileID: 0}
+  m_Sun: {fileID: 0}
+  m_IndirectSpecularColor: {r: 0.442611, g: 0.49171674, b: 0.571535, a: 1}
+  m_UseRadianceAmbientProbe: 0
+--- !u!157 &3
+LightmapSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 12
+  m_GIWorkflowMode: 1
+  m_GISettings:
+    serializedVersion: 2
+    m_BounceScale: 1
+    m_IndirectOutputScale: 1
+    m_AlbedoBoost: 1
+    m_EnvironmentLightingMode: 0
+    m_EnableBakedLightmaps: 1
+    m_EnableRealtimeLightmaps: 0
+  m_LightmapEditorSettings:
+    serializedVersion: 12
+    m_Resolution: 2
+    m_BakeResolution: 40
+    m_AtlasSize: 1024
+    m_AO: 0
+    m_AOMaxDistance: 1
+    m_CompAOExponent: 1
+    m_CompAOExponentDirect: 0
+    m_ExtractAmbientOcclusion: 0
+    m_Padding: 2
+    m_LightmapParameters: {fileID: 0}
+    m_LightmapsBakeMode: 1
+    m_TextureCompression: 1
+    m_FinalGather: 0
+    m_FinalGatherFiltering: 1
+    m_FinalGatherRayCount: 256
+    m_ReflectionCompression: 2
+    m_MixedBakeMode: 2
+    m_BakeBackend: 1
+    m_PVRSampling: 1
+    m_PVRDirectSampleCount: 32
+    m_PVRSampleCount: 512
+    m_PVRBounces: 2
+    m_PVREnvironmentSampleCount: 256
+    m_PVREnvironmentReferencePointCount: 2048
+    m_PVRFilteringMode: 1
+    m_PVRDenoiserTypeDirect: 1
+    m_PVRDenoiserTypeIndirect: 1
+    m_PVRDenoiserTypeAO: 1
+    m_PVRFilterTypeDirect: 0
+    m_PVRFilterTypeIndirect: 0
+    m_PVRFilterTypeAO: 0
+    m_PVREnvironmentMIS: 1
+    m_PVRCulling: 1
+    m_PVRFilteringGaussRadiusDirect: 1
+    m_PVRFilteringGaussRadiusIndirect: 5
+    m_PVRFilteringGaussRadiusAO: 2
+    m_PVRFilteringAtrousPositionSigmaDirect: 0.5
+    m_PVRFilteringAtrousPositionSigmaIndirect: 2
+    m_PVRFilteringAtrousPositionSigmaAO: 1
+    m_ExportTrainingData: 0
+    m_TrainingDataDestination: TrainingData
+    m_LightProbeSampleCountMultiplier: 4
+  m_LightingDataAsset: {fileID: 112000000, guid: 67b9c3a40db93a84f95889a5b4a25bd2, type: 2}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: ca9a063c8645bcd45bf624a350a16e62, type: 2}
+--- !u!196 &4
+NavMeshSettings:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_BuildSettings:
+    serializedVersion: 2
+    agentTypeID: 0
+    agentRadius: 0.5
+    agentHeight: 2
+    agentSlope: 45
+    agentClimb: 0.4
+    ledgeDropHeight: 0
+    maxJumpAcrossDistance: 0
+    minRegionArea: 2
+    manualCellSize: 0
+    cellSize: 0.16666667
+    manualTileSize: 0
+    tileSize: 256
+    accuratePlacement: 0
+    maxJobWorkers: 0
+    preserveTilesOutsideBounds: 0
+    debug:
+      m_Flags: 0
+  m_NavMeshData: {fileID: 0}
+--- !u!1 &368508775
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 368508776}
+  - component: {fileID: 368508777}
+  m_Layer: 0
+  m_Name: Light Probe Group
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &368508776
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 368508775}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -8.646904, y: 6.29, z: 2.3905}
+  m_LocalScale: {x: 0.28696585, y: 1.8010434, z: 1.0941298}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!220 &368508777
+LightProbeGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 368508775}
+  m_Enabled: 1
+  m_SourcePositions:
+  - {x: 4.3700504, y: 1, z: -8.750959}
+  - {x: 4.3700504, y: 1, z: -1}
+  - {x: 1.787014, y: 1, z: -8.750959}
+  - {x: 1.787014, y: 1, z: -1}
+  - {x: 1.787014, y: 1, z: 8.025869}
+  - {x: 4.3700504, y: 1, z: 8.025869}
+  - {x: 1.787014, y: 1, z: 6.217525}
+  - {x: 4.3700504, y: 1, z: 6.217525}
+  - {x: 1.787014, y: 1, z: 3.9136178}
+  - {x: 4.3700504, y: 1, z: 3.9136178}
+  - {x: 1.787014, y: 1, z: 1.2513809}
+  - {x: 4.3700504, y: 1, z: 1.2513809}
+  - {x: 1.787014, y: 1, z: -3.199434}
+  - {x: 4.3700504, y: 1, z: -3.199434}
+  - {x: 1.787014, y: 1, z: -5.5371046}
+  - {x: 4.3700504, y: 1, z: -5.5371046}
+  - {x: 4.3700504, y: -1, z: -1}
+  - {x: 1.787014, y: -1, z: -8.750959}
+  - {x: 1.787014, y: -1, z: -1}
+  - {x: 1.787014, y: -1, z: 8.025869}
+  - {x: 4.3700504, y: -1, z: 8.025869}
+  - {x: 1.787014, y: -1, z: 6.217525}
+  - {x: 4.3700504, y: -1, z: 6.217525}
+  - {x: 1.787014, y: -1, z: 3.9136178}
+  - {x: 4.3700504, y: -1, z: 3.9136178}
+  - {x: 1.787014, y: -1, z: 1.2513809}
+  - {x: 4.3700504, y: -1, z: 1.2513809}
+  - {x: 1.787014, y: -1, z: -3.199434}
+  - {x: 4.3700504, y: -1, z: -3.199434}
+  - {x: 1.787014, y: -1, z: -5.5371046}
+  - {x: 4.3700504, y: -1, z: -5.5371046}
+  - {x: 4.3700504, y: -1, z: -8.750959}
+  - {x: 4.3700504, y: -3.121097, z: -1}
+  - {x: 1.787014, y: -3.121097, z: -8.750959}
+  - {x: 1.787014, y: -3.121097, z: -1}
+  - {x: 1.787014, y: -3.121097, z: 8.025869}
+  - {x: 4.3700504, y: -3.121097, z: 8.025869}
+  - {x: 1.787014, y: -3.121097, z: 6.217525}
+  - {x: 4.3700504, y: -3.121097, z: 6.217525}
+  - {x: 1.787014, y: -3.121097, z: 3.9136178}
+  - {x: 4.3700504, y: -3.121097, z: 3.9136178}
+  - {x: 1.787014, y: -3.121097, z: 1.2513809}
+  - {x: 4.3700504, y: -3.121097, z: 1.2513809}
+  - {x: 1.787014, y: -3.121097, z: -3.199434}
+  - {x: 4.3700504, y: -3.121097, z: -3.199434}
+  - {x: 1.787014, y: -3.121097, z: -5.5371046}
+  - {x: 4.3700504, y: -3.121097, z: -5.5371046}
+  - {x: 4.3700504, y: -3.121097, z: -8.750959}
+  - {x: -12.4963875, y: 1, z: -8.750959}
+  - {x: -12.4963875, y: 1, z: -1}
+  - {x: -12.4963875, y: 1, z: 8.025869}
+  - {x: -12.4963875, y: 1, z: 6.217525}
+  - {x: -12.4963875, y: 1, z: 3.9136178}
+  - {x: -12.4963875, y: 1, z: 1.2513809}
+  - {x: -12.4963875, y: 1, z: -3.199434}
+  - {x: -12.4963875, y: 1, z: -5.5371046}
+  - {x: -12.4963875, y: -1, z: -8.750959}
+  - {x: -12.4963875, y: -1, z: -1}
+  - {x: -12.4963875, y: -1, z: 8.025869}
+  - {x: -12.4963875, y: -1, z: 6.217525}
+  - {x: -12.4963875, y: -1, z: 3.9136178}
+  - {x: -12.4963875, y: -1, z: 1.2513809}
+  - {x: -12.4963875, y: -1, z: -3.199434}
+  - {x: -12.4963875, y: -1, z: -5.5371046}
+  - {x: -12.4963875, y: -3.121097, z: -8.750959}
+  - {x: -12.4963875, y: -3.121097, z: -1}
+  - {x: -12.4963875, y: -3.121097, z: 8.025869}
+  - {x: -12.4963875, y: -3.121097, z: 6.217525}
+  - {x: -12.4963875, y: -3.121097, z: 3.9136178}
+  - {x: -12.4963875, y: -3.121097, z: 1.2513809}
+  - {x: -12.4963875, y: -3.121097, z: -3.199434}
+  - {x: -12.4963875, y: -3.121097, z: -5.5371046}
+  - {x: -9.800972, y: 1, z: -8.750959}
+  - {x: -9.800972, y: 1, z: -1}
+  - {x: -9.800972, y: 1, z: 8.025869}
+  - {x: -9.800972, y: 1, z: 6.217525}
+  - {x: -9.800972, y: 1, z: 3.9136178}
+  - {x: -9.800972, y: 1, z: 1.2513809}
+  - {x: -9.800972, y: 1, z: -3.199434}
+  - {x: -9.800972, y: 1, z: -5.5371046}
+  - {x: -9.800972, y: -1, z: -8.750959}
+  - {x: -9.800972, y: -1, z: -1}
+  - {x: -9.800972, y: -1, z: 8.025869}
+  - {x: -9.800972, y: -1, z: 6.217525}
+  - {x: -9.800972, y: -1, z: 3.9136178}
+  - {x: -9.800972, y: -1, z: 1.2513809}
+  - {x: -9.800972, y: -1, z: -3.199434}
+  - {x: -9.800972, y: -1, z: -5.5371046}
+  - {x: -9.800972, y: -3.121097, z: -8.750959}
+  - {x: -9.800972, y: -3.121097, z: -1}
+  - {x: -9.800972, y: -3.121097, z: 8.025869}
+  - {x: -9.800972, y: -3.121097, z: 6.217525}
+  - {x: -9.800972, y: -3.121097, z: 3.9136178}
+  - {x: -9.800972, y: -3.121097, z: 1.2513809}
+  - {x: -9.800972, y: -3.121097, z: -3.199434}
+  - {x: -9.800972, y: -3.121097, z: -5.5371046}
+  - {x: -6.845984, y: 1, z: -8.750959}
+  - {x: -6.845984, y: 1, z: -1}
+  - {x: -6.845984, y: 1, z: 8.025869}
+  - {x: -6.845984, y: 1, z: 6.217525}
+  - {x: -6.845984, y: 1, z: 3.9136178}
+  - {x: -6.845984, y: 1, z: 1.2513809}
+  - {x: -6.845984, y: 1, z: -3.199434}
+  - {x: -6.845984, y: 1, z: -5.5371046}
+  - {x: -6.845984, y: -1, z: -8.750959}
+  - {x: -6.845984, y: -1, z: -1}
+  - {x: -6.845984, y: -1, z: 8.025869}
+  - {x: -6.845984, y: -1, z: 6.217525}
+  - {x: -6.845984, y: -1, z: 3.9136178}
+  - {x: -6.845984, y: -1, z: 1.2513809}
+  - {x: -6.845984, y: -1, z: -3.199434}
+  - {x: -6.845984, y: -1, z: -5.5371046}
+  - {x: -6.845984, y: -3.121097, z: -8.750959}
+  - {x: -6.845984, y: -3.121097, z: -1}
+  - {x: -6.845984, y: -3.121097, z: 8.025869}
+  - {x: -6.845984, y: -3.121097, z: 6.217525}
+  - {x: -6.845984, y: -3.121097, z: 3.9136178}
+  - {x: -6.845984, y: -3.121097, z: 1.2513809}
+  - {x: -6.845984, y: -3.121097, z: -3.199434}
+  - {x: -6.845984, y: -3.121097, z: -5.5371046}
+  - {x: -5.1256194, y: 1, z: -8.750959}
+  - {x: -5.1256194, y: 1, z: -1}
+  - {x: -5.1256194, y: 1, z: 8.025869}
+  - {x: -5.1256194, y: 1, z: 6.217525}
+  - {x: -5.1256194, y: 1, z: 3.9136178}
+  - {x: -5.1256194, y: 1, z: 1.2513809}
+  - {x: -5.1256194, y: 1, z: -3.199434}
+  - {x: -5.1256194, y: 1, z: -5.5371046}
+  - {x: -5.1256194, y: -1, z: -8.750959}
+  - {x: -5.1256194, y: -1, z: -1}
+  - {x: -5.1256194, y: -1, z: 8.025869}
+  - {x: -5.1256194, y: -1, z: 6.217525}
+  - {x: -5.1256194, y: -1, z: 3.9136178}
+  - {x: -5.1256194, y: -1, z: 1.2513809}
+  - {x: -5.1256194, y: -1, z: -3.199434}
+  - {x: -5.1256194, y: -1, z: -5.5371046}
+  - {x: -5.1256194, y: -3.121097, z: -8.750959}
+  - {x: -5.1256194, y: -3.121097, z: -1}
+  - {x: -5.1256194, y: -3.121097, z: 8.025869}
+  - {x: -5.1256194, y: -3.121097, z: 6.217525}
+  - {x: -5.1256194, y: -3.121097, z: 3.9136178}
+  - {x: -5.1256194, y: -3.121097, z: 1.2513809}
+  - {x: -5.1256194, y: -3.121097, z: -3.199434}
+  - {x: -5.1256194, y: -3.121097, z: -5.5371046}
+  - {x: -2.99011, y: 1, z: -8.750959}
+  - {x: -2.99011, y: 1, z: -1}
+  - {x: -2.99011, y: 1, z: 8.025869}
+  - {x: -2.99011, y: 1, z: 6.217525}
+  - {x: -2.99011, y: 1, z: 3.9136178}
+  - {x: -2.99011, y: 1, z: 1.2513809}
+  - {x: -2.99011, y: 1, z: -3.199434}
+  - {x: -2.99011, y: 1, z: -5.5371046}
+  - {x: -2.99011, y: -1, z: -8.750959}
+  - {x: -2.99011, y: -1, z: -1}
+  - {x: -2.99011, y: -1, z: 8.025869}
+  - {x: -2.99011, y: -1, z: 6.217525}
+  - {x: -2.99011, y: -1, z: 3.9136178}
+  - {x: -2.99011, y: -1, z: 1.2513809}
+  - {x: -2.99011, y: -1, z: -3.199434}
+  - {x: -2.99011, y: -1, z: -5.5371046}
+  - {x: -2.99011, y: -3.121097, z: -8.750959}
+  - {x: -2.99011, y: -3.121097, z: -1}
+  - {x: -2.99011, y: -3.121097, z: 8.025869}
+  - {x: -2.99011, y: -3.121097, z: 6.217525}
+  - {x: -2.99011, y: -3.121097, z: 3.9136178}
+  - {x: -2.99011, y: -3.121097, z: 1.2513809}
+  - {x: -2.99011, y: -3.121097, z: -3.199434}
+  - {x: -2.99011, y: -3.121097, z: -5.5371046}
+  - {x: -0.5339656, y: 1, z: -8.750959}
+  - {x: -0.5339656, y: 1, z: -1}
+  - {x: -0.5339656, y: 1, z: 8.025869}
+  - {x: -0.5339656, y: 1, z: 6.217525}
+  - {x: -0.5339656, y: 1, z: 3.9136178}
+  - {x: -0.5339656, y: 1, z: 1.2513809}
+  - {x: -0.5339656, y: 1, z: -3.199434}
+  - {x: -0.5339656, y: 1, z: -5.5371046}
+  - {x: -0.5339656, y: -1, z: -8.750959}
+  - {x: -0.5339656, y: -1, z: -1}
+  - {x: -0.5339656, y: -1, z: 8.025869}
+  - {x: -0.5339656, y: -1, z: 6.217525}
+  - {x: -0.5339656, y: -1, z: 3.9136178}
+  - {x: -0.5339656, y: -1, z: 1.2513809}
+  - {x: -0.5339656, y: -1, z: -3.199434}
+  - {x: -0.5339656, y: -1, z: -5.5371046}
+  - {x: -0.5339656, y: -3.121097, z: -8.750959}
+  - {x: -0.5339656, y: -3.121097, z: -1}
+  - {x: -0.5339656, y: -3.121097, z: 8.025869}
+  - {x: -0.5339656, y: -3.121097, z: 6.217525}
+  - {x: -0.5339656, y: -3.121097, z: 3.9136178}
+  - {x: -0.5339656, y: -3.121097, z: 1.2513809}
+  - {x: -0.5339656, y: -3.121097, z: -3.199434}
+  - {x: -0.5339656, y: -3.121097, z: -5.5371046}
+  m_Dering: 1
+--- !u!1 &434103519
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 434103520}
+  - component: {fileID: 434103521}
+  m_Layer: 0
+  m_Name: Directional Light (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 1
+--- !u!4 &434103520
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 434103519}
+  m_LocalRotation: {x: 0.81462026, y: -0.024876203, z: -0.20071591, w: 0.5435883}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2041651334}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 118.87799, y: 407.149, z: 392.39502}
+--- !u!108 &434103521
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 434103519}
+  m_Enabled: 1
+  serializedVersion: 10
+  m_Type: 1
+  m_Shape: 0
+  m_Color: {r: 0.0032929946, g: 0.3453119, b: 0.6981132, a: 1}
+  m_Intensity: 1
+  m_Range: 10
+  m_SpotAngle: 30
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 1
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 2
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+--- !u!1 &498609525
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 498609526}
+  m_Layer: 0
+  m_Name: luces
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &498609526
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 498609525}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -23.372, y: -15.048, z: -8.7701}
+  m_LocalScale: {x: 0.7782602, y: 0.7782602, z: 0.7782602}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1456684035}
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1095628606
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1095628609}
+  - component: {fileID: 1095628608}
+  - component: {fileID: 1095628607}
+  m_Layer: 0
+  m_Name: w
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!81 &1095628607
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1095628606}
+  m_Enabled: 1
+--- !u!20 &1095628608
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1095628606}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_FocalLength: 50
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!4 &1095628609
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1095628606}
+  m_LocalRotation: {x: 0.7071056, y: -0, z: -0, w: 0.707108}
+  m_LocalPosition: {x: -9.83, y: 6.79, z: -4.14}
+  m_LocalScale: {x: 0.65348, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!1 &1456684034
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1456684035}
+  - component: {fileID: 1456684036}
+  m_Layer: 0
+  m_Name: Directional Light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 1
+--- !u!4 &1456684035
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1456684034}
+  m_LocalRotation: {x: 0.81462026, y: -0.024876203, z: -0.20071591, w: 0.5435883}
+  m_LocalPosition: {x: 8.736, y: 12.275, z: 3.4161}
+  m_LocalScale: {x: 0.44315, y: 0.44315, z: 0.44315}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 498609526}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 118.87799, y: 407.149, z: 392.39502}
+--- !u!108 &1456684036
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1456684034}
+  m_Enabled: 1
+  serializedVersion: 10
+  m_Type: 1
+  m_Shape: 0
+  m_Color: {r: 0.8018868, g: 0.40113974, b: 0.056737266, a: 1}
+  m_Intensity: 1
+  m_Range: 10
+  m_SpotAngle: 30
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 1
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 2
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+--- !u!1 &2041651333
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2041651334}
+  m_Layer: 0
+  m_Name: noche
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2041651334
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2041651333}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -23.372, y: -15.048, z: -8.7701}
+  m_LocalScale: {x: 0.7782602, y: 0.7782602, z: 0.7782602}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 434103520}
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &1305037035327442194
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2193423312438391474}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &2193423312438391474
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4931218028019239932}
+  - component: {fileID: 4876933052198187519}
+  - component: {fileID: 1305037035327442194}
+  - component: {fileID: 4931218028019239933}
+  - component: {fileID: 4931218028019239934}
+  m_Layer: 0
+  m_Name: Plane
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 1
+--- !u!33 &4876933052198187519
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2193423312438391474}
+  m_Mesh: {fileID: -462981019419857548, guid: 961382a75c73b0f4dbf5bd5f4cf62343, type: 3}
+--- !u!4 &4931218028019239932
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2193423312438391474}
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
+  m_LocalPosition: {x: -9.867, y: 1.2435, z: -4.1714363}
+  m_LocalScale: {x: 228.76353, y: 228.76349, z: 228.76349}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4931218028019239933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2193423312438391474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3a96ff7819912489fe2919312fed47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lightStates:
+  - {fileID: 11400000, guid: 7a5d2cb7c81e7f2409707022261ba761, type: 2}
+  - {fileID: 11400000, guid: e32c25edee5abb749985fb15ccc21f56, type: 2}
+  maxStatesCount: 3
+  probes_Current:
+  - sh[ 0]: 0.15482995
+    sh[ 1]: -0.007278835
+    sh[ 2]: 0.005588739
+    sh[ 3]: 0.006419826
+    sh[ 4]: 0.0014281168
+    sh[ 5]: 0.0028647378
+    sh[ 6]: 0.0046505323
+    sh[ 7]: 0.0048549417
+    sh[ 8]: 0.011425255
+    sh[ 9]: 0.22122063
+    sh[10]: 0.051386695
+    sh[11]: 0.022006974
+    sh[12]: 0.019525673
+    sh[13]: 0.014163442
+    sh[14]: 0.012067469
+    sh[15]: 0.0049268412
+    sh[16]: 0.008969965
+    sh[17]: 0.010411929
+    sh[18]: 0.3837717
+    sh[19]: 0.21134731
+    sh[20]: 0.0722495
+    sh[21]: 0.06645638
+    sh[22]: 0.05571347
+    sh[23]: 0.0440218
+    sh[24]: 0.00010530806
+    sh[25]: 0.021688813
+    sh[26]: -0.005661807
+  - sh[ 0]: 0.14804478
+    sh[ 1]: 0.0020729117
+    sh[ 2]: 0.010164572
+    sh[ 3]: 0.015308099
+    sh[ 4]: -0.002030355
+    sh[ 5]: 0.0046644323
+    sh[ 6]: 0.0064303414
+    sh[ 7]: 0.0065963482
+    sh[ 8]: 0.01567303
+    sh[ 9]: 0.22027138
+    sh[10]: 0.059445653
+    sh[11]: 0.02947077
+    sh[12]: 0.028493604
+    sh[13]: 0.017774714
+    sh[14]: 0.018986834
+    sh[15]: 0.0062692934
+    sh[16]: 0.013724248
+    sh[17]: 0.013606878
+    sh[18]: 0.39682436
+    sh[19]: 0.21699822
+    sh[20]: 0.08437032
+    sh[21]: 0.07431718
+    sh[22]: 0.07932264
+    sh[23]: 0.0667278
+    sh[24]: -0.0013944743
+    sh[25]: 0.03355118
+    sh[26]: -0.008756444
+  - sh[ 0]: 0.15235439
+    sh[ 1]: -0.0049072094
+    sh[ 2]: 0.0076313666
+    sh[ 3]: 0.009581244
+    sh[ 4]: 0.0023161226
+    sh[ 5]: 0.0039751395
+    sh[ 6]: 0.004299576
+    sh[ 7]: 0.005162808
+    sh[ 8]: 0.012014029
+    sh[ 9]: 0.21949936
+    sh[10]: 0.054357126
+    sh[11]: 0.026267288
+    sh[12]: 0.025145214
+    sh[13]: 0.01592932
+    sh[14]: 0.012952741
+    sh[15]: 0.004320792
+    sh[16]: 0.010350946
+    sh[17]: 0.010750165
+    sh[18]: 0.38424143
+    sh[19]: 0.21652387
+    sh[20]: 0.07912909
+    sh[21]: 0.07613814
+    sh[22]: 0.059889756
+    sh[23]: 0.045014977
+    sh[24]: -0.001113754
+    sh[25]: 0.026014553
+    sh[26]: -0.0065488424
+  - sh[ 0]: 0.14547805
+    sh[ 1]: 0.0036773398
+    sh[ 2]: 0.0102023855
+    sh[ 3]: 0.010279987
+    sh[ 4]: -0.0021419385
+    sh[ 5]: 0.0021465973
+    sh[ 6]: 0.0053255106
+    sh[ 7]: 0.008518204
+    sh[ 8]: 0.0190612
+    sh[ 9]: 0.21783148
+    sh[10]: 0.060186982
+    sh[11]: 0.02798279
+    sh[12]: 0.022350382
+    sh[13]: 0.018148094
+    sh[14]: 0.016601488
+    sh[15]: 0.0045547774
+    sh[16]: 0.016231542
+    sh[17]: 0.015901579
+    sh[18]: 0.3964376
+    sh[19]: 0.21608506
+    sh[20]: 0.08011397
+    sh[21]: 0.06807284
+    sh[22]: 0.08208929
+    sh[23]: 0.065551035
+    sh[24]: -0.0042098626
+    sh[25]: 0.0383013
+    sh[26]: -0.010782424
+  - sh[ 0]: 0.15009741
+    sh[ 1]: -0.011925872
+    sh[ 2]: 0.009271739
+    sh[ 3]: 0.010421004
+    sh[ 4]: 0.0023746812
+    sh[ 5]: 0.00016790975
+    sh[ 6]: 0.0027347782
+    sh[ 7]: -0.0015630203
+    sh[ 8]: 0.009949577
+    sh[ 9]: 0.2165562
+    sh[10]: 0.04621205
+    sh[11]: 0.016791508
+    sh[12]: 0.024219777
+    sh[13]: 0.015571456
+    sh[14]: 0.015086132
+    sh[15]: 0.002650299
+    sh[16]: 0.0051552025
+    sh[17]: 0.0091472445
+    sh[18]: 0.38504815
+    sh[19]: 0.20632741
+    sh[20]: 0.04931587
+    sh[21]: 0.06887646
+    sh[22]: 0.05838178
+    sh[23]: 0.060229808
+    sh[24]: -0.002007778
+    sh[25]: 0.025735283
+    sh[26]: -0.006100661
+  - sh[ 0]: 0.15342574
+    sh[ 1]: -0.00933178
+    sh[ 2]: 0.0105264485
+    sh[ 3]: 0.0074448395
+    sh[ 4]: 0.0029412021
+    sh[ 5]: -0.000024271556
+    sh[ 6]: 0.0031944732
+    sh[ 7]: -0.0013165213
+    sh[ 8]: 0.01041917
+    sh[ 9]: 0.22109476
+    sh[10]: 0.048694067
+    sh[11]: 0.02023564
+    sh[12]: 0.019682286
+    sh[13]: 0.016150353
+    sh[14]: 0.012392253
+    sh[15]: 0.003386451
+    sh[16]: 0.004085379
+    sh[17]: 0.010389016
+    sh[18]: 0.38789937
+    sh[19]: 0.2072774
+    sh[20]: 0.05737938
+    sh[21]: 0.06518007
+    sh[22]: 0.05796833
+    sh[23]: 0.05123434
+    sh[24]: -0.00059843855
+    sh[25]: 0.02164491
+    sh[26]: -0.003075904
+  - sh[ 0]: 0.13623217
+    sh[ 1]: 0.014628037
+    sh[ 2]: 0.018040119
+    sh[ 3]: 0.012435723
+    sh[ 4]: -0.0029277173
+    sh[ 5]: -0.002331654
+    sh[ 6]: 0.0073971343
+    sh[ 7]: 0.001794824
+    sh[ 8]: 0.020911409
+    sh[ 9]: 0.2156856
+    sh[10]: 0.065641396
+    sh[11]: 0.029757604
+    sh[12]: 0.022204138
+    sh[13]: 0.019463383
+    sh[14]: 0.01685983
+    sh[15]: 0.0067493236
+    sh[16]: 0.011489405
+    sh[17]: 0.017715896
+    sh[18]: 0.40948465
+    sh[19]: 0.21034905
+    sh[20]: 0.0709991
+    sh[21]: 0.06561716
+    sh[22]: 0.08881522
+    sh[23]: 0.0780445
+    sh[24]: -0.0021232052
+    sh[25]: 0.03968849
+    sh[26]: -0.01008944
+  - sh[ 0]: 0.14365204
+    sh[ 1]: -0.001718634
+    sh[ 2]: 0.0014493463
+    sh[ 3]: 0.013774658
+    sh[ 4]: -0.0055817775
+    sh[ 5]: 0.0030151543
+    sh[ 6]: 0.005113529
+    sh[ 7]: -0.0006589398
+    sh[ 8]: 0.011078924
+    sh[ 9]: 0.21780209
+    sh[10]: 0.052794438
+    sh[11]: 0.010576088
+    sh[12]: 0.019349204
+    sh[13]: 0.015060716
+    sh[14]: 0.018171437
+    sh[15]: 0.0042506405
+    sh[16]: 0.0076735625
+    sh[17]: 0.009906121
+    sh[18]: 0.40272105
+    sh[19]: 0.20327741
+    sh[20]: 0.04766805
+    sh[21]: 0.049026947
+    sh[22]: 0.078082666
+    sh[23]: 0.06760477
+    sh[24]: -0.0037794977
+    sh[25]: 0.031357687
+    sh[26]: -0.008865039
+  - sh[ 0]: 0.12963879
+    sh[ 1]: 0.018854795
+    sh[ 2]: 0.0030484467
+    sh[ 3]: 0.025541069
+    sh[ 4]: -0.0032164308
+    sh[ 5]: 0.0026936606
+    sh[ 6]: 0.006430059
+    sh[ 7]: 0.00067376223
+    sh[ 8]: 0.021730902
+    sh[ 9]: 0.20982961
+    sh[10]: 0.06888876
+    sh[11]: 0.017759023
+    sh[12]: 0.039245285
+    sh[13]: 0.0217925
+    sh[14]: 0.018951472
+    sh[15]: 0.0054132636
+    sh[16]: 0.0065586655
+    sh[17]: 0.018146241
+    sh[18]: 0.40816218
+    sh[19]: 0.2106421
+    sh[20]: 0.06664347
+    sh[21]: 0.08439024
+    sh[22]: 0.098499864
+    sh[23]: 0.07403935
+    sh[24]: -0.0041515725
+    sh[25]: 0.028889364
+    sh[26]: -0.011535191
+  - sh[ 0]: 0.13957226
+    sh[ 1]: 0.0040917546
+    sh[ 2]: 0.002713531
+    sh[ 3]: 0.014790902
+    sh[ 4]: -0.005093784
+    sh[ 5]: 0.004108506
+    sh[ 6]: 0.00406375
+    sh[ 7]: 0.0047339234
+    sh[ 8]: 0.012977757
+    sh[ 9]: 0.21616462
+    sh[10]: 0.05838485
+    sh[11]: 0.018147832
+    sh[12]: 0.020825056
+    sh[13]: 0.017597225
+    sh[14]: 0.017839232
+    sh[15]: 0.0029279161
+    sh[16]: 0.011134917
+    sh[17]: 0.011408865
+    sh[18]: 0.40729624
+    sh[19]: 0.20882635
+    sh[20]: 0.06647712
+    sh[21]: 0.0496323
+    sh[22]: 0.086999856
+    sh[23]: 0.064349726
+    sh[24]: -0.0053074067
+    sh[25]: 0.031561002
+    sh[26]: -0.010150137
+  - sh[ 0]: 0.14380763
+    sh[ 1]: 0.002908966
+    sh[ 2]: 0.008816551
+    sh[ 3]: 0.008248579
+    sh[ 4]: 0.0017233231
+    sh[ 5]: -0.0009782381
+    sh[ 6]: 0.0038773597
+    sh[ 7]: 0.003318374
+    sh[ 8]: 0.01523096
+    sh[ 9]: 0.21678852
+    sh[10]: 0.05918926
+    sh[11]: 0.02627784
+    sh[12]: 0.020667767
+    sh[13]: 0.020730173
+    sh[14]: 0.012618748
+    sh[15]: 0.0039136275
+    sh[16]: 0.008899917
+    sh[17]: 0.01302754
+    sh[18]: 0.39790025
+    sh[19]: 0.21519981
+    sh[20]: 0.075100824
+    sh[21]: 0.0679838
+    sh[22]: 0.07949176
+    sh[23]: 0.059003603
+    sh[24]: -0.0014478232
+    sh[25]: 0.027414113
+    sh[26]: -0.00881054
+  - sh[ 0]: 0.1440013
+    sh[ 1]: -0.0014233985
+    sh[ 2]: -0.0005220013
+    sh[ 3]: 0.0070385137
+    sh[ 4]: -0.0031521
+    sh[ 5]: 0.0010557284
+    sh[ 6]: 0.0034456372
+    sh[ 7]: 0.0015511204
+    sh[ 8]: 0.011213551
+    sh[ 9]: 0.21420169
+    sh[10]: 0.0542591
+    sh[11]: 0.012223585
+    sh[12]: 0.015367843
+    sh[13]: 0.012139368
+    sh[14]: 0.012629935
+    sh[15]: 0.002825626
+    sh[16]: 0.007161407
+    sh[17]: 0.010214216
+    sh[18]: 0.38928893
+    sh[19]: 0.20742933
+    sh[20]: 0.054928802
+    sh[21]: 0.052672766
+    sh[22]: 0.06017017
+    sh[23]: 0.052585963
+    sh[24]: -0.0033741624
+    sh[25]: 0.024790749
+    sh[26]: -0.0068003335
+  - sh[ 0]: 0.14665402
+    sh[ 1]: 0.0012576908
+    sh[ 2]: 0.00866575
+    sh[ 3]: 0.009894684
+    sh[ 4]: 0.0013047978
+    sh[ 5]: 0.0044816933
+    sh[ 6]: 0.0055768397
+    sh[ 7]: 0.0026694401
+    sh[ 8]: 0.0149808675
+    sh[ 9]: 0.21749723
+    sh[10]: 0.058968306
+    sh[11]: 0.028398838
+    sh[12]: 0.024375027
+    sh[13]: 0.019129883
+    sh[14]: 0.016380247
+    sh[15]: 0.0056662415
+    sh[16]: 0.0071033984
+    sh[17]: 0.012615544
+    sh[18]: 0.3918539
+    sh[19]: 0.21758604
+    sh[20]: 0.0842956
+    sh[21]: 0.07269068
+    sh[22]: 0.075931355
+    sh[23]: 0.057602685
+    sh[24]: -0.000757519
+    sh[25]: 0.023315119
+    sh[26]: -0.009867988
+  - sh[ 0]: 0.14531155
+    sh[ 1]: -0.005290874
+    sh[ 2]: -0.00677873
+    sh[ 3]: 0.009445215
+    sh[ 4]: -0.0032118685
+    sh[ 5]: 0.005865809
+    sh[ 6]: 0.0046892604
+    sh[ 7]: 0.005541612
+    sh[ 8]: 0.011982593
+    sh[ 9]: 0.21230818
+    sh[10]: 0.052666113
+    sh[11]: 0.007846122
+    sh[12]: 0.020502511
+    sh[13]: 0.013394763
+    sh[14]: 0.016813103
+    sh[15]: 0.0040674047
+    sh[16]: 0.010656801
+    sh[17]: 0.009934045
+    sh[18]: 0.38328472
+    sh[19]: 0.21107455
+    sh[20]: 0.059304617
+    sh[21]: 0.062090382
+    sh[22]: 0.06636509
+    sh[23]: 0.055886585
+    sh[24]: -0.0028572038
+    sh[25]: 0.02672872
+    sh[26]: -0.0101090195
+  - sh[ 0]: 0.14916137
+    sh[ 1]: -0.0025436073
+    sh[ 2]: 0.007925646
+    sh[ 3]: 0.013122232
+    sh[ 4]: 0.0010169351
+    sh[ 5]: 0.0022756162
+    sh[ 6]: 0.0036318123
+    sh[ 7]: 0.006953332
+    sh[ 8]: 0.015611868
+    sh[ 9]: 0.21803862
+    sh[10]: 0.05662933
+    sh[11]: 0.025661286
+    sh[12]: 0.028851822
+    sh[13]: 0.017454928
+    sh[14]: 0.013759486
+    sh[15]: 0.0032004726
+    sh[16]: 0.0132630365
+    sh[17]: 0.0141070895
+    sh[18]: 0.387097
+    sh[19]: 0.21902186
+    sh[20]: 0.0785056
+    sh[21]: 0.08042146
+    sh[22]: 0.06946013
+    sh[23]: 0.05360902
+    sh[24]: -0.0034083466
+    sh[25]: 0.030982234
+    sh[26]: -0.0066491724
+  - sh[ 0]: 0.14841326
+    sh[ 1]: -0.0030614827
+    sh[ 2]: -0.0006608066
+    sh[ 3]: 0.0019484984
+    sh[ 4]: 0.0005710023
+    sh[ 5]: 0.004487684
+    sh[ 6]: 0.0043185996
+    sh[ 7]: 0.003818304
+    sh[ 8]: 0.011283151
+    sh[ 9]: 0.21562123
+    sh[10]: 0.053278856
+    sh[11]: 0.014863094
+    sh[12]: 0.013106122
+    sh[13]: 0.013605348
+    sh[14]: 0.013525394
+    sh[15]: 0.0037797259
+    sh[16]: 0.008530676
+    sh[17]: 0.009820128
+    sh[18]: 0.38344428
+    sh[19]: 0.20815523
+    sh[20]: 0.062126018
+    sh[21]: 0.056267288
+    sh[22]: 0.055981815
+    sh[23]: 0.046513822
+    sh[24]: -0.0024367755
+    sh[25]: 0.02381938
+    sh[26]: -0.006743085
+  - sh[ 0]: 0.13648987
+    sh[ 1]: -0.004579753
+    sh[ 2]: 0.005612888
+    sh[ 3]: 0.028164798
+    sh[ 4]: 0.00035206988
+    sh[ 5]: 0.0027479164
+    sh[ 6]: 0.0026765824
+    sh[ 7]: 0.0024454712
+    sh[ 8]: 0.0071861655
+    sh[ 9]: 0.20413637
+    sh[10]: 0.05116256
+    sh[11]: 0.020117424
+    sh[12]: 0.042134773
+    sh[13]: 0.022403242
+    sh[14]: 0.015486183
+    sh[15]: 0.0013927805
+    sh[16]: 0.009183388
+    sh[17]: 0.0059242407
+    sh[18]: 0.38586852
+    sh[19]: 0.21066266
+    sh[20]: 0.06831149
+    sh[21]: 0.07541285
+    sh[22]: 0.08403643
+    sh[23]: 0.058043946
+    sh[24]: -0.0059779654
+    sh[25]: 0.030212343
+    sh[26]: -0.009399673
+  - sh[ 0]: 0.14232597
+    sh[ 1]: -0.005083221
+    sh[ 2]: -0.010976772
+    sh[ 3]: 0.008176864
+    sh[ 4]: 0.0014522471
+    sh[ 5]: 0.008340072
+    sh[ 6]: 0.002210644
+    sh[ 7]: 0.0074393367
+    sh[ 8]: 0.01016962
+    sh[ 9]: 0.207496
+    sh[10]: 0.052058987
+    sh[11]: 0.0055996357
+    sh[12]: 0.022324545
+    sh[13]: 0.014263094
+    sh[14]: 0.01542642
+    sh[15]: 0.0014822996
+    sh[16]: 0.012718071
+    sh[17]: 0.008955883
+    sh[18]: 0.37574866
+    sh[19]: 0.20853664
+    sh[20]: 0.059796996
+    sh[21]: 0.06829039
+    sh[22]: 0.05613654
+    sh[23]: 0.043167375
+    sh[24]: -0.004214714
+    sh[25]: 0.026433261
+    sh[26]: -0.0063154893
+  - sh[ 0]: 0.023229513
+    sh[ 1]: 0.012994967
+    sh[ 2]: -0.0043119723
+    sh[ 3]: -0.008081142
+    sh[ 4]: -0.0039647953
+    sh[ 5]: -0.0018479951
+    sh[ 6]: -0.0012531485
+    sh[ 7]: 0.0021799738
+    sh[ 8]: -0.002601653
+    sh[ 9]: 0.047293946
+    sh[10]: 0.020352619
+    sh[11]: -0.011201152
+    sh[12]: -0.01960885
+    sh[13]: -0.0040043043
+    sh[14]: -0.0018270224
+    sh[15]: -0.0019086271
+    sh[16]: 0.0059252307
+    sh[17]: -0.002532779
+    sh[18]: 0.11527523
+    sh[19]: 0.036489695
+    sh[20]: -0.032596562
+    sh[21]: -0.05439999
+    sh[22]: -0.0009951487
+    sh[23]: -0.00038575602
+    sh[24]: -0.0033105407
+    sh[25]: 0.017642837
+    sh[26]: -0.00051056343
+  - sh[ 0]: 0.14660908
+    sh[ 1]: -0.010967168
+    sh[ 2]: 0.012360535
+    sh[ 3]: 0.013824535
+    sh[ 4]: 0.0053060506
+    sh[ 5]: 0.0045154244
+    sh[ 6]: 0.0018932659
+    sh[ 7]: 0.0017391342
+    sh[ 8]: 0.009927896
+    sh[ 9]: 0.20694324
+    sh[10]: 0.04775146
+    sh[11]: 0.030377857
+    sh[12]: 0.033800684
+    sh[13]: 0.017845914
+    sh[14]: 0.015993899
+    sh[15]: 0.0011135271
+    sh[16]: 0.005208754
+    sh[17]: 0.009728715
+    sh[18]: 0.35937074
+    sh[19]: 0.20847464
+    sh[20]: 0.083040655
+    sh[21]: 0.09264989
+    sh[22]: 0.057518817
+    sh[23]: 0.052404843
+    sh[24]: -0.0043524653
+    sh[25]: 0.017348336
+    sh[26]: -0.0035547563
+  - sh[ 0]: 0.14932102
+    sh[ 1]: -0.01375168
+    sh[ 2]: 0.019969832
+    sh[ 3]: 0.009388122
+    sh[ 4]: 0.004620018
+    sh[ 5]: 0.0022830816
+    sh[ 6]: 0.0018417422
+    sh[ 7]: 0.0004711671
+    sh[ 8]: 0.010150776
+    sh[ 9]: 0.20867117
+    sh[10]: 0.045929473
+    sh[11]: 0.038787793
+    sh[12]: 0.026773792
+    sh[13]: 0.017573303
+    sh[14]: 0.013906449
+    sh[15]: 0.001051233
+    sh[16]: 0.004091324
+    sh[17]: 0.009737161
+    sh[18]: 0.3603549
+    sh[19]: 0.20875143
+    sh[20]: 0.09083501
+    sh[21]: 0.08416566
+    sh[22]: 0.058656316
+    sh[23]: 0.050404035
+    sh[24]: -0.0043967473
+    sh[25]: 0.016878223
+    sh[26]: -0.0044792215
+  - sh[ 0]: 0.13983113
+    sh[ 1]: -0.02645126
+    sh[ 2]: 0.02036212
+    sh[ 3]: 0.011537761
+    sh[ 4]: 0.009355164
+    sh[ 5]: 0.0042464067
+    sh[ 6]: 0.0036478878
+    sh[ 7]: 0.0009824993
+    sh[ 8]: 0.01316001
+    sh[ 9]: 0.19367002
+    sh[10]: 0.027543725
+    sh[11]: 0.040762596
+    sh[12]: 0.03272897
+    sh[13]: 0.025444996
+    sh[14]: 0.018140059
+    sh[15]: 0.0036249203
+    sh[16]: 0.0055063753
+    sh[17]: 0.013966343
+    sh[18]: 0.33105782
+    sh[19]: 0.17692906
+    sh[20]: 0.094927914
+    sh[21]: 0.096348524
+    sh[22]: 0.0759482
+    sh[23]: 0.061788347
+    sh[24]: -0.00078883604
+    sh[25]: 0.021036178
+    sh[26]: 0.001101757
+  - sh[ 0]: 0.1421629
+    sh[ 1]: -0.019433897
+    sh[ 2]: 0.010481661
+    sh[ 3]: 0.012323233
+    sh[ 4]: 0.007580173
+    sh[ 5]: 0.0045942725
+    sh[ 6]: 0.0024848846
+    sh[ 7]: -0.0023269416
+    sh[ 8]: 0.009441008
+    sh[ 9]: 0.19797038
+    sh[10]: 0.037831042
+    sh[11]: 0.027294783
+    sh[12]: 0.032757577
+    sh[13]: 0.02173014
+    sh[14]: 0.017045612
+    sh[15]: 0.0020091922
+    sh[16]: 0.00013459711
+    sh[17]: 0.009041983
+    sh[18]: 0.34330544
+    sh[19]: 0.19415756
+    sh[20]: 0.07858005
+    sh[21]: 0.09243371
+    sh[22]: 0.06675442
+    sh[23]: 0.056649517
+    sh[24]: -0.0027853074
+    sh[25]: 0.011684415
+    sh[26]: -0.0049061757
+  - sh[ 0]: 0.1319408
+    sh[ 1]: -0.02970245
+    sh[ 2]: 0.006010424
+    sh[ 3]: 0.016714731
+    sh[ 4]: 0.007844809
+    sh[ 5]: 0.00050549203
+    sh[ 6]: 0.0030341432
+    sh[ 7]: -0.00063103164
+    sh[ 8]: 0.013336429
+    sh[ 9]: 0.18279658
+    sh[10]: 0.022277258
+    sh[11]: 0.018230032
+    sh[12]: 0.038982145
+    sh[13]: 0.024668692
+    sh[14]: 0.010679512
+    sh[15]: 0.0025523684
+    sh[16]: 0.0054302276
+    sh[17]: 0.014700375
+    sh[18]: 0.31771162
+    sh[19]: 0.166897
+    sh[20]: 0.05689603
+    sh[21]: 0.10403102
+    sh[22]: 0.07656381
+    sh[23]: 0.046229754
+    sh[24]: -0.0022831352
+    sh[25]: 0.026358306
+    sh[26]: 0.0036738566
+  - sh[ 0]: 0.1393068
+    sh[ 1]: -0.02585429
+    sh[ 2]: 0.008693386
+    sh[ 3]: 0.014510216
+    sh[ 4]: 0.010545986
+    sh[ 5]: 0.0016011505
+    sh[ 6]: 0.0030176435
+    sh[ 7]: -0.0048050606
+    sh[ 8]: 0.009252464
+    sh[ 9]: 0.19242787
+    sh[10]: 0.030822156
+    sh[11]: 0.023003176
+    sh[12]: 0.03807479
+    sh[13]: 0.026804047
+    sh[14]: 0.012076455
+    sh[15]: 0.0028029066
+    sh[16]: -0.00043426856
+    sh[17]: 0.008644648
+    sh[18]: 0.3336198
+    sh[19]: 0.18640909
+    sh[20]: 0.063862026
+    sh[21]: 0.10350394
+    sh[22]: 0.07744558
+    sh[23]: 0.04794156
+    sh[24]: -0.0018980091
+    sh[25]: 0.017878097
+    sh[26]: -0.006626187
+  - sh[ 0]: 0.017947515
+    sh[ 1]: 0.010895727
+    sh[ 2]: -0.00862041
+    sh[ 3]: -0.0051709847
+    sh[ 4]: -0.0042723306
+    sh[ 5]: -0.0058238334
+    sh[ 6]: -0.0005371785
+    sh[ 7]: 0.0032655513
+    sh[ 8]: -0.0021877377
+    sh[ 9]: 0.034942295
+    sh[10]: 0.018160079
+    sh[11]: -0.017168248
+    sh[12]: -0.01151749
+    sh[13]: -0.006544369
+    sh[14]: -0.009341941
+    sh[15]: -0.00026880164
+    sh[16]: 0.008424363
+    sh[17]: -0.002634138
+    sh[18]: 0.08164001
+    sh[19]: 0.035607215
+    sh[20]: -0.040890027
+    sh[21]: -0.030049955
+    sh[22]: -0.011317287
+    sh[23]: -0.01721063
+    sh[24]: 0.001036209
+    sh[25]: 0.024249597
+    sh[26]: -0.002717428
+  - sh[ 0]: 0.1371837
+    sh[ 1]: -0.0044899792
+    sh[ 2]: 0.01043053
+    sh[ 3]: 0.02897226
+    sh[ 4]: 0.0016460292
+    sh[ 5]: 0.0005284259
+    sh[ 6]: 0.0025638747
+    sh[ 7]: -0.00027315892
+    sh[ 8]: 0.00696353
+    sh[ 9]: 0.20374401
+    sh[10]: 0.051469434
+    sh[11]: 0.02294828
+    sh[12]: 0.044386655
+    sh[13]: 0.022125853
+    sh[14]: 0.012596758
+    sh[15]: 0.0014330533
+    sh[16]: 0.0061460724
+    sh[17]: 0.0058264956
+    sh[18]: 0.37866926
+    sh[19]: 0.21054956
+    sh[20]: 0.05955149
+    sh[21]: 0.08116299
+    sh[22]: 0.079491384
+    sh[23]: 0.051500667
+    sh[24]: -0.0059988284
+    sh[25]: 0.029011214
+    sh[26]: -0.009100653
+  - sh[ 0]: 0.13040711
+    sh[ 1]: -0.0053954083
+    sh[ 2]: -0.014820436
+    sh[ 3]: 0.009437493
+    sh[ 4]: -0.00033087996
+    sh[ 5]: -0.00069119193
+    sh[ 6]: 0.00047914678
+    sh[ 7]: 0.0035746233
+    sh[ 8]: 0.0072111646
+    sh[ 9]: 0.19309197
+    sh[10]: 0.044542994
+    sh[11]: -0.011795299
+    sh[12]: 0.020912105
+    sh[13]: 0.011262293
+    sh[14]: 0.007347917
+    sh[15]: -0.00054786465
+    sh[16]: 0.01086104
+    sh[17]: 0.0058473344
+    sh[18]: 0.35675746
+    sh[19]: 0.18441068
+    sh[20]: 0.012569666
+    sh[21]: 0.061477922
+    sh[22]: 0.048591375
+    sh[23]: 0.037624322
+    sh[24]: -0.006169256
+    sh[25]: 0.02966723
+    sh[26]: -0.008034031
+  - sh[ 0]: 0.14026785
+    sh[ 1]: -0.0071162675
+    sh[ 2]: 0.0005157418
+    sh[ 3]: 0.024903497
+    sh[ 4]: 0.0030776164
+    sh[ 5]: -0.0020521933
+    sh[ 6]: 0.0024226347
+    sh[ 7]: 0.0049282503
+    sh[ 8]: 0.00916581
+    sh[ 9]: 0.20496014
+    sh[10]: 0.04905444
+    sh[11]: 0.009044245
+    sh[12]: 0.044254377
+    sh[13]: 0.01918603
+    sh[14]: 0.009465037
+    sh[15]: 0.0020487725
+    sh[16]: 0.012567917
+    sh[17]: 0.00811272
+    sh[18]: 0.3706842
+    sh[19]: 0.20370394
+    sh[20]: 0.044363443
+    sh[21]: 0.09676164
+    sh[22]: 0.06856369
+    sh[23]: 0.048156817
+    sh[24]: -0.0032793956
+    sh[25]: 0.03265268
+    sh[26]: -0.0072212615
+  - sh[ 0]: 0.13362809
+    sh[ 1]: 0.008081085
+    sh[ 2]: -0.00642579
+    sh[ 3]: 0.013852062
+    sh[ 4]: -0.001020362
+    sh[ 5]: -0.0018473141
+    sh[ 6]: 0.0041993205
+    sh[ 7]: 0.0075447652
+    sh[ 8]: 0.015923798
+    sh[ 9]: 0.20563263
+    sh[10]: 0.058896117
+    sh[11]: 0.0013010307
+    sh[12]: 0.025560167
+    sh[13]: 0.018523159
+    sh[14]: 0.01097281
+    sh[15]: 0.0026140295
+    sh[16]: 0.01586375
+    sh[17]: 0.012939314
+    sh[18]: 0.38685396
+    sh[19]: 0.2008135
+    sh[20]: 0.039766803
+    sh[21]: 0.066480875
+    sh[22]: 0.079505675
+    sh[23]: 0.05477226
+    sh[24]: -0.0061235563
+    sh[25]: 0.036473744
+    sh[26]: -0.010836379
+  - sh[ 0]: 0.13644893
+    sh[ 1]: -0.0007545277
+    sh[ 2]: -0.00087590783
+    sh[ 3]: 0.0193063
+    sh[ 4]: -0.0036650905
+    sh[ 5]: 0.0010822753
+    sh[ 6]: 0.0038607018
+    sh[ 7]: 0.0061639464
+    sh[ 8]: 0.012186545
+    sh[ 9]: 0.2047336
+    sh[10]: 0.053957198
+    sh[11]: 0.009626026
+    sh[12]: 0.030943198
+    sh[13]: 0.015897097
+    sh[14]: 0.01467807
+    sh[15]: 0.0024794661
+    sh[16]: 0.014418053
+    sh[17]: 0.0101021
+    sh[18]: 0.38004434
+    sh[19]: 0.20477135
+    sh[20]: 0.052977137
+    sh[21]: 0.06843909
+    sh[22]: 0.07667274
+    sh[23]: 0.05983063
+    sh[24]: -0.0058824574
+    sh[25]: 0.035236083
+    sh[26]: -0.0104668485
+  - sh[ 0]: 0.1456872
+    sh[ 1]: -0.0082056755
+    sh[ 2]: -0.008704863
+    sh[ 3]: 0.007618354
+    sh[ 4]: -0.0008255049
+    sh[ 5]: 0.0056538694
+    sh[ 6]: 0.002500923
+    sh[ 7]: 0.004778347
+    sh[ 8]: 0.008840774
+    sh[ 9]: 0.21002753
+    sh[10]: 0.04875175
+    sh[11]: 0.0053272783
+    sh[12]: 0.01929599
+    sh[13]: 0.0108370045
+    sh[14]: 0.013021597
+    sh[15]: 0.0017612451
+    sh[16]: 0.009155365
+    sh[17]: 0.008164201
+    sh[18]: 0.37470418
+    sh[19]: 0.20430404
+    sh[20]: 0.05577793
+    sh[21]: 0.05987432
+    sh[22]: 0.049140997
+    sh[23]: 0.0407362
+    sh[24]: -0.0036708938
+    sh[25]: 0.021456564
+    sh[26]: -0.0057880725
+  - sh[ 0]: 0.14422671
+    sh[ 1]: -0.021566613
+    sh[ 2]: 0.0042861514
+    sh[ 3]: 0.010223711
+    sh[ 4]: 0.007339478
+    sh[ 5]: 0.0025388477
+    sh[ 6]: 0.0035841682
+    sh[ 7]: 0.0018914737
+    sh[ 8]: 0.010446518
+    sh[ 9]: 0.19947235
+    sh[10]: 0.0356648
+    sh[11]: 0.019839877
+    sh[12]: 0.030878292
+    sh[13]: 0.021243375
+    sh[14]: 0.012611014
+    sh[15]: 0.003175517
+    sh[16]: 0.007947036
+    sh[17]: 0.010479294
+    sh[18]: 0.3440325
+    sh[19]: 0.19238582
+    sh[20]: 0.06604854
+    sh[21]: 0.09026544
+    sh[22]: 0.06582427
+    sh[23]: 0.046999827
+    sh[24]: -0.0021835356
+    sh[25]: 0.025265805
+    sh[26]: -0.0022668606
+  - sh[ 0]: 0.15200709
+    sh[ 1]: -0.010767072
+    sh[ 2]: -0.0012488054
+    sh[ 3]: 0.009525091
+    sh[ 4]: 0.002727906
+    sh[ 5]: -0.00046641787
+    sh[ 6]: 0.0022127344
+    sh[ 7]: 0.006242793
+    sh[ 8]: 0.009110138
+    sh[ 9]: 0.2100532
+    sh[10]: 0.044187877
+    sh[11]: 0.004590587
+    sh[12]: 0.027836349
+    sh[13]: 0.013388764
+    sh[14]: 0.005206279
+    sh[15]: 0.0015656452
+    sh[16]: 0.012470617
+    sh[17]: 0.009104584
+    sh[18]: 0.35296074
+    sh[19]: 0.19445024
+    sh[20]: 0.032058954
+    sh[21]: 0.08300951
+    sh[22]: 0.047950745
+    sh[23]: 0.027417136
+    sh[24]: -0.003944636
+    sh[25]: 0.028739389
+    sh[26]: -0.0027805553
+  - sh[ 0]: 0.14693072
+    sh[ 1]: -0.021280603
+    sh[ 2]: 0.011815584
+    sh[ 3]: 0.012325506
+    sh[ 4]: 0.008584987
+    sh[ 5]: -0.00060519687
+    sh[ 6]: 0.0041516977
+    sh[ 7]: 0.0014980306
+    sh[ 8]: 0.013583856
+    sh[ 9]: 0.20373285
+    sh[10]: 0.034889903
+    sh[11]: 0.028634677
+    sh[12]: 0.033916418
+    sh[13]: 0.023739956
+    sh[14]: 0.010051076
+    sh[15]: 0.0041280757
+    sh[16]: 0.005660144
+    sh[17]: 0.014327007
+    sh[18]: 0.34602407
+    sh[19]: 0.18955144
+    sh[20]: 0.07635555
+    sh[21]: 0.09669105
+    sh[22]: 0.07171306
+    sh[23]: 0.04541862
+    sh[24]: -0.0007702993
+    sh[25]: 0.021062661
+    sh[26]: 0.0015195195
+  - sh[ 0]: 0.15154026
+    sh[ 1]: -0.014474586
+    sh[ 2]: 0.014025879
+    sh[ 3]: 0.0044920454
+    sh[ 4]: 0.0041483203
+    sh[ 5]: 0.0040162425
+    sh[ 6]: 0.0037766322
+    sh[ 7]: 0.0036448257
+    sh[ 8]: 0.009891475
+    sh[ 9]: 0.2107514
+    sh[10]: 0.04467958
+    sh[11]: 0.032815766
+    sh[12]: 0.019907795
+    sh[13]: 0.01577994
+    sh[14]: 0.015711108
+    sh[15]: 0.0036998533
+    sh[16]: 0.008003853
+    sh[17]: 0.009085742
+    sh[18]: 0.36211926
+    sh[19]: 0.20592749
+    sh[20]: 0.08576269
+    sh[21]: 0.07235684
+    sh[22]: 0.054152895
+    sh[23]: 0.05293655
+    sh[24]: -0.001141029
+    sh[25]: 0.02087827
+    sh[26]: -0.0047785984
+  - sh[ 0]: 0.15506652
+    sh[ 1]: -0.01480573
+    sh[ 2]: 0.00975417
+    sh[ 3]: 0.0057716966
+    sh[ 4]: 0.003765377
+    sh[ 5]: 0.003301479
+    sh[ 6]: 0.0030935872
+    sh[ 7]: 0.003029953
+    sh[ 8]: 0.01090974
+    sh[ 9]: 0.21628141
+    sh[10]: 0.044825677
+    sh[11]: 0.0264455
+    sh[12]: 0.022250943
+    sh[13]: 0.016065218
+    sh[14]: 0.014444172
+    sh[15]: 0.0029128639
+    sh[16]: 0.00772812
+    sh[17]: 0.010835623
+    sh[18]: 0.3687397
+    sh[19]: 0.20673195
+    sh[20]: 0.07621674
+    sh[21]: 0.076421
+    sh[22]: 0.055879608
+    sh[23]: 0.05072726
+    sh[24]: -0.0020093932
+    sh[25]: 0.02146706
+    sh[26]: -0.0027094288
+  - sh[ 0]: 0.15175004
+    sh[ 1]: -0.013177816
+    sh[ 2]: 0.013381457
+    sh[ 3]: 0.007720068
+    sh[ 4]: 0.004849845
+    sh[ 5]: 0.0030706334
+    sh[ 6]: 0.003281733
+    sh[ 7]: 0.0016635684
+    sh[ 8]: 0.011843423
+    sh[ 9]: 0.21271609
+    sh[10]: 0.044883437
+    sh[11]: 0.031318102
+    sh[12]: 0.02455721
+    sh[13]: 0.017385269
+    sh[14]: 0.014678855
+    sh[15]: 0.0030789033
+    sh[16]: 0.005353036
+    sh[17]: 0.012090634
+    sh[18]: 0.36422485
+    sh[19]: 0.20354892
+    sh[20]: 0.08356909
+    sh[21]: 0.07912304
+    sh[22]: 0.05797709
+    sh[23]: 0.05164779
+    sh[24]: -0.0018600523
+    sh[25]: 0.018174035
+    sh[26]: -0.00035428363
+  - sh[ 0]: 0.14836532
+    sh[ 1]: -0.018566689
+    sh[ 2]: 0.003469323
+    sh[ 3]: 0.009420226
+    sh[ 4]: 0.004361235
+    sh[ 5]: 0.0034119063
+    sh[ 6]: 0.0025007818
+    sh[ 7]: 0.0010532303
+    sh[ 8]: 0.009808535
+    sh[ 9]: 0.20622039
+    sh[10]: 0.040274926
+    sh[11]: 0.017878227
+    sh[12]: 0.027430007
+    sh[13]: 0.016726997
+    sh[14]: 0.014751852
+    sh[15]: 0.0016747698
+    sh[16]: 0.0061562257
+    sh[17]: 0.0100985505
+    sh[18]: 0.3557266
+    sh[19]: 0.20017713
+    sh[20]: 0.06641419
+    sh[21]: 0.08280441
+    sh[22]: 0.05685472
+    sh[23]: 0.05170736
+    sh[24]: -0.003936343
+    sh[25]: 0.020486047
+    sh[26]: -0.0023249248
+  - sh[ 0]: 0.15346272
+    sh[ 1]: -0.016328206
+    sh[ 2]: 0.012361209
+    sh[ 3]: 0.011939442
+    sh[ 4]: 0.005321683
+    sh[ 5]: 0.0027292063
+    sh[ 6]: 0.004794616
+    sh[ 7]: 0.0040408503
+    sh[ 8]: 0.01265396
+    sh[ 9]: 0.21415165
+    sh[10]: 0.041856866
+    sh[11]: 0.02945832
+    sh[12]: 0.031290635
+    sh[13]: 0.018912964
+    sh[14]: 0.015057717
+    sh[15]: 0.004849075
+    sh[16]: 0.00952109
+    sh[17]: 0.013241045
+    sh[18]: 0.3622124
+    sh[19]: 0.2012789
+    sh[20]: 0.08170814
+    sh[21]: 0.08879167
+    sh[22]: 0.06277407
+    sh[23]: 0.054555204
+    sh[24]: -0.0005040459
+    sh[25]: 0.025293235
+    sh[26]: 0.00004692397
+  - sh[ 0]: 0.14795373
+    sh[ 1]: -0.022220956
+    sh[ 2]: 0.0023263292
+    sh[ 3]: 0.008041187
+    sh[ 4]: 0.004350329
+    sh[ 5]: 0.0042140572
+    sh[ 6]: 0.0028904506
+    sh[ 7]: -0.001514094
+    sh[ 8]: 0.00980696
+    sh[ 9]: 0.20433852
+    sh[10]: 0.036728375
+    sh[11]: 0.017206192
+    sh[12]: 0.025296751
+    sh[13]: 0.017387081
+    sh[14]: 0.014753908
+    sh[15]: 0.0022773382
+    sh[16]: 0.0030536798
+    sh[17]: 0.0100044
+    sh[18]: 0.35134482
+    sh[19]: 0.1968032
+    sh[20]: 0.06434753
+    sh[21]: 0.07944903
+    sh[22]: 0.059895992
+    sh[23]: 0.050785393
+    sh[24]: -0.003232094
+    sh[25]: 0.01753573
+    sh[26]: -0.0031387547
+  - sh[ 0]: 0.14644583
+    sh[ 1]: -0.02558547
+    sh[ 2]: 0.0046944804
+    sh[ 3]: 0.0035197411
+    sh[ 4]: 0.0066031734
+    sh[ 5]: 0.005448485
+    sh[ 6]: 0.0037074722
+    sh[ 7]: -0.00038947002
+    sh[ 8]: 0.011177789
+    sh[ 9]: 0.20074563
+    sh[10]: 0.031497657
+    sh[11]: 0.021884192
+    sh[12]: 0.020912593
+    sh[13]: 0.020356575
+    sh[14]: 0.017224489
+    sh[15]: 0.003162925
+    sh[16]: 0.0053399857
+    sh[17]: 0.01164709
+    sh[18]: 0.3431952
+    sh[19]: 0.18702555
+    sh[20]: 0.072428584
+    sh[21]: 0.07730106
+    sh[22]: 0.065240785
+    sh[23]: 0.056216765
+    sh[24]: -0.00264118
+    sh[25]: 0.02248764
+    sh[26]: -0.0004098516
+  - sh[ 0]: 0.14901981
+    sh[ 1]: -0.022474322
+    sh[ 2]: 0.0006073613
+    sh[ 3]: 0.008575398
+    sh[ 4]: 0.0059436583
+    sh[ 5]: 0.0034801895
+    sh[ 6]: 0.0035340239
+    sh[ 7]: -0.0008765443
+    sh[ 8]: 0.011805578
+    sh[ 9]: 0.20507133
+    sh[10]: 0.035165224
+    sh[11]: 0.015399428
+    sh[12]: 0.027048688
+    sh[13]: 0.019346498
+    sh[14]: 0.01403438
+    sh[15]: 0.0030165012
+    sh[16]: 0.003210765
+    sh[17]: 0.012239649
+    sh[18]: 0.34966683
+    sh[19]: 0.19225346
+    sh[20]: 0.061653465
+    sh[21]: 0.08252245
+    sh[22]: 0.06327549
+    sh[23]: 0.04994837
+    sh[24]: -0.0024197518
+    sh[25]: 0.017419733
+    sh[26]: -0.00058254943
+  - sh[ 0]: 0.14128353
+    sh[ 1]: -0.019358363
+    sh[ 2]: 0.009270489
+    sh[ 3]: 0.0081564
+    sh[ 4]: 0.005138104
+    sh[ 5]: -0.0005004613
+    sh[ 6]: 0.0026656
+    sh[ 7]: -0.0006485
+    sh[ 8]: 0.008946664
+    sh[ 9]: 0.1937284
+    sh[10]: 0.037522845
+    sh[11]: 0.02640455
+    sh[12]: 0.027646033
+    sh[13]: 0.018860823
+    sh[14]: 0.009839703
+    sh[15]: 0.001594535
+    sh[16]: 0.0030607253
+    sh[17]: 0.008381183
+    sh[18]: 0.33277243
+    sh[19]: 0.19410712
+    sh[20]: 0.07611621
+    sh[21]: 0.08683951
+    sh[22]: 0.06254246
+    sh[23]: 0.044542227
+    sh[24]: -0.0052602137
+    sh[25]: 0.016508525
+    sh[26]: -0.005780074
+  - sh[ 0]: 0.14349158
+    sh[ 1]: -0.014623106
+    sh[ 2]: 0.0022370392
+    sh[ 3]: 0.010776102
+    sh[ 4]: 0.0045218347
+    sh[ 5]: 0.0012821124
+    sh[ 6]: 0.0025441682
+    sh[ 7]: -0.00045135713
+    sh[ 8]: 0.008414568
+    sh[ 9]: 0.19885242
+    sh[10]: 0.04296329
+    sh[11]: 0.017018765
+    sh[12]: 0.030799592
+    sh[13]: 0.017461026
+    sh[14]: 0.010094454
+    sh[15]: 0.0016688459
+    sh[16]: 0.0032734587
+    sh[17]: 0.0076233293
+    sh[18]: 0.34460884
+    sh[19]: 0.20075536
+    sh[20]: 0.06267836
+    sh[21]: 0.09147342
+    sh[22]: 0.0581733
+    sh[23]: 0.04047466
+    sh[24]: -0.004166835
+    sh[25]: 0.017111445
+    sh[26]: -0.005978264
+  - sh[ 0]: 0.12482463
+    sh[ 1]: -0.04162264
+    sh[ 2]: 0.008247387
+    sh[ 3]: 0.01609882
+    sh[ 4]: 0.008744435
+    sh[ 5]: 0.0014978744
+    sh[ 6]: 0.004229253
+    sh[ 7]: 0.0012613881
+    sh[ 8]: 0.015364909
+    sh[ 9]: 0.14545774
+    sh[10]: -0.02675318
+    sh[11]: 0.013219536
+    sh[12]: 0.026375486
+    sh[13]: 0.014290379
+    sh[14]: 0.0027247851
+    sh[15]: 0.006159059
+    sh[16]: 0.0012858793
+    sh[17]: 0.0225356
+    sh[18]: 0.17449258
+    sh[19]: -0.006270087
+    sh[20]: 0.02081988
+    sh[21]: 0.04990011
+    sh[22]: 0.026587604
+    sh[23]: 0.0049235164
+    sh[24]: 0.0073372955
+    sh[25]: 0.0018455894
+    sh[26]: 0.030585686
+  - sh[ 0]: 0.14180353
+    sh[ 1]: -0.021465844
+    sh[ 2]: 0.0045152856
+    sh[ 3]: 0.01710553
+    sh[ 4]: 0.009677572
+    sh[ 5]: 0.0026240204
+    sh[ 6]: 0.0034757536
+    sh[ 7]: 0.0015984151
+    sh[ 8]: 0.007148608
+    sh[ 9]: 0.19373873
+    sh[10]: 0.035422325
+    sh[11]: 0.019602459
+    sh[12]: 0.042389147
+    sh[13]: 0.0257918
+    sh[14]: 0.013298775
+    sh[15]: 0.0029999348
+    sh[16]: 0.0071151634
+    sh[17]: 0.0055094007
+    sh[18]: 0.33026674
+    sh[19]: 0.19153774
+    sh[20]: 0.06688665
+    sh[21]: 0.11498407
+    sh[22]: 0.07494156
+    sh[23]: 0.049042143
+    sh[24]: -0.0023176493
+    sh[25]: 0.023383306
+    sh[26]: -0.0117056295
+  - sh[ 0]: 0.1500369
+    sh[ 1]: -0.016812582
+    sh[ 2]: -0.0066394643
+    sh[ 3]: 0.0072404235
+    sh[ 4]: 0.0041822437
+    sh[ 5]: 0.001982819
+    sh[ 6]: 0.0016067778
+    sh[ 7]: 0.0039046404
+    sh[ 8]: 0.0072102416
+    sh[ 9]: 0.20587845
+    sh[10]: 0.040786117
+    sh[11]: 0.0019839397
+    sh[12]: 0.026900766
+    sh[13]: 0.015166915
+    sh[14]: 0.009342907
+    sh[15]: 0.0008438477
+    sh[16]: 0.010065337
+    sh[17]: 0.006431515
+    sh[18]: 0.35194004
+    sh[19]: 0.19624674
+    sh[20]: 0.037521444
+    sh[21]: 0.08568546
+    sh[22]: 0.050736126
+    sh[23]: 0.03581092
+    sh[24]: -0.004367218
+    sh[25]: 0.026936917
+    sh[26]: -0.006227942
+  - sh[ 0]: 0.14993252
+    sh[ 1]: -0.008228116
+    sh[ 2]: -0.0040086834
+    sh[ 3]: 0.0017394425
+    sh[ 4]: 0.004563194
+    sh[ 5]: 0.006620269
+    sh[ 6]: 0.00345887
+    sh[ 7]: -0.0007572792
+    sh[ 8]: 0.009439515
+    sh[ 9]: 0.21447825
+    sh[10]: 0.05033866
+    sh[11]: 0.011891469
+    sh[12]: 0.018096915
+    sh[13]: 0.014169705
+    sh[14]: 0.015495567
+    sh[15]: 0.0031431336
+    sh[16]: 0.0037584514
+    sh[17]: 0.008560086
+    sh[18]: 0.37702852
+    sh[19]: 0.20971552
+    sh[20]: 0.063670084
+    sh[21]: 0.07010323
+    sh[22]: 0.047820136
+    sh[23]: 0.04697667
+    sh[24]: -0.0021051888
+    sh[25]: 0.018370442
+    sh[26]: -0.0060445853
+  - sh[ 0]: 0.14585161
+    sh[ 1]: 0.0017768184
+    sh[ 2]: 0.009874962
+    sh[ 3]: 0.002804924
+    sh[ 4]: 0.012085258
+    sh[ 5]: 0.0029917208
+    sh[ 6]: 0.0071275653
+    sh[ 7]: 0.005575359
+    sh[ 8]: 0.017125485
+    sh[ 9]: 0.21718481
+    sh[10]: 0.06139395
+    sh[11]: 0.028714595
+    sh[12]: 0.026794164
+    sh[13]: 0.024041979
+    sh[14]: 0.017950647
+    sh[15]: 0.0068531185
+    sh[16]: 0.014403158
+    sh[17]: 0.01433218
+    sh[18]: 0.39166483
+    sh[19]: 0.22627561
+    sh[20]: 0.08355151
+    sh[21]: 0.09769513
+    sh[22]: 0.06846354
+    sh[23]: 0.06864399
+    sh[24]: -0.0019511824
+    sh[25]: 0.037437566
+    sh[26]: -0.011955263
+  - sh[ 0]: 0.148009
+    sh[ 1]: -0.0119419815
+    sh[ 2]: 0.008967168
+    sh[ 3]: -0.00028643833
+    sh[ 4]: 0.002873997
+    sh[ 5]: 0.0006292227
+    sh[ 6]: 0.0029484401
+    sh[ 7]: 0.0042321715
+    sh[ 8]: 0.007867648
+    sh[ 9]: 0.21308754
+    sh[10]: 0.04785423
+    sh[11]: 0.019275647
+    sh[12]: 0.01736738
+    sh[13]: 0.012751932
+    sh[14]: 0.014282034
+    sh[15]: 0.0026793429
+    sh[16]: 0.0075632418
+    sh[17]: 0.007149731
+    sh[18]: 0.38033554
+    sh[19]: 0.21072711
+    sh[20]: 0.056524053
+    sh[21]: 0.0745314
+    sh[22]: 0.04800802
+    sh[23]: 0.0567984
+    sh[24]: -0.0024595568
+    sh[25]: 0.019153053
+    sh[26]: -0.0074028
+  - sh[ 0]: 0.1417346
+    sh[ 1]: 0.005048497
+    sh[ 2]: 0.011113564
+    sh[ 3]: -0.0032166825
+    sh[ 4]: 0.0142411785
+    sh[ 5]: 0.0028133723
+    sh[ 6]: 0.006512965
+    sh[ 7]: 0.0060589677
+    sh[ 8]: 0.014275142
+    sh[ 9]: 0.2158953
+    sh[10]: 0.06323136
+    sh[11]: 0.025908414
+    sh[12]: 0.022911457
+    sh[13]: 0.024652842
+    sh[14]: 0.01973852
+    sh[15]: 0.005852358
+    sh[16]: 0.010197463
+    sh[17]: 0.0121733295
+    sh[18]: 0.39893022
+    sh[19]: 0.22397752
+    sh[20]: 0.07163529
+    sh[21]: 0.10070047
+    sh[22]: 0.0641882
+    sh[23]: 0.0747606
+    sh[24]: -0.0022878416
+    sh[25]: 0.02572486
+    sh[26]: -0.012159235
+  - sh[ 0]: 0.13902968
+    sh[ 1]: 0.0052987034
+    sh[ 2]: 0.006505094
+    sh[ 3]: -0.0089876605
+    sh[ 4]: 0.019671831
+    sh[ 5]: 0.004975414
+    sh[ 6]: 0.005178041
+    sh[ 7]: 0.0053746086
+    sh[ 8]: 0.01708164
+    sh[ 9]: 0.21333776
+    sh[10]: 0.06412263
+    sh[11]: 0.025010098
+    sh[12]: 0.020310942
+    sh[13]: 0.030285152
+    sh[14]: 0.022063054
+    sh[15]: 0.0040208567
+    sh[16]: 0.013887144
+    sh[17]: 0.014715896
+    sh[18]: 0.3994559
+    sh[19]: 0.22697903
+    sh[20]: 0.08033849
+    sh[21]: 0.10642939
+    sh[22]: 0.07234061
+    sh[23]: 0.07950086
+    sh[24]: -0.005471553
+    sh[25]: 0.037943788
+    sh[26]: -0.012364483
+  - sh[ 0]: 0.14566834
+    sh[ 1]: 0.0014445282
+    sh[ 2]: 0.008205445
+    sh[ 3]: -0.0040520965
+    sh[ 4]: 0.010032958
+    sh[ 5]: 0.00088366674
+    sh[ 6]: 0.0048701535
+    sh[ 7]: 0.0057888515
+    sh[ 8]: 0.013918088
+    sh[ 9]: 0.2171472
+    sh[10]: 0.05955271
+    sh[11]: 0.025303256
+    sh[12]: 0.01719496
+    sh[13]: 0.020798989
+    sh[14]: 0.014188655
+    sh[15]: 0.004846085
+    sh[16]: 0.013830176
+    sh[17]: 0.012638597
+    sh[18]: 0.3902663
+    sh[19]: 0.22055776
+    sh[20]: 0.074541934
+    sh[21]: 0.08281628
+    sh[22]: 0.060298778
+    sh[23]: 0.059434433
+    sh[24]: -0.0011671814
+    sh[25]: 0.03414485
+    sh[26]: -0.0075493115
+  - sh[ 0]: 0.14668651
+    sh[ 1]: -0.00083718234
+    sh[ 2]: 0.013201667
+    sh[ 3]: -0.005184349
+    sh[ 4]: 0.011897645
+    sh[ 5]: 0.0056348513
+    sh[ 6]: 0.00593056
+    sh[ 7]: 0.00067621906
+    sh[ 8]: 0.015315399
+    sh[ 9]: 0.21590428
+    sh[10]: 0.058780152
+    sh[11]: 0.035166245
+    sh[12]: 0.015292581
+    sh[13]: 0.024188949
+    sh[14]: 0.018488983
+    sh[15]: 0.0061571593
+    sh[16]: 0.0074282684
+    sh[17]: 0.012588596
+    sh[18]: 0.38833916
+    sh[19]: 0.2228493
+    sh[20]: 0.09288058
+    sh[21]: 0.08088975
+    sh[22]: 0.06864458
+    sh[23]: 0.062771335
+    sh[24]: -0.00021319931
+    sh[25]: 0.027700013
+    sh[26]: -0.010827159
+  - sh[ 0]: 0.15113162
+    sh[ 1]: -0.0025788753
+    sh[ 2]: 0.0067581763
+    sh[ 3]: 0.006936422
+    sh[ 4]: 0.007594386
+    sh[ 5]: 0.0044342726
+    sh[ 6]: 0.0054847864
+    sh[ 7]: 0.0041917176
+    sh[ 8]: 0.013838016
+    sh[ 9]: 0.22078015
+    sh[10]: 0.05728395
+    sh[11]: 0.02545957
+    sh[12]: 0.028129127
+    sh[13]: 0.02012887
+    sh[14]: 0.016553236
+    sh[15]: 0.0057235984
+    sh[16]: 0.011133302
+    sh[17]: 0.012729403
+    sh[18]: 0.39129776
+    sh[19]: 0.2217531
+    sh[20]: 0.082500346
+    sh[21]: 0.09105734
+    sh[22]: 0.06302174
+    sh[23]: 0.05782241
+    sh[24]: 0.00015145604
+    sh[25]: 0.031540286
+    sh[26]: -0.0054447697
+  - sh[ 0]: 0.14501049
+    sh[ 1]: -0.009996784
+    sh[ 2]: -0.005038142
+    sh[ 3]: -0.0005669941
+    sh[ 4]: 0.0041070436
+    sh[ 5]: 0.005175978
+    sh[ 6]: 0.002134919
+    sh[ 7]: -0.0026335816
+    sh[ 8]: 0.009755564
+    sh[ 9]: 0.20893615
+    sh[10]: 0.04896286
+    sh[11]: 0.010538987
+    sh[12]: 0.01605328
+    sh[13]: 0.014102936
+    sh[14]: 0.013768282
+    sh[15]: 0.001300961
+    sh[16]: 0.002984917
+    sh[17]: 0.009219533
+    sh[18]: 0.37393865
+    sh[19]: 0.20922878
+    sh[20]: 0.064071335
+    sh[21]: 0.071004905
+    sh[22]: 0.049374323
+    sh[23]: 0.044988487
+    sh[24]: -0.0046783993
+    sh[25]: 0.02212132
+    sh[26]: -0.0053526517
+  - sh[ 0]: 0.12644187
+    sh[ 1]: -0.014556665
+    sh[ 2]: 0.0028850848
+    sh[ 3]: -0.029498488
+    sh[ 4]: 0.008246476
+    sh[ 5]: 0.0017974199
+    sh[ 6]: 0.0057981336
+    sh[ 7]: 0.0032353725
+    sh[ 8]: 0.008413162
+    sh[ 9]: 0.15661846
+    sh[10]: 0.007425879
+    sh[11]: 0.004971151
+    sh[12]: -0.037351437
+    sh[13]: -0.0047364584
+    sh[14]: 0.0031574327
+    sh[15]: 0.008701226
+    sh[16]: 0.00631685
+    sh[17]: 0.012615139
+    sh[18]: 0.21089116
+    sh[19]: 0.048774194
+    sh[20]: 0.007893111
+    sh[21]: -0.048355207
+    sh[22]: -0.0285809
+    sh[23]: 0.0064289407
+    sh[24]: 0.011441387
+    sh[25]: 0.010050265
+    sh[26]: 0.013713972
+  - sh[ 0]: 0.15150325
+    sh[ 1]: -0.013544562
+    sh[ 2]: 0.020790206
+    sh[ 3]: 0.0013191738
+    sh[ 4]: 0.0041690925
+    sh[ 5]: 0.0032241435
+    sh[ 6]: 0.0028724072
+    sh[ 7]: 0.005126423
+    sh[ 8]: 0.009630153
+    sh[ 9]: 0.21197422
+    sh[10]: 0.045432925
+    sh[11]: 0.040476274
+    sh[12]: 0.016031146
+    sh[13]: 0.01475166
+    sh[14]: 0.015018578
+    sh[15]: 0.0025633702
+    sh[16]: 0.011006862
+    sh[17]: 0.009249058
+    sh[18]: 0.36412936
+    sh[19]: 0.20568046
+    sh[20]: 0.094613515
+    sh[21]: 0.06628745
+    sh[22]: 0.05060634
+    sh[23]: 0.052171327
+    sh[24]: -0.0021651164
+    sh[25]: 0.028439345
+    sh[26]: -0.0044641327
+  - sh[ 0]: 0.1420544
+    sh[ 1]: -0.026746722
+    sh[ 2]: 0.024090128
+    sh[ 3]: -0.007934978
+    sh[ 4]: -0.0072468943
+    sh[ 5]: 0.0056530144
+    sh[ 6]: 0.007323794
+    sh[ 7]: 0.019476464
+    sh[ 8]: 0.02295239
+    sh[ 9]: 0.1752874
+    sh[10]: 0.0035021312
+    sh[11]: 0.033545263
+    sh[12]: -0.012746942
+    sh[13]: -0.011637254
+    sh[14]: 0.011953667
+    sh[15]: 0.01148434
+    sh[16]: 0.026709158
+    sh[17]: 0.03300973
+    sh[18]: 0.23388427
+    sh[19]: 0.057534616
+    sh[20]: 0.04764874
+    sh[21]: -0.0201478
+    sh[22]: -0.022271063
+    sh[23]: 0.025577223
+    sh[24]: 0.01690393
+    sh[25]: 0.037118524
+    sh[26]: 0.041323584
+  - sh[ 0]: 0.13350922
+    sh[ 1]: -0.03286762
+    sh[ 2]: 0.007514021
+    sh[ 3]: -0.014768087
+    sh[ 4]: -0.010089705
+    sh[ 5]: 0.0035888895
+    sh[ 6]: 0.0067322846
+    sh[ 7]: 0.0040780157
+    sh[ 8]: 0.017900724
+    sh[ 9]: 0.1611318
+    sh[10]: -0.0035153334
+    sh[11]: 0.010177194
+    sh[12]: -0.020926071
+    sh[13]: -0.017134776
+    sh[14]: 0.0032939475
+    sh[15]: 0.010008374
+    sh[16]: 0.005293007
+    sh[17]: 0.026835449
+    sh[18]: 0.21450181
+    sh[19]: 0.047512762
+    sh[20]: 0.008224496
+    sh[21]: -0.03240816
+    sh[22]: -0.03359288
+    sh[23]: 0.0023555064
+    sh[24]: 0.014559187
+    sh[25]: 0.0019395123
+    sh[26]: 0.035151362
+  - sh[ 0]: 0.1260894
+    sh[ 1]: -0.014578019
+    sh[ 2]: 0.009457174
+    sh[ 3]: -0.03285974
+    sh[ 4]: 0.006022596
+    sh[ 5]: -0.000085756714
+    sh[ 6]: 0.0027968036
+    sh[ 7]: 0.0032893375
+    sh[ 8]: 0.008962302
+    sh[ 9]: 0.15490903
+    sh[10]: 0.010206108
+    sh[11]: 0.012453277
+    sh[12]: -0.041242056
+    sh[13]: -0.0085352855
+    sh[14]: 0.001833702
+    sh[15]: 0.0034130225
+    sh[16]: 0.0040529724
+    sh[17]: 0.01397801
+    sh[18]: 0.20871966
+    sh[19]: 0.05606524
+    sh[20]: 0.012814145
+    sh[21]: -0.056618106
+    sh[22]: -0.036302373
+    sh[23]: 0.005520169
+    sh[24]: 0.0027003495
+    sh[25]: 0.004347321
+    sh[26]: 0.016543858
+  - sh[ 0]: 0.13196144
+    sh[ 1]: -0.011435576
+    sh[ 2]: -0.009603245
+    sh[ 3]: -0.010340249
+    sh[ 4]: 0.0043668495
+    sh[ 5]: -0.0021392577
+    sh[ 6]: 0.0015657645
+    sh[ 7]: -0.003159925
+    sh[ 8]: 0.0061616646
+    sh[ 9]: 0.1917941
+    sh[10]: 0.041470513
+    sh[11]: -0.0059227855
+    sh[12]: 0.0036203663
+    sh[13]: 0.011268723
+    sh[14]: 0.007145143
+    sh[15]: 0.000788598
+    sh[16]: -0.0027897274
+    sh[17]: 0.0047036195
+    sh[18]: 0.35062882
+    sh[19]: 0.18842435
+    sh[20]: 0.02207179
+    sh[21]: 0.053324867
+    sh[22]: 0.039061736
+    sh[23]: 0.040029746
+    sh[24]: -0.00459662
+    sh[25]: 0.003561424
+    sh[26]: -0.009379865
+  - sh[ 0]: 0.136812
+    sh[ 1]: 0.0051932214
+    sh[ 2]: -0.0023412316
+    sh[ 3]: -0.000069061774
+    sh[ 4]: 0.011520257
+    sh[ 5]: 0.0012970407
+    sh[ 6]: 0.0039494806
+    sh[ 7]: 0.0003798691
+    sh[ 8]: 0.0131001
+    sh[ 9]: 0.20588751
+    sh[10]: 0.06174934
+    sh[11]: 0.008488
+    sh[12]: 0.022211915
+    sh[13]: 0.0214327
+    sh[14]: 0.014088402
+    sh[15]: 0.002450544
+    sh[16]: 0.004207693
+    sh[17]: 0.010562794
+    sh[18]: 0.38188332
+    sh[19]: 0.21784936
+    sh[20]: 0.05060189
+    sh[21]: 0.09024907
+    sh[22]: 0.05812063
+    sh[23]: 0.05787568
+    sh[24]: -0.005928633
+    sh[25]: 0.019880185
+    sh[26]: -0.01128921
+  - sh[ 0]: 0.14578934
+    sh[ 1]: -0.015534624
+    sh[ 2]: -0.007515596
+    sh[ 3]: -0.004275706
+    sh[ 4]: -0.00020312947
+    sh[ 5]: 0.00042991308
+    sh[ 6]: 0.0021197593
+    sh[ 7]: -0.002883867
+    sh[ 8]: 0.0068759816
+    sh[ 9]: 0.20092309
+    sh[10]: 0.040681157
+    sh[11]: -0.00043884537
+    sh[12]: 0.0033616566
+    sh[13]: 0.0074372655
+    sh[14]: 0.0067079803
+    sh[15]: 0.0014711515
+    sh[16]: -0.002065836
+    sh[17]: 0.0059293373
+    sh[18]: 0.34464696
+    sh[19]: 0.19358417
+    sh[20]: 0.029834155
+    sh[21]: 0.037980966
+    sh[22]: 0.035287786
+    sh[23]: 0.030913075
+    sh[24]: -0.0038175436
+    sh[25]: 0.004034776
+    sh[26]: -0.0068727685
+  - sh[ 0]: 0.14209518
+    sh[ 1]: -0.022595398
+    sh[ 2]: 0.0057694474
+    sh[ 3]: -0.0019310819
+    sh[ 4]: -0.0018348783
+    sh[ 5]: 0.0031734095
+    sh[ 6]: 0.0076877815
+    sh[ 7]: 0.007115222
+    sh[ 8]: 0.021230662
+    sh[ 9]: 0.17554556
+    sh[10]: 0.0074588438
+    sh[11]: 0.012150442
+    sh[12]: -0.0024507348
+    sh[13]: -0.004091083
+    sh[14]: 0.0046352977
+    sh[15]: 0.010880433
+    sh[16]: 0.01022033
+    sh[17]: 0.030933283
+    sh[18]: 0.23554784
+    sh[19]: 0.06182263
+    sh[20]: 0.021045474
+    sh[21]: -0.0041406956
+    sh[22]: -0.00939462
+    sh[23]: 0.006861989
+    sh[24]: 0.014220617
+    sh[25]: 0.015565025
+    sh[26]: 0.04083631
+  - sh[ 0]: 0.15397961
+    sh[ 1]: -0.013384002
+    sh[ 2]: 0.010391322
+    sh[ 3]: 0.0012723625
+    sh[ 4]: 0.003056393
+    sh[ 5]: 0.0025150129
+    sh[ 6]: 0.0029511228
+    sh[ 7]: 0.0021835626
+    sh[ 8]: 0.010448429
+    sh[ 9]: 0.21503007
+    sh[10]: 0.04439819
+    sh[11]: 0.027072478
+    sh[12]: 0.014879494
+    sh[13]: 0.013196351
+    sh[14]: 0.013092936
+    sh[15]: 0.002757967
+    sh[16]: 0.0061370013
+    sh[17]: 0.010446133
+    sh[18]: 0.3670669
+    sh[19]: 0.20166904
+    sh[20]: 0.07702262
+    sh[21]: 0.06411468
+    sh[22]: 0.047275323
+    sh[23]: 0.04713327
+    sh[24]: -0.0017112826
+    sh[25]: 0.019384053
+    sh[26]: -0.0018290317
+  - sh[ 0]: 0.15285198
+    sh[ 1]: -0.019860044
+    sh[ 2]: 0.0019535788
+    sh[ 3]: 0.0023099252
+    sh[ 4]: -0.00031492175
+    sh[ 5]: 0.0041636582
+    sh[ 6]: 0.0036136026
+    sh[ 7]: 0.0013062108
+    sh[ 8]: 0.009370064
+    sh[ 9]: 0.21164261
+    sh[10]: 0.03800071
+    sh[11]: 0.016240334
+    sh[12]: 0.014316694
+    sh[13]: 0.009277752
+    sh[14]: 0.014595615
+    sh[15]: 0.0034216165
+    sh[16]: 0.006292845
+    sh[17]: 0.00958974
+    sh[18]: 0.361225
+    sh[19]: 0.19470336
+    sh[20]: 0.06421206
+    sh[21]: 0.058392685
+    sh[22]: 0.0424924
+    sh[23]: 0.049318943
+    sh[24]: -0.0013944084
+    sh[25]: 0.021628259
+    sh[26]: -0.0022524192
+  - sh[ 0]: 0.14885359
+    sh[ 1]: -0.027096722
+    sh[ 2]: 0.00242571
+    sh[ 3]: -0.002491118
+    sh[ 4]: 0.0014845666
+    sh[ 5]: 0.0066186944
+    sh[ 6]: 0.006253736
+    sh[ 7]: 0.0094603235
+    sh[ 8]: 0.017344596
+    sh[ 9]: 0.18288136
+    sh[10]: 0.0077645755
+    sh[11]: 0.006936846
+    sh[12]: -0.0009757849
+    sh[13]: 0.0017356717
+    sh[14]: 0.009999645
+    sh[15]: 0.008459885
+    sh[16]: 0.014565471
+    sh[17]: 0.02713222
+    sh[18]: 0.24778591
+    sh[19]: 0.07156748
+    sh[20]: 0.017718187
+    sh[21]: 0.0034540026
+    sh[22]: 0.0019396354
+    sh[23]: 0.018310389
+    sh[24]: 0.009861401
+    sh[25]: 0.022006623
+    sh[26]: 0.0370723
+  - sh[ 0]: 0.14526233
+    sh[ 1]: -0.025198651
+    sh[ 2]: 0.008880931
+    sh[ 3]: -0.0027838028
+    sh[ 4]: 0.00095512415
+    sh[ 5]: 0.0097164735
+    sh[ 6]: 0.005197011
+    sh[ 7]: 0.006598257
+    sh[ 8]: 0.02232711
+    sh[ 9]: 0.17865966
+    sh[10]: 0.0072400575
+    sh[11]: 0.017377524
+    sh[12]: -0.0011650774
+    sh[13]: -0.000049561848
+    sh[14]: 0.013578606
+    sh[15]: 0.007232245
+    sh[16]: 0.011213205
+    sh[17]: 0.032855425
+    sh[18]: 0.24037135
+    sh[19]: 0.066429816
+    sh[20]: 0.031375572
+    sh[21]: 0.0032427264
+    sh[22]: -0.0028556103
+    sh[23]: 0.022738662
+    sh[24]: 0.008589787
+    sh[25]: 0.018685523
+    sh[26]: 0.043405134
+  - sh[ 0]: 0.14411066
+    sh[ 1]: -0.024739653
+    sh[ 2]: 0.0032087492
+    sh[ 3]: -0.002776189
+    sh[ 4]: -0.0028856639
+    sh[ 5]: 0.003961431
+    sh[ 6]: 0.0064259246
+    sh[ 7]: 0.006291491
+    sh[ 8]: 0.016695749
+    sh[ 9]: 0.17510888
+    sh[10]: 0.010515296
+    sh[11]: 0.009078079
+    sh[12]: -0.0054725506
+    sh[13]: -0.0055261706
+    sh[14]: 0.0065623815
+    sh[15]: 0.008323068
+    sh[16]: 0.011810806
+    sh[17]: 0.025397556
+    sh[18]: 0.23402785
+    sh[19]: 0.075472996
+    sh[20]: 0.022170177
+    sh[21]: -0.011932119
+    sh[22]: -0.01183756
+    sh[23]: 0.011620582
+    sh[24]: 0.008044621
+    sh[25]: 0.019049557
+    sh[26]: 0.032512415
+  - sh[ 0]: 0.13054387
+    sh[ 1]: -0.038773242
+    sh[ 2]: 0.000051451094
+    sh[ 3]: -0.029232144
+    sh[ 4]: -0.015805136
+    sh[ 5]: 0.0018516445
+    sh[ 6]: 0.007187389
+    sh[ 7]: 0.005442725
+    sh[ 8]: 0.01185963
+    sh[ 9]: 0.15249576
+    sh[10]: -0.01135964
+    sh[11]: 0.0005494089
+    sh[12]: -0.04523851
+    sh[13]: -0.027197892
+    sh[14]: 0.0033407437
+    sh[15]: 0.010424537
+    sh[16]: 0.0075242785
+    sh[17]: 0.018121624
+    sh[18]: 0.19214377
+    sh[19]: 0.03487655
+    sh[20]: 0.0047621625
+    sh[21]: -0.076750055
+    sh[22]: -0.05266001
+    sh[23]: 0.007486522
+    sh[24]: 0.0132027585
+    sh[25]: 0.008966941
+    sh[26]: 0.020992802
+  - sh[ 0]: 0.15299611
+    sh[ 1]: -0.003496858
+    sh[ 2]: 0.0046927636
+    sh[ 3]: 0.005902445
+    sh[ 4]: 0.0041610766
+    sh[ 5]: 0.003535203
+    sh[ 6]: 0.00428293
+    sh[ 7]: -0.0000037462382
+    sh[ 8]: 0.011011418
+    sh[ 9]: 0.2210917
+    sh[10]: 0.055132058
+    sh[11]: 0.02166097
+    sh[12]: 0.022707019
+    sh[13]: 0.015259763
+    sh[14]: 0.01225203
+    sh[15]: 0.004447146
+    sh[16]: 0.0047347825
+    sh[17]: 0.010144328
+    sh[18]: 0.38640773
+    sh[19]: 0.21536988
+    sh[20]: 0.071896546
+    sh[21]: 0.07730753
+    sh[22]: 0.05228206
+    sh[23]: 0.042928327
+    sh[24]: -0.00033058555
+    sh[25]: 0.020396017
+    sh[26]: -0.0054891715
+  - sh[ 0]: 0.1400498
+    sh[ 1]: 0.0065803328
+    sh[ 2]: -0.0017877221
+    sh[ 3]: -0.004937592
+    sh[ 4]: 0.011995982
+    sh[ 5]: 0.0039925473
+    sh[ 6]: 0.0062213945
+    sh[ 7]: 0.0035588192
+    sh[ 8]: 0.017752038
+    sh[ 9]: 0.21173908
+    sh[10]: 0.06383697
+    sh[11]: 0.013833399
+    sh[12]: 0.016268367
+    sh[13]: 0.024164373
+    sh[14]: 0.017952789
+    sh[15]: 0.0050687906
+    sh[16]: 0.011040519
+    sh[17]: 0.014060094
+    sh[18]: 0.39175823
+    sh[19]: 0.22211769
+    sh[20]: 0.06449264
+    sh[21]: 0.08354765
+    sh[22]: 0.06928574
+    sh[23]: 0.06732936
+    sh[24]: -0.0045210295
+    sh[25]: 0.03282704
+    sh[26]: -0.013736777
+  - sh[ 0]: 0.14814577
+    sh[ 1]: -0.008962678
+    sh[ 2]: 0.006772148
+    sh[ 3]: 0.001709616
+    sh[ 4]: 0.0033440208
+    sh[ 5]: 0.0010141012
+    sh[ 6]: 0.0019915141
+    sh[ 7]: 0.0017041283
+    sh[ 8]: 0.009573912
+    sh[ 9]: 0.2150088
+    sh[10]: 0.048826672
+    sh[11]: 0.0144808255
+    sh[12]: 0.019222422
+    sh[13]: 0.013098895
+    sh[14]: 0.015339968
+    sh[15]: 0.0017679317
+    sh[16]: 0.004682774
+    sh[17]: 0.008752984
+    sh[18]: 0.3846839
+    sh[19]: 0.20742024
+    sh[20]: 0.048119944
+    sh[21]: 0.07300671
+    sh[22]: 0.047771126
+    sh[23]: 0.059196547
+    sh[24]: -0.0031174507
+    sh[25]: 0.016364146
+    sh[26]: -0.0058504078
+  - sh[ 0]: 0.12973148
+    sh[ 1]: 0.016088968
+    sh[ 2]: 0.009645014
+    sh[ 3]: -0.009629403
+    sh[ 4]: 0.013942899
+    sh[ 5]: -0.002447501
+    sh[ 6]: 0.005755977
+    sh[ 7]: 0.001517126
+    sh[ 8]: 0.021004273
+    sh[ 9]: 0.20678104
+    sh[10]: 0.0670187
+    sh[11]: 0.018844083
+    sh[12]: 0.012436917
+    sh[13]: 0.028625531
+    sh[14]: 0.017276675
+    sh[15]: 0.0039941086
+    sh[16]: 0.00611724
+    sh[17]: 0.016464595
+    sh[18]: 0.40001452
+    sh[19]: 0.2108882
+    sh[20]: 0.056402512
+    sh[21]: 0.07977405
+    sh[22]: 0.08214825
+    sh[23]: 0.08095222
+    sh[24]: -0.0066619427
+    sh[25]: 0.024721168
+    sh[26]: -0.015164045
+  - sh[ 0]: 0.12769088
+    sh[ 1]: 0.020730268
+    sh[ 2]: -0.007579671
+    sh[ 3]: -0.009301189
+    sh[ 4]: 0.012358707
+    sh[ 5]: 0.0075997645
+    sh[ 6]: 0.005929034
+    sh[ 7]: 0.00486146
+    sh[ 8]: 0.020466125
+    sh[ 9]: 0.20784724
+    sh[10]: 0.06967499
+    sh[11]: 0.007881484
+    sh[12]: 0.011124823
+    sh[13]: 0.026423765
+    sh[14]: 0.024091382
+    sh[15]: 0.004242112
+    sh[16]: 0.013462755
+    sh[17]: 0.015379517
+    sh[18]: 0.40993917
+    sh[19]: 0.20805116
+    sh[20]: 0.06051471
+    sh[21]: 0.07541896
+    sh[22]: 0.07844744
+    sh[23]: 0.08095336
+    sh[24]: -0.006398187
+    sh[25]: 0.037985492
+    sh[26]: -0.017170982
+  - sh[ 0]: 0.14426379
+    sh[ 1]: 0.0061616288
+    sh[ 2]: 0.006839239
+    sh[ 3]: 0.001001873
+    sh[ 4]: 0.010738537
+    sh[ 5]: 0.0015600009
+    sh[ 6]: 0.005266739
+    sh[ 7]: 0.0038014315
+    sh[ 8]: 0.017394999
+    sh[ 9]: 0.21885039
+    sh[10]: 0.06361249
+    sh[11]: 0.02527672
+    sh[12]: 0.023419622
+    sh[13]: 0.024004918
+    sh[14]: 0.016431093
+    sh[15]: 0.005392512
+    sh[16]: 0.010865162
+    sh[17]: 0.015042167
+    sh[18]: 0.39894804
+    sh[19]: 0.22463627
+    sh[20]: 0.07801333
+    sh[21]: 0.091000296
+    sh[22]: 0.07137408
+    sh[23]: 0.06808705
+    sh[24]: -0.0010118239
+    sh[25]: 0.030617798
+    sh[26]: -0.009652102
+  - sh[ 0]: 0.14521246
+    sh[ 1]: -0.0015636183
+    sh[ 2]: 0.0005825176
+    sh[ 3]: -0.00024660793
+    sh[ 4]: 0.007062063
+    sh[ 5]: 0.005940671
+    sh[ 6]: 0.0045516696
+    sh[ 7]: 0.0017962825
+    sh[ 8]: 0.016550675
+    sh[ 9]: 0.2146576
+    sh[10]: 0.05920063
+    sh[11]: 0.018863913
+    sh[12]: 0.019519035
+    sh[13]: 0.019667612
+    sh[14]: 0.019304026
+    sh[15]: 0.0036002218
+    sh[16]: 0.0097673945
+    sh[17]: 0.013555512
+    sh[18]: 0.39003846
+    sh[19]: 0.22631611
+    sh[20]: 0.07730509
+    sh[21]: 0.08186217
+    sh[22]: 0.065961346
+    sh[23]: 0.06650189
+    sh[24]: -0.004851545
+    sh[25]: 0.0340566
+    sh[26]: -0.012924339
+  - sh[ 0]: 0.14639589
+    sh[ 1]: -0.0074478695
+    sh[ 2]: -0.0012140822
+    sh[ 3]: 0.0038377258
+    sh[ 4]: 0.0077193235
+    sh[ 5]: 0.004861415
+    sh[ 6]: 0.0035313095
+    sh[ 7]: 0.00066882453
+    sh[ 8]: 0.013278862
+    sh[ 9]: 0.21120721
+    sh[10]: 0.052887265
+    sh[11]: 0.015766231
+    sh[12]: 0.024551537
+    sh[13]: 0.019769443
+    sh[14]: 0.015897263
+    sh[15]: 0.002610278
+    sh[16]: 0.00761325
+    sh[17]: 0.011336115
+    sh[18]: 0.37721142
+    sh[19]: 0.21762316
+    sh[20]: 0.06790953
+    sh[21]: 0.08427615
+    sh[22]: 0.062201083
+    sh[23]: 0.05590336
+    sh[24]: -0.004701595
+    sh[25]: 0.027955526
+    sh[26]: -0.009076662
+  - sh[ 0]: 0.14458935
+    sh[ 1]: -0.008013771
+    sh[ 2]: -0.011407301
+    sh[ 3]: -0.0019814193
+    sh[ 4]: 0.0038350937
+    sh[ 5]: 0.007853244
+    sh[ 6]: 0.0024397147
+    sh[ 7]: -0.0041460562
+    sh[ 8]: 0.010639954
+    sh[ 9]: 0.2095316
+    sh[10]: 0.05136636
+    sh[11]: 0.0042202678
+    sh[12]: 0.014651875
+    sh[13]: 0.014584478
+    sh[14]: 0.015804553
+    sh[15]: 0.0017355793
+    sh[16]: 0.0008262434
+    sh[17]: 0.009090608
+    sh[18]: 0.37625048
+    sh[19]: 0.21379827
+    sh[20]: 0.06026952
+    sh[21]: 0.069953
+    sh[22]: 0.052701768
+    sh[23]: 0.046857275
+    sh[24]: -0.004411835
+    sh[25]: 0.01919682
+    sh[26]: -0.008943612
+  - sh[ 0]: 0.030161211
+    sh[ 1]: 0.013779677
+    sh[ 2]: -0.004609856
+    sh[ 3]: 0.0063502244
+    sh[ 4]: 0.0028011114
+    sh[ 5]: -0.0014252019
+    sh[ 6]: -0.0008520364
+    sh[ 7]: 0.00014583737
+    sh[ 8]: -0.0023780274
+    sh[ 9]: 0.092415184
+    sh[10]: 0.042804245
+    sh[11]: -0.0064187353
+    sh[12]: 0.019569982
+    sh[13]: 0.011973013
+    sh[14]: 0.009657627
+    sh[15]: -0.0030098304
+    sh[16]: 0.0044086287
+    sh[17]: -0.008434423
+    sh[18]: 0.29144964
+    sh[19]: 0.1357135
+    sh[20]: -0.009109975
+    sh[21]: 0.061992742
+    sh[22]: 0.042569987
+    sh[23]: 0.050375123
+    sh[24]: -0.010085513
+    sh[25]: 0.0196766
+    sh[26]: -0.028344179
+  - sh[ 0]: 0.14858614
+    sh[ 1]: -0.012283189
+    sh[ 2]: 0.017317113
+    sh[ 3]: 0.0021680414
+    sh[ 4]: 0.001469314
+    sh[ 5]: 0.005068867
+    sh[ 6]: 0.002832315
+    sh[ 7]: 0.0070791626
+    sh[ 8]: 0.009075774
+    sh[ 9]: 0.20829831
+    sh[10]: 0.045360662
+    sh[11]: 0.037925463
+    sh[12]: 0.015273432
+    sh[13]: 0.011026358
+    sh[14]: 0.016887983
+    sh[15]: 0.0025732834
+    sh[16]: 0.013259615
+    sh[17]: 0.00845944
+    sh[18]: 0.35898128
+    sh[19]: 0.20333342
+    sh[20]: 0.093439795
+    sh[21]: 0.061166715
+    sh[22]: 0.044113826
+    sh[23]: 0.05366898
+    sh[24]: -0.0022912696
+    sh[25]: 0.029438114
+    sh[26]: -0.005114263
+  - sh[ 0]: 0.1322114
+    sh[ 1]: -0.03963353
+    sh[ 2]: 0.015021803
+    sh[ 3]: -0.008848867
+    sh[ 4]: -0.006353295
+    sh[ 5]: 0.009070125
+    sh[ 6]: 0.0042624236
+    sh[ 7]: 0.009711098
+    sh[ 8]: 0.023098938
+    sh[ 9]: 0.15870096
+    sh[10]: -0.013094888
+    sh[11]: 0.02209438
+    sh[12]: -0.012834373
+    sh[13]: -0.010640067
+    sh[14]: 0.016093178
+    sh[15]: 0.0070356787
+    sh[16]: 0.013687127
+    sh[17]: 0.034977112
+    sh[18]: 0.20946245
+    sh[19]: 0.030923575
+    sh[20]: 0.036381233
+    sh[21]: -0.020701114
+    sh[22]: -0.020635067
+    sh[23]: 0.031884186
+    sh[24]: 0.01137878
+    sh[25]: 0.022668326
+    sh[26]: 0.049299024
+  - sh[ 0]: 0.13085376
+    sh[ 1]: -0.036548372
+    sh[ 2]: 0.014337963
+    sh[ 3]: -0.01412115
+    sh[ 4]: -0.0070144157
+    sh[ 5]: -0.0036156909
+    sh[ 6]: 0.0055435905
+    sh[ 7]: 0.01015774
+    sh[ 8]: 0.020616
+    sh[ 9]: 0.15729393
+    sh[10]: -0.015265765
+    sh[11]: 0.016312268
+    sh[12]: -0.021217361
+    sh[13]: -0.011553135
+    sh[14]: -0.0033940373
+    sh[15]: 0.008930805
+    sh[16]: 0.011661155
+    sh[17]: 0.029853549
+    sh[18]: 0.20389786
+    sh[19]: 0.018695489
+    sh[20]: 0.013625648
+    sh[21]: -0.032002285
+    sh[22]: -0.021737028
+    sh[23]: -0.0046449695
+    sh[24]: 0.013787524
+    sh[25]: 0.008386227
+    sh[26]: 0.04061361
+  - sh[ 0]: 0.02137646
+    sh[ 1]: 0.009863338
+    sh[ 2]: -0.010460493
+    sh[ 3]: 0.0035026637
+    sh[ 4]: 0.0042052697
+    sh[ 5]: -0.0065564094
+    sh[ 6]: -0.000016502796
+    sh[ 7]: -0.0021723078
+    sh[ 8]: -0.0021395627
+    sh[ 9]: 0.044717714
+    sh[10]: 0.016464561
+    sh[11]: -0.02269725
+    sh[12]: 0.004642667
+    sh[13]: 0.006182047
+    sh[14]: -0.0091591105
+    sh[15]: 0.0013670573
+    sh[16]: -0.0023939738
+    sh[17]: -0.0030144094
+    sh[18]: 0.111214414
+    sh[19]: 0.032288942
+    sh[20]: -0.0580137
+    sh[21]: 0.005977118
+    sh[22]: 0.009902675
+    sh[23]: -0.013104502
+    sh[24]: 0.0062011695
+    sh[25]: -0.0013920881
+    sh[26]: -0.0045989086
+  - sh[ 0]: 0.12652515
+    sh[ 1]: -0.00858224
+    sh[ 2]: -0.018380642
+    sh[ 3]: -0.0069008614
+    sh[ 4]: 0.002672987
+    sh[ 5]: -0.003746927
+    sh[ 6]: 0.0000607204
+    sh[ 7]: -0.00021273045
+    sh[ 8]: 0.0074332985
+    sh[ 9]: 0.18710318
+    sh[10]: 0.040734664
+    sh[11]: -0.017889205
+    sh[12]: 0.006935734
+    sh[13]: 0.0100197755
+    sh[14]: 0.0043060766
+    sh[15]: -0.0009596
+    sh[16]: 0.0016781191
+    sh[17]: 0.0057162866
+    sh[18]: 0.3464986
+    sh[19]: 0.17989331
+    sh[20]: 0.0031873994
+    sh[21]: 0.054757982
+    sh[22]: 0.038444463
+    sh[23]: 0.034968596
+    sh[24]: -0.0066370955
+    sh[25]: 0.010164252
+    sh[26]: -0.00944694
+  - sh[ 0]: 0.12940687
+    sh[ 1]: 0.008210215
+    sh[ 2]: -0.008397938
+    sh[ 3]: -0.009750172
+    sh[ 4]: 0.013518153
+    sh[ 5]: -0.0003942213
+    sh[ 6]: 0.0037467782
+    sh[ 7]: 0.002027837
+    sh[ 8]: 0.015821857
+    sh[ 9]: 0.19835213
+    sh[10]: 0.061138157
+    sh[11]: -0.0004768999
+    sh[12]: 0.010440304
+    sh[13]: 0.024533113
+    sh[14]: 0.013280843
+    sh[15]: 0.0014146094
+    sh[16]: 0.0074542766
+    sh[17]: 0.012346768
+    sh[18]: 0.37750572
+    sh[19]: 0.20819214
+    sh[20]: 0.03830744
+    sh[21]: 0.075384684
+    sh[22]: 0.06595236
+    sh[23]: 0.0603658
+    sh[24]: -0.00841413
+    sh[25]: 0.026434425
+    sh[26]: -0.0128284255
+  - sh[ 0]: 0.14385155
+    sh[ 1]: -0.018092733
+    sh[ 2]: -0.012168419
+    sh[ 3]: -0.005192282
+    sh[ 4]: 0.0009734948
+    sh[ 5]: -0.0006749877
+    sh[ 6]: 0.0013666741
+    sh[ 7]: -0.0019941286
+    sh[ 8]: 0.0069065504
+    sh[ 9]: 0.1948613
+    sh[10]: 0.036073707
+    sh[11]: -0.009595548
+    sh[12]: 0.003382123
+    sh[13]: 0.008857497
+    sh[14]: 0.0042860783
+    sh[15]: 0.00018472316
+    sh[16]: -0.00019686703
+    sh[17]: 0.0059886784
+    sh[18]: 0.33033893
+    sh[19]: 0.18381155
+    sh[20]: 0.0129766315
+    sh[21]: 0.040325265
+    sh[22]: 0.037385624
+    sh[23]: 0.025288718
+    sh[24]: -0.0058473567
+    sh[25]: 0.007525414
+    sh[26]: -0.006806423
+  - sh[ 0]: 0.14460902
+    sh[ 1]: -0.02931832
+    sh[ 2]: 0.004463406
+    sh[ 3]: 0.0004404674
+    sh[ 4]: 0.0009903142
+    sh[ 5]: -0.0016074821
+    sh[ 6]: 0.008119541
+    sh[ 7]: 0.0032952162
+    sh[ 8]: 0.024120633
+    sh[ 9]: 0.17710604
+    sh[10]: -0.00019996634
+    sh[11]: 0.0072703045
+    sh[12]: 0.0020240305
+    sh[13]: 0.00063371204
+    sh[14]: -0.0006330285
+    sh[15]: 0.011781748
+    sh[16]: 0.005498812
+    sh[17]: 0.035436712
+    sh[18]: 0.23378561
+    sh[19]: 0.05126133
+    sh[20]: 0.014041591
+    sh[21]: 0.0057456507
+    sh[22]: -0.00025078323
+    sh[23]: -0.00034324967
+    sh[24]: 0.015313869
+    sh[25]: 0.009763668
+    sh[26]: 0.047687255
+  - sh[ 0]: 0.1561819
+    sh[ 1]: -0.01289051
+    sh[ 2]: 0.009660249
+    sh[ 3]: 0.00033546463
+    sh[ 4]: 0.002389482
+    sh[ 5]: 0.0027593493
+    sh[ 6]: 0.0041956874
+    sh[ 7]: 0.0040261927
+    sh[ 8]: 0.010017565
+    sh[ 9]: 0.21928908
+    sh[10]: 0.044482507
+    sh[11]: 0.026001545
+    sh[12]: 0.013554951
+    sh[13]: 0.012250093
+    sh[14]: 0.013196761
+    sh[15]: 0.0044299257
+    sh[16]: 0.009011809
+    sh[17]: 0.010272451
+    sh[18]: 0.3727308
+    sh[19]: 0.20066361
+    sh[20]: 0.075969934
+    sh[21]: 0.06141243
+    sh[22]: 0.045604683
+    sh[23]: 0.04677743
+    sh[24]: 0.0002966396
+    sh[25]: 0.02355723
+    sh[26]: -0.0014864955
+  - sh[ 0]: 0.14810343
+    sh[ 1]: -0.016674057
+    sh[ 2]: 0.01235044
+    sh[ 3]: 0.002896987
+    sh[ 4]: 0.002744783
+    sh[ 5]: 0.00443047
+    sh[ 6]: 0.0029841485
+    sh[ 7]: 0.0011666302
+    sh[ 8]: 0.010330155
+    sh[ 9]: 0.20696375
+    sh[10]: 0.041284423
+    sh[11]: 0.030472377
+    sh[12]: 0.018407088
+    sh[13]: 0.012949003
+    sh[14]: 0.015377057
+    sh[15]: 0.0024809546
+    sh[16]: 0.0059572207
+    sh[17]: 0.010716342
+    sh[18]: 0.3577465
+    sh[19]: 0.19914852
+    sh[20]: 0.081204146
+    sh[21]: 0.0677074
+    sh[22]: 0.04799203
+    sh[23]: 0.05102022
+    sh[24]: -0.0028213128
+    sh[25]: 0.021661378
+    sh[26]: -0.00076719624
+  - sh[ 0]: 0.14728497
+    sh[ 1]: -0.028058423
+    sh[ 2]: 0.013026775
+    sh[ 3]: 0.0048693223
+    sh[ 4]: 0.00213014
+    sh[ 5]: 0.0062187463
+    sh[ 6]: 0.0059658987
+    sh[ 7]: 0.008501702
+    sh[ 8]: 0.019585662
+    sh[ 9]: 0.18076871
+    sh[10]: 0.006359309
+    sh[11]: 0.021043912
+    sh[12]: 0.008410141
+    sh[13]: 0.003502614
+    sh[14]: 0.010540473
+    sh[15]: 0.008479392
+    sh[16]: 0.013478183
+    sh[17]: 0.02987352
+    sh[18]: 0.2447422
+    sh[19]: 0.06906538
+    sh[20]: 0.035212927
+    sh[21]: 0.015711807
+    sh[22]: 0.0063430783
+    sh[23]: 0.020057922
+    sh[24]: 0.010389786
+    sh[25]: 0.021465497
+    sh[26]: 0.04075049
+  - sh[ 0]: 0.14757136
+    sh[ 1]: -0.024937434
+    sh[ 2]: 0.014740984
+    sh[ 3]: 0.004173314
+    sh[ 4]: 0.0003300708
+    sh[ 5]: 0.004780003
+    sh[ 6]: 0.008050877
+    sh[ 7]: 0.0064097163
+    sh[ 8]: 0.026170585
+    sh[ 9]: 0.18209438
+    sh[10]: 0.005141682
+    sh[11]: 0.022136668
+    sh[12]: 0.0058639944
+    sh[13]: 0.0013079388
+    sh[14]: 0.009521247
+    sh[15]: 0.011870808
+    sh[16]: 0.008697794
+    sh[17]: 0.036930125
+    sh[18]: 0.24243668
+    sh[19]: 0.05945232
+    sh[20]: 0.036401905
+    sh[21]: 0.010340147
+    sh[22]: 0.003375422
+    sh[23]: 0.019228227
+    sh[24]: 0.016337214
+    sh[25]: 0.013991631
+    sh[26]: 0.04753882
+  - sh[ 0]: 0.14290453
+    sh[ 1]: -0.027482964
+    sh[ 2]: 0.0063653407
+    sh[ 3]: 0.0004234879
+    sh[ 4]: 0.004474503
+    sh[ 5]: -0.000993916
+    sh[ 6]: 0.0060236305
+    sh[ 7]: 0.011407615
+    sh[ 8]: 0.019139182
+    sh[ 9]: 0.17242074
+    sh[10]: 0.0032228157
+    sh[11]: 0.013369892
+    sh[12]: 0.0022723526
+    sh[13]: 0.005254325
+    sh[14]: 0.0014925803
+    sh[15]: 0.00837393
+    sh[16]: 0.01621761
+    sh[17]: 0.02824388
+    sh[18]: 0.22542392
+    sh[19]: 0.05859497
+    sh[20]: 0.02773481
+    sh[21]: 0.0064068525
+    sh[22]: 0.0075526615
+    sh[23]: 0.0053652446
+    sh[24]: 0.008519402
+    sh[25]: 0.024943572
+    sh[26]: 0.03658896
+  - sh[ 0]: 0.11912465
+    sh[ 1]: -0.043677162
+    sh[ 2]: 0.005018045
+    sh[ 3]: -0.01682697
+    sh[ 4]: -0.0037071712
+    sh[ 5]: 0.00031048045
+    sh[ 6]: 0.0051042954
+    sh[ 7]: 0.006202919
+    sh[ 8]: 0.013905427
+    sh[ 9]: 0.136127
+    sh[10]: -0.031909995
+    sh[11]: 0.008092176
+    sh[12]: -0.02540141
+    sh[13]: -0.0064411657
+    sh[14]: 0.0013228384
+    sh[15]: 0.007320126
+    sh[16]: 0.00852889
+    sh[17]: 0.019919785
+    sh[18]: 0.15778062
+    sh[19]: -0.018187532
+    sh[20]: 0.013766638
+    sh[21]: -0.039421935
+    sh[22]: -0.0119694015
+    sh[23]: 0.0030815592
+    sh[24]: 0.009498404
+    sh[25]: 0.011097255
+    sh[26]: 0.026039004
+  - sh[ 0]: 0.14863044
+    sh[ 1]: -0.007192434
+    sh[ 2]: -0.00490063
+    sh[ 3]: 0.0010894359
+    sh[ 4]: 0.00088419195
+    sh[ 5]: 0.0051214667
+    sh[ 6]: 0.004029555
+    sh[ 7]: 0.0021696314
+    sh[ 8]: 0.008490676
+    sh[ 9]: 0.21309453
+    sh[10]: 0.04991465
+    sh[11]: 0.010306411
+    sh[12]: 0.013323372
+    sh[13]: 0.010258544
+    sh[14]: 0.012615609
+    sh[15]: 0.0039364886
+    sh[16]: 0.0073809964
+    sh[17]: 0.007033609
+    sh[18]: 0.37645233
+    sh[19]: 0.20563206
+    sh[20]: 0.058466382
+    sh[21]: 0.05854429
+    sh[22]: 0.04271987
+    sh[23]: 0.04049437
+    sh[24]: -0.0007919294
+    sh[25]: 0.022506451
+    sh[26]: -0.0076944297
+  - sh[ 0]: 0.14140257
+    sh[ 1]: 0.008828244
+    sh[ 2]: 0.009712249
+    sh[ 3]: -0.0002482444
+    sh[ 4]: 0.008484637
+    sh[ 5]: 0.00229346
+    sh[ 6]: 0.0074240854
+    sh[ 7]: 0.0061603608
+    sh[ 8]: 0.022900041
+    sh[ 9]: 0.21537198
+    sh[10]: 0.065395296
+    sh[11]: 0.028758787
+    sh[12]: 0.01756075
+    sh[13]: 0.024559706
+    sh[14]: 0.018347697
+    sh[15]: 0.0068577346
+    sh[16]: 0.014017169
+    sh[17]: 0.01781671
+    sh[18]: 0.39730126
+    sh[19]: 0.2228978
+    sh[20]: 0.083779134
+    sh[21]: 0.07806896
+    sh[22]: 0.08149142
+    sh[23]: 0.073665895
+    sh[24]: -0.0028857267
+    sh[25]: 0.036914475
+    sh[26]: -0.016571168
+  - sh[ 0]: 0.14978279
+    sh[ 1]: -0.007479734
+    sh[ 2]: 0.013780512
+    sh[ 3]: 0.0037993032
+    sh[ 4]: 0.0044947546
+    sh[ 5]: -0.0018877678
+    sh[ 6]: 0.0037332156
+    sh[ 7]: 0.0060769496
+    sh[ 8]: 0.010525006
+    sh[ 9]: 0.2195813
+    sh[10]: 0.050314788
+    sh[11]: 0.020845221
+    sh[12]: 0.020795476
+    sh[13]: 0.017193357
+    sh[14]: 0.013890162
+    sh[15]: 0.0045406483
+    sh[16]: 0.011875421
+    sh[17]: 0.009273682
+    sh[18]: 0.39185327
+    sh[19]: 0.20990817
+    sh[20]: 0.050641704
+    sh[21]: 0.07566368
+    sh[22]: 0.05947437
+    sh[23]: 0.06149705
+    sh[24]: 0.0007778506
+    sh[25]: 0.027607193
+    sh[26]: -0.00753358
+  - sh[ 0]: 0.12474974
+    sh[ 1]: 0.023193488
+    sh[ 2]: 0.0140870875
+    sh[ 3]: -0.00043712475
+    sh[ 4]: 0.0064323023
+    sh[ 5]: -0.002443239
+    sh[ 6]: 0.0076771816
+    sh[ 7]: 0.005906535
+    sh[ 8]: 0.019827606
+    sh[ 9]: 0.20439473
+    sh[10]: 0.07254662
+    sh[11]: 0.024921294
+    sh[12]: 0.017452572
+    sh[13]: 0.023527224
+    sh[14]: 0.01718418
+    sh[15]: 0.006242832
+    sh[16]: 0.013679022
+    sh[17]: 0.016298367
+    sh[18]: 0.403883
+    sh[19]: 0.21335581
+    sh[20]: 0.06492628
+    sh[21]: 0.07461722
+    sh[22]: 0.08207836
+    sh[23]: 0.079969265
+    sh[24]: -0.0038838554
+    sh[25]: 0.038729854
+    sh[26]: -0.010980061
+  - sh[ 0]: 0.12024434
+    sh[ 1]: 0.02634754
+    sh[ 2]: -0.00131716
+    sh[ 3]: 0.001639732
+    sh[ 4]: 0.00626715
+    sh[ 5]: 0.007749664
+    sh[ 6]: 0.006845281
+    sh[ 7]: 0.0076056602
+    sh[ 8]: 0.020889224
+    sh[ 9]: 0.20181891
+    sh[10]: 0.07365782
+    sh[11]: 0.015928226
+    sh[12]: 0.02029463
+    sh[13]: 0.024216652
+    sh[14]: 0.024603926
+    sh[15]: 0.0051799226
+    sh[16]: 0.016336383
+    sh[17]: 0.01647995
+    sh[18]: 0.407015
+    sh[19]: 0.20978859
+    sh[20]: 0.068638906
+    sh[21]: 0.07878263
+    sh[22]: 0.086113624
+    sh[23]: 0.082599446
+    sh[24]: -0.0058938805
+    sh[25]: 0.04041136
+    sh[26]: -0.013994915
+  - sh[ 0]: 0.1402289
+    sh[ 1]: 0.006783231
+    sh[ 2]: 0.00859691
+    sh[ 3]: 0.004566984
+    sh[ 4]: 0.009171661
+    sh[ 5]: 0.0011099705
+    sh[ 6]: 0.00585008
+    sh[ 7]: 0.0031182289
+    sh[ 8]: 0.017154148
+    sh[ 9]: 0.21504405
+    sh[10]: 0.06355683
+    sh[11]: 0.027592558
+    sh[12]: 0.02581712
+    sh[13]: 0.024333108
+    sh[14]: 0.017983815
+    sh[15]: 0.0062246555
+    sh[16]: 0.010742728
+    sh[17]: 0.013844138
+    sh[18]: 0.39890316
+    sh[19]: 0.22265093
+    sh[20]: 0.08227088
+    sh[21]: 0.09094061
+    sh[22]: 0.07639121
+    sh[23]: 0.0752387
+    sh[24]: -0.00034412753
+    sh[25]: 0.031686578
+    sh[26]: -0.012688666
+  - sh[ 0]: 0.14363316
+    sh[ 1]: 0.00090502854
+    sh[ 2]: -0.0053382223
+    sh[ 3]: 0.0009828977
+    sh[ 4]: 0.0049551395
+    sh[ 5]: 0.0068794796
+    sh[ 6]: 0.00525513
+    sh[ 7]: 0.004165857
+    sh[ 8]: 0.01756241
+    sh[ 9]: 0.21395177
+    sh[10]: 0.058963742
+    sh[11]: 0.0116226
+    sh[12]: 0.017765664
+    sh[13]: 0.018176153
+    sh[14]: 0.018725274
+    sh[15]: 0.00442921
+    sh[16]: 0.012897993
+    sh[17]: 0.014831064
+    sh[18]: 0.38993064
+    sh[19]: 0.21898004
+    sh[20]: 0.06780344
+    sh[21]: 0.07231736
+    sh[22]: 0.06559518
+    sh[23]: 0.06186361
+    sh[24]: -0.0037368017
+    sh[25]: 0.0356668
+    sh[26]: -0.010473498
+  - sh[ 0]: 0.15031216
+    sh[ 1]: -0.0026521413
+    sh[ 2]: 0.009928956
+    sh[ 3]: -0.0008887438
+    sh[ 4]: 0.005313492
+    sh[ 5]: 0.0040335706
+    sh[ 6]: 0.0048347474
+    sh[ 7]: 0.003485808
+    sh[ 8]: 0.015075528
+    sh[ 9]: 0.2190528
+    sh[10]: 0.056401845
+    sh[11]: 0.029750757
+    sh[12]: 0.014641194
+    sh[13]: 0.017824491
+    sh[14]: 0.015244978
+    sh[15]: 0.0048765927
+    sh[16]: 0.010242454
+    sh[17]: 0.013088278
+    sh[18]: 0.38693377
+    sh[19]: 0.21845986
+    sh[20]: 0.08344243
+    sh[21]: 0.06792386
+    sh[22]: 0.061376963
+    sh[23]: 0.054706715
+    sh[24]: -0.0013539528
+    sh[25]: 0.028534437
+    sh[26]: -0.008421907
+  - sh[ 0]: 0.143897
+    sh[ 1]: -0.0031444205
+    sh[ 2]: -0.00795783
+    sh[ 3]: 0.00585706
+    sh[ 4]: 0.00542384
+    sh[ 5]: 0.0066057197
+    sh[ 6]: 0.002908636
+    sh[ 7]: 0.0037716695
+    sh[ 8]: 0.01432727
+    sh[ 9]: 0.21153897
+    sh[10]: 0.054732893
+    sh[11]: 0.009046673
+    sh[12]: 0.023641212
+    sh[13]: 0.019364197
+    sh[14]: 0.014346328
+    sh[15]: 0.002226343
+    sh[16]: 0.010917658
+    sh[17]: 0.012717115
+    sh[18]: 0.3801565
+    sh[19]: 0.21602653
+    sh[20]: 0.06661421
+    sh[21]: 0.08222982
+    sh[22]: 0.06607787
+    sh[23]: 0.04593376
+    sh[24]: -0.004032094
+    sh[25]: 0.030100843
+    sh[26]: -0.00744421
+  - sh[ 0]: 0.028299421
+    sh[ 1]: 0.01226812
+    sh[ 2]: -0.0012630648
+    sh[ 3]: -0.003584854
+    sh[ 4]: -0.0003356143
+    sh[ 5]: -0.0002553254
+    sh[ 6]: -0.0002632458
+    sh[ 7]: -0.00087155425
+    sh[ 8]: -0.002443426
+    sh[ 9]: 0.085697085
+    sh[10]: 0.040443406
+    sh[11]: 0.0016539347
+    sh[12]: 0.000021589074
+    sh[13]: 0.009865191
+    sh[14]: 0.011349857
+    sh[15]: -0.0019227229
+    sh[16]: 0.002947204
+    sh[17]: -0.008923541
+    sh[18]: 0.26875693
+    sh[19]: 0.1313274
+    sh[20]: 0.012893622
+    sh[21]: 0.015599546
+    sh[22]: 0.046505265
+    sh[23]: 0.052907936
+    sh[24]: -0.007706512
+    sh[25]: 0.017246537
+    sh[26]: -0.030295162
+  - sh[ 0]: 0.14669524
+    sh[ 1]: -0.01592486
+    sh[ 2]: 0.0077769663
+    sh[ 3]: 0.0023106148
+    sh[ 4]: 0.0021993013
+    sh[ 5]: 0.0056113987
+    sh[ 6]: 0.00022387445
+    sh[ 7]: 0.0036225722
+    sh[ 8]: 0.008441167
+    sh[ 9]: 0.2035551
+    sh[10]: 0.042571608
+    sh[11]: 0.025157345
+    sh[12]: 0.016940666
+    sh[13]: 0.011806773
+    sh[14]: 0.016278777
+    sh[15]: -0.0010803257
+    sh[16]: 0.009378367
+    sh[17]: 0.007964454
+    sh[18]: 0.35353288
+    sh[19]: 0.20139402
+    sh[20]: 0.07623278
+    sh[21]: 0.064778104
+    sh[22]: 0.04490095
+    sh[23]: 0.05080309
+    sh[24]: -0.0074139317
+    sh[25]: 0.02566138
+    sh[26]: -0.004455678
+  - sh[ 0]: 0.13508075
+    sh[ 1]: -0.033261813
+    sh[ 2]: 0.03000975
+    sh[ 3]: -0.0032041993
+    sh[ 4]: 0.0013819657
+    sh[ 5]: 0.007841931
+    sh[ 6]: 0.005414358
+    sh[ 7]: 0.005539275
+    sh[ 8]: 0.01802986
+    sh[ 9]: 0.163943
+    sh[10]: -0.011192478
+    sh[11]: 0.04239058
+    sh[12]: -0.002387305
+    sh[13]: 0.0015043679
+    sh[14]: 0.014972644
+    sh[15]: 0.008533207
+    sh[16]: 0.00813511
+    sh[17]: 0.026368078
+    sh[18]: 0.21382155
+    sh[19]: 0.025062745
+    sh[20]: 0.062414896
+    sh[21]: 0.00008879681
+    sh[22]: 0.0018966844
+    sh[23]: 0.030360749
+    sh[24]: 0.012767266
+    sh[25]: 0.015002099
+    sh[26]: 0.03591188
+  - sh[ 0]: 0.12651576
+    sh[ 1]: -0.03801728
+    sh[ 2]: 0.019027451
+    sh[ 3]: -0.0007764049
+    sh[ 4]: -0.0014611006
+    sh[ 5]: -0.0038573246
+    sh[ 6]: 0.004209683
+    sh[ 7]: 0.0061636055
+    sh[ 8]: 0.019716166
+    sh[ 9]: 0.1520218
+    sh[10]: -0.018927947
+    sh[11]: 0.022652926
+    sh[12]: -0.0008611911
+    sh[13]: -0.002560892
+    sh[14]: -0.0046957913
+    sh[15]: 0.0071047544
+    sh[16]: 0.0075692027
+    sh[17]: 0.029305903
+    sh[18]: 0.19676137
+    sh[19]: 0.009888108
+    sh[20]: 0.017441854
+    sh[21]: -0.0009395758
+    sh[22]: -0.0052178134
+    sh[23]: -0.007990698
+    sh[24]: 0.0116797155
+    sh[25]: 0.008874
+    sh[26]: 0.04123901
+  - sh[ 0]: 0.020953318
+    sh[ 1]: 0.011686448
+    sh[ 2]: -0.010812472
+    sh[ 3]: -0.002838112
+    sh[ 4]: -0.0013041133
+    sh[ 5]: -0.0083670365
+    sh[ 6]: 0.00031848543
+    sh[ 7]: 0.0013239764
+    sh[ 8]: -0.003053741
+    sh[ 9]: 0.042292025
+    sh[10]: 0.019300094
+    sh[11]: -0.022024656
+    sh[12]: -0.007298514
+    sh[13]: -0.0021129746
+    sh[14]: -0.011940288
+    sh[15]: 0.0016582584
+    sh[16]: 0.0052286494
+    sh[17]: -0.0039669285
+    sh[18]: 0.10206411
+    sh[19]: 0.037271246
+    sh[20]: -0.05323181
+    sh[21]: -0.020958219
+    sh[22]: -0.004027216
+    sh[23]: -0.01784163
+    sh[24]: 0.00604059
+    sh[25]: 0.018064529
+    sh[26]: -0.0050650206
+  - sh[ 0]: 0.119866036
+    sh[ 1]: -0.0022407346
+    sh[ 2]: -0.018110823
+    sh[ 3]: 0.0030730518
+    sh[ 4]: 0.003736389
+    sh[ 5]: -0.0049224924
+    sh[ 6]: 0.00004604231
+    sh[ 7]: -0.00031036342
+    sh[ 8]: 0.007927745
+    sh[ 9]: 0.18082997
+    sh[10]: 0.04529092
+    sh[11]: -0.019004
+    sh[12]: 0.018115299
+    sh[13]: 0.013754584
+    sh[14]: 0.0029768117
+    sh[15]: -0.0008913317
+    sh[16]: 0.0010408793
+    sh[17]: 0.005633602
+    sh[18]: 0.3411248
+    sh[19]: 0.18058135
+    sh[20]: -0.0018362472
+    sh[21]: 0.06863687
+    sh[22]: 0.0476929
+    sh[23]: 0.034079175
+    sh[24]: -0.0062428233
+    sh[25]: 0.010429559
+    sh[26]: -0.010931529
+  - sh[ 0]: 0.13096724
+    sh[ 1]: 0.012599357
+    sh[ 2]: -0.0057282588
+    sh[ 3]: 0.004176766
+    sh[ 4]: 0.007660439
+    sh[ 5]: -0.0009979856
+    sh[ 6]: 0.003716257
+    sh[ 7]: -0.0013428765
+    sh[ 8]: 0.022384087
+    sh[ 9]: 0.20319535
+    sh[10]: 0.063548215
+    sh[11]: 0.0017693203
+    sh[12]: 0.024205273
+    sh[13]: 0.022900715
+    sh[14]: 0.015401096
+    sh[15]: 0.0011002539
+    sh[16]: 0.003424765
+    sh[17]: 0.018409872
+    sh[18]: 0.386377
+    sh[19]: 0.20634742
+    sh[20]: 0.042030998
+    sh[21]: 0.08812364
+    sh[22]: 0.0751034
+    sh[23]: 0.07033199
+    sh[24]: -0.009985737
+    sh[25]: 0.02256004
+    sh[26]: -0.0114559075
+  - sh[ 0]: 0.14522761
+    sh[ 1]: -0.01503845
+    sh[ 2]: -0.008242412
+    sh[ 3]: -0.000030996238
+    sh[ 4]: 0.0019964774
+    sh[ 5]: -0.0025691465
+    sh[ 6]: 0.0017769629
+    sh[ 7]: -0.00013225006
+    sh[ 8]: 0.009039931
+    sh[ 9]: 0.19931966
+    sh[10]: 0.03753009
+    sh[11]: -0.005572799
+    sh[12]: 0.011944165
+    sh[13]: 0.011104943
+    sh[14]: 0.0023114837
+    sh[15]: 0.0009138476
+    sh[16]: 0.0025691318
+    sh[17]: 0.008949011
+    sh[18]: 0.3335821
+    sh[19]: 0.18163292
+    sh[20]: 0.0147966985
+    sh[21]: 0.055879753
+    sh[22]: 0.042398673
+    sh[23]: 0.022490539
+    sh[24]: -0.004939267
+    sh[25]: 0.011416273
+    sh[26]: -0.0029234516
+  - sh[ 0]: 0.14202535
+    sh[ 1]: -0.032963004
+    sh[ 2]: 0.0046163304
+    sh[ 3]: 0.0016955731
+    sh[ 4]: 0.00078165607
+    sh[ 5]: 0.0033482932
+    sh[ 6]: 0.008603067
+    sh[ 7]: 0.002283937
+    sh[ 8]: 0.021673948
+    sh[ 9]: 0.17246084
+    sh[10]: -0.0043165833
+    sh[11]: 0.010235518
+    sh[12]: 0.0037695293
+    sh[13]: 0.0017476265
+    sh[14]: 0.0056416793
+    sh[15]: 0.011798516
+    sh[16]: 0.006213823
+    sh[17]: 0.03319402
+    sh[18]: 0.22780088
+    sh[19]: 0.045736767
+    sh[20]: 0.020152202
+    sh[21]: 0.009011437
+    sh[22]: 0.0036512623
+    sh[23]: 0.009321415
+    sh[24]: 0.014274708
+    sh[25]: 0.0120417215
+    sh[26]: 0.047554012
+  - sh[ 0]: 0.14906898
+    sh[ 1]: -0.017233616
+    sh[ 2]: 0.007632766
+    sh[ 3]: 0.0071389824
+    sh[ 4]: 0.0027495888
+    sh[ 5]: 0.005731839
+    sh[ 6]: 0.003232509
+    sh[ 7]: 0.0014938184
+    sh[ 8]: 0.008429702
+    sh[ 9]: 0.20780262
+    sh[10]: 0.0425961
+    sh[11]: 0.024525763
+    sh[12]: 0.023197126
+    sh[13]: 0.0132815875
+    sh[14]: 0.017103484
+    sh[15]: 0.0028056705
+    sh[16]: 0.0059836893
+    sh[17]: 0.008008838
+    sh[18]: 0.35919282
+    sh[19]: 0.2049141
+    sh[20]: 0.07483607
+    sh[21]: 0.07245938
+    sh[22]: 0.049431108
+    sh[23]: 0.054379813
+    sh[24]: -0.002623417
+    sh[25]: 0.020772982
+    sh[26]: -0.0055290284
+  - sh[ 0]: 0.14856996
+    sh[ 1]: -0.017715665
+    sh[ 2]: 0.008181327
+    sh[ 3]: -0.00018508786
+    sh[ 4]: 0.003091075
+    sh[ 5]: 0.005325452
+    sh[ 6]: 0.0025331024
+    sh[ 7]: 0.0018994043
+    sh[ 8]: 0.011034366
+    sh[ 9]: 0.20637317
+    sh[10]: 0.039553955
+    sh[11]: 0.02612635
+    sh[12]: 0.014169156
+    sh[13]: 0.01336141
+    sh[14]: 0.017193606
+    sh[15]: 0.0018122324
+    sh[16]: 0.007179279
+    sh[17]: 0.011512998
+    sh[18]: 0.35572544
+    sh[19]: 0.19576164
+    sh[20]: 0.07951751
+    sh[21]: 0.063090235
+    sh[22]: 0.048450723
+    sh[23]: 0.054747492
+    sh[24]: -0.0034548955
+    sh[25]: 0.02255682
+    sh[26]: 0.00036146014
+  - sh[ 0]: 0.15243648
+    sh[ 1]: -0.023155265
+    sh[ 2]: 0.015496812
+    sh[ 3]: 0.0022479068
+    sh[ 4]: 0.005296713
+    sh[ 5]: 0.0065085483
+    sh[ 6]: 0.006417008
+    sh[ 7]: 0.007876242
+    sh[ 8]: 0.025669616
+    sh[ 9]: 0.18967523
+    sh[10]: 0.009006528
+    sh[11]: 0.025006898
+    sh[12]: 0.0049760775
+    sh[13]: 0.008714581
+    sh[14]: 0.0116719
+    sh[15]: 0.009376632
+    sh[16]: 0.012298996
+    sh[17]: 0.03747269
+    sh[18]: 0.2542048
+    sh[19]: 0.067840755
+    sh[20]: 0.042680107
+    sh[21]: 0.01563653
+    sh[22]: 0.016495928
+    sh[23]: 0.022506773
+    sh[24]: 0.011858025
+    sh[25]: 0.018747687
+    sh[26]: 0.049185354
+  - sh[ 0]: 0.14525636
+    sh[ 1]: -0.026384423
+    sh[ 2]: 0.016910594
+    sh[ 3]: 0.0014447041
+    sh[ 4]: 0.004983307
+    sh[ 5]: 0.0016409635
+    sh[ 6]: 0.006270259
+    sh[ 7]: 0.01145674
+    sh[ 8]: 0.022576015
+    sh[ 9]: 0.17912784
+    sh[10]: 0.0041523725
+    sh[11]: 0.023320083
+    sh[12]: 0.0045777895
+    sh[13]: 0.008209682
+    sh[14]: 0.0060163415
+    sh[15]: 0.008889052
+    sh[16]: 0.016049102
+    sh[17]: 0.03361698
+    sh[18]: 0.24067934
+    sh[19]: 0.05902942
+    sh[20]: 0.035529394
+    sh[21]: 0.014559364
+    sh[22]: 0.015758837
+    sh[23]: 0.014819778
+    sh[24]: 0.011493273
+    sh[25]: 0.02382365
+    sh[26]: 0.046066675
+  - sh[ 0]: 0.14271672
+    sh[ 1]: -0.027512286
+    sh[ 2]: 0.009818016
+    sh[ 3]: -0.0005531872
+    sh[ 4]: -0.0012373395
+    sh[ 5]: 0.00061940507
+    sh[ 6]: 0.0043088454
+    sh[ 7]: 0.007194419
+    sh[ 8]: 0.020644337
+    sh[ 9]: 0.17102028
+    sh[10]: 0.0043070787
+    sh[11]: 0.0189272
+    sh[12]: -0.0020340304
+    sh[13]: -0.0004091567
+    sh[14]: 0.0034833762
+    sh[15]: 0.0054435544
+    sh[16]: 0.011477718
+    sh[17]: 0.030591983
+    sh[18]: 0.22416906
+    sh[19]: 0.061724633
+    sh[20]: 0.036115196
+    sh[21]: -0.0020332455
+    sh[22]: 0.0013046879
+    sh[23]: 0.008575657
+    sh[24]: 0.003931737
+    sh[25]: 0.018874645
+    sh[26]: 0.040520012
+  - sh[ 0]: 0.11400765
+    sh[ 1]: -0.051564388
+    sh[ 2]: 0.00030738456
+    sh[ 3]: -0.005293348
+    sh[ 4]: -0.0009639603
+    sh[ 5]: 0.00105441
+    sh[ 6]: 0.003953644
+    sh[ 7]: 0.00032252484
+    sh[ 8]: 0.010091045
+    sh[ 9]: 0.12599239
+    sh[10]: -0.04129273
+    sh[11]: 0.0010728991
+    sh[12]: -0.0078109843
+    sh[13]: -0.0016990133
+    sh[14]: 0.0012997597
+    sh[15]: 0.005676088
+    sh[16]: 0.0011543157
+    sh[17]: 0.01528637
+    sh[18]: 0.13996495
+    sh[19]: -0.031708803
+    sh[20]: 0.003284192
+    sh[21]: -0.012695825
+    sh[22]: -0.003055502
+    sh[23]: 0.0018673798
+    sh[24]: 0.0072192936
+    sh[25]: 0.0027976686
+    sh[26]: 0.020349722
+  - sh[ 0]: 0.15012512
+    sh[ 1]: -0.009125242
+    sh[ 2]: -0.0029490713
+    sh[ 3]: 0.0040906966
+    sh[ 4]: 0.0017587589
+    sh[ 5]: 0.005090975
+    sh[ 6]: 0.002764725
+    sh[ 7]: 0.0024606648
+    sh[ 8]: 0.012068546
+    sh[ 9]: 0.21456747
+    sh[10]: 0.049887605
+    sh[11]: 0.012885735
+    sh[12]: 0.018917218
+    sh[13]: 0.0132127525
+    sh[14]: 0.013926055
+    sh[15]: 0.002110453
+    sh[16]: 0.008126901
+    sh[17]: 0.0109566385
+    sh[18]: 0.37731537
+    sh[19]: 0.21037854
+    sh[20]: 0.06416036
+    sh[21]: 0.06855387
+    sh[22]: 0.052148346
+    sh[23]: 0.046052787
+    sh[24]: -0.003942219
+    sh[25]: 0.02407469
+    sh[26]: -0.006212676
+  - sh[ 0]: 0.14231956
+    sh[ 1]: 0.010781788
+    sh[ 2]: 0.007736013
+    sh[ 3]: 0.0049848384
+    sh[ 4]: 0.0063275737
+    sh[ 5]: 0.0053155296
+    sh[ 6]: 0.00863918
+    sh[ 7]: 0.0071290717
+    sh[ 8]: 0.02451364
+    sh[ 9]: 0.21786831
+    sh[10]: 0.06629987
+    sh[11]: 0.02845961
+    sh[12]: 0.023393594
+    sh[13]: 0.024943318
+    sh[14]: 0.022313282
+    sh[15]: 0.008243106
+    sh[16]: 0.0165177
+    sh[17]: 0.019303454
+    sh[18]: 0.40218094
+    sh[19]: 0.22132857
+    sh[20]: 0.088382766
+    sh[21]: 0.08417343
+    sh[22]: 0.087681465
+    sh[23]: 0.08048298
+    sh[24]: -0.0016388296
+    sh[25]: 0.042558257
+    sh[26]: -0.016347837
+  - sh[ 0]: 0.14823635
+    sh[ 1]: -0.0070387656
+    sh[ 2]: 0.006110977
+    sh[ 3]: 0.004054589
+    sh[ 4]: 0.0033476877
+    sh[ 5]: -0.0007033355
+    sh[ 6]: 0.002229262
+    sh[ 7]: 0.0024947275
+    sh[ 8]: 0.009977038
+    sh[ 9]: 0.21770336
+    sh[10]: 0.048678964
+    sh[11]: 0.010217897
+    sh[12]: 0.01991835
+    sh[13]: 0.014111186
+    sh[14]: 0.013639062
+    sh[15]: 0.00210547
+    sh[16]: 0.007910898
+    sh[17]: 0.009331369
+    sh[18]: 0.39221153
+    sh[19]: 0.20265192
+    sh[20]: 0.036326673
+    sh[21]: 0.0715818
+    sh[22]: 0.050466727
+    sh[23]: 0.05711225
+    sh[24]: -0.0021918397
+    sh[25]: 0.02329389
+    sh[26]: -0.0046730614
+  - sh[ 0]: 0.123137966
+    sh[ 1]: 0.024288502
+    sh[ 2]: 0.010542092
+    sh[ 3]: -0.00094768597
+    sh[ 4]: 0.0046587307
+    sh[ 5]: -0.0030610908
+    sh[ 6]: 0.0070493203
+    sh[ 7]: -0.0023536263
+    sh[ 8]: 0.01917952
+    sh[ 9]: 0.20393413
+    sh[10]: 0.07273505
+    sh[11]: 0.018933704
+    sh[12]: 0.0144511815
+    sh[13]: 0.021769816
+    sh[14]: 0.01752969
+    sh[15]: 0.0049862727
+    sh[16]: 0.0036314707
+    sh[17]: 0.014979777
+    sh[18]: 0.40638652
+    sh[19]: 0.21102346
+    sh[20]: 0.054431092
+    sh[21]: 0.068576716
+    sh[22]: 0.08044865
+    sh[23]: 0.0834061
+    sh[24]: -0.0065294714
+    sh[25]: 0.023893181
+    sh[26]: -0.01540503
+  - sh[ 0]: 0.11737118
+    sh[ 1]: 0.02735517
+    sh[ 2]: -0.0041203178
+    sh[ 3]: 0.0047003
+    sh[ 4]: 0.0054236036
+    sh[ 5]: 0.007827682
+    sh[ 6]: 0.0053342977
+    sh[ 7]: 0.0074382187
+    sh[ 8]: 0.02010004
+    sh[ 9]: 0.19921048
+    sh[10]: 0.07341396
+    sh[11]: 0.011419204
+    sh[12]: 0.022500183
+    sh[13]: 0.023374965
+    sh[14]: 0.024638545
+    sh[15]: 0.002836773
+    sh[16]: 0.016002208
+    sh[17]: 0.01567114
+    sh[18]: 0.4060553
+    sh[19]: 0.20564523
+    sh[20]: 0.06272218
+    sh[21]: 0.079509296
+    sh[22]: 0.08359498
+    sh[23]: 0.08265106
+    sh[24]: -0.009747246
+    sh[25]: 0.04014395
+    sh[26]: -0.014947998
+  - sh[ 0]: 0.13703442
+    sh[ 1]: 0.009465482
+    sh[ 2]: -0.0007130822
+    sh[ 3]: 0.0074197506
+    sh[ 4]: 0.0056088665
+    sh[ 5]: 0.00095744367
+    sh[ 6]: 0.004490089
+    sh[ 7]: 0.0046541253
+    sh[ 8]: 0.017630529
+    sh[ 9]: 0.21123986
+    sh[10]: 0.06481079
+    sh[11]: 0.015045717
+    sh[12]: 0.02716668
+    sh[13]: 0.020511894
+    sh[14]: 0.016289193
+    sh[15]: 0.0038481865
+    sh[16]: 0.012318956
+    sh[17]: 0.014470102
+    sh[18]: 0.39650586
+    sh[19]: 0.22029576
+    sh[20]: 0.065293685
+    sh[21]: 0.08578293
+    sh[22]: 0.07146776
+    sh[23]: 0.06967558
+    sh[24]: -0.0036039278
+    sh[25]: 0.03468833
+    sh[26]: -0.010974958
+  - sh[ 0]: 0.14731006
+    sh[ 1]: 0.00057289173
+    sh[ 2]: 0.0009458277
+    sh[ 3]: 0.0040205237
+    sh[ 4]: 0.0065022795
+    sh[ 5]: 0.0069638686
+    sh[ 6]: 0.006763185
+    sh[ 7]: 0.00027549645
+    sh[ 8]: 0.0193236
+    sh[ 9]: 0.21872647
+    sh[10]: 0.05873467
+    sh[11]: 0.02144878
+    sh[12]: 0.02236045
+    sh[13]: 0.023291588
+    sh[14]: 0.019381208
+    sh[15]: 0.007046852
+    sh[16]: 0.0066594956
+    sh[17]: 0.015953291
+    sh[18]: 0.39419532
+    sh[19]: 0.21936017
+    sh[20]: 0.08172472
+    sh[21]: 0.083180845
+    sh[22]: 0.0794989
+    sh[23]: 0.063953154
+    sh[24]: 0.00013474238
+    sh[25]: 0.02977393
+    sh[26]: -0.011927072
+  - sh[ 0]: 0.1447318
+    sh[ 1]: -0.0015027903
+    sh[ 2]: 0.00353171
+    sh[ 3]: 0.0011581227
+    sh[ 4]: 0.0026016736
+    sh[ 5]: 0.0069338386
+    sh[ 6]: 0.0037285793
+    sh[ 7]: 0.0034544514
+    sh[ 8]: 0.013660981
+    sh[ 9]: 0.211526
+    sh[10]: 0.057133466
+    sh[11]: 0.023416873
+    sh[12]: 0.015319303
+    sh[13]: 0.015462548
+    sh[14]: 0.018407714
+    sh[15]: 0.0028802182
+    sh[16]: 0.009705654
+    sh[17]: 0.011209703
+    sh[18]: 0.3810435
+    sh[19]: 0.21826515
+    sh[20]: 0.080546275
+    sh[21]: 0.06529893
+    sh[22]: 0.05947488
+    sh[23]: 0.058525406
+    sh[24]: -0.003997539
+    sh[25]: 0.02823599
+    sh[26]: -0.0100268135
+  - sh[ 0]: 0.14010076
+    sh[ 1]: -0.003536998
+    sh[ 2]: -0.009793557
+    sh[ 3]: 0.0031398253
+    sh[ 4]: 0.0016626276
+    sh[ 5]: 0.010270429
+    sh[ 6]: 0.0014115566
+    sh[ 7]: 0.001613237
+    sh[ 8]: 0.012316141
+    sh[ 9]: 0.20631318
+    sh[10]: 0.054896045
+    sh[11]: 0.009634172
+    sh[12]: 0.01793917
+    sh[13]: 0.014774565
+    sh[14]: 0.018078353
+    sh[15]: 0.00028256068
+    sh[16]: 0.0064952914
+    sh[17]: 0.010734535
+    sh[18]: 0.37684858
+    sh[19]: 0.21545398
+    sh[20]: 0.07184856
+    sh[21]: 0.06800727
+    sh[22]: 0.058899347
+    sh[23]: 0.04893734
+    sh[24]: -0.006401201
+    sh[25]: 0.023176609
+    sh[26]: -0.008273048
+  - sh[ 0]: 0.02099494
+    sh[ 1]: 0.012705383
+    sh[ 2]: -0.004123571
+    sh[ 3]: -0.008530329
+    sh[ 4]: -0.0061490894
+    sh[ 5]: -0.002803373
+    sh[ 6]: -0.0013357786
+    sh[ 7]: -0.0004037709
+    sh[ 8]: -0.0027856126
+    sh[ 9]: 0.04212828
+    sh[10]: 0.020919703
+    sh[11]: -0.01020434
+    sh[12]: -0.019076098
+    sh[13]: -0.008421803
+    sh[14]: -0.004016338
+    sh[15]: -0.002183398
+    sh[16]: 0.00225736
+    sh[17]: -0.002155107
+    sh[18]: 0.101210445
+    sh[19]: 0.04020216
+    sh[20]: -0.028789943
+    sh[21]: -0.049849484
+    sh[22]: -0.01158852
+    sh[23]: -0.006243983
+    sh[24]: -0.004198483
+    sh[25]: 0.012158494
+    sh[26]: 0.0019770402
+  - sh[ 0]: 0.14746946
+    sh[ 1]: -0.012867872
+    sh[ 2]: 0.0123002585
+    sh[ 3]: 0.001807929
+    sh[ 4]: 0.0014022085
+    sh[ 5]: 0.004983089
+    sh[ 6]: 0.0013962046
+    sh[ 7]: 0.0044655446
+    sh[ 8]: 0.009107956
+    sh[ 9]: 0.20652018
+    sh[10]: 0.044011973
+    sh[11]: 0.030519405
+    sh[12]: 0.014921044
+    sh[13]: 0.010352413
+    sh[14]: 0.015676798
+    sh[15]: 0.00036102426
+    sh[16]: 0.009836334
+    sh[17]: 0.009188821
+    sh[18]: 0.35771587
+    sh[19]: 0.1996288
+    sh[20]: 0.081625566
+    sh[21]: 0.060609683
+    sh[22]: 0.0410269
+    sh[23]: 0.049660977
+    sh[24]: -0.005329896
+    sh[25]: 0.024418034
+    sh[26]: -0.002193503
+  - sh[ 0]: 0.13297851
+    sh[ 1]: -0.041064795
+    sh[ 2]: 0.016879091
+    sh[ 3]: -0.0040710038
+    sh[ 4]: 0.0022896142
+    sh[ 5]: 0.01178128
+    sh[ 6]: 0.005258398
+    sh[ 7]: 0.003753686
+    sh[ 8]: 0.020299464
+    sh[ 9]: 0.15929309
+    sh[10]: -0.01750837
+    sh[11]: 0.026802378
+    sh[12]: -0.0033614498
+    sh[13]: 0.0028324306
+    sh[14]: 0.018764745
+    sh[15]: 0.008184095
+    sh[16]: 0.006501105
+    sh[17]: 0.031074464
+    sh[18]: 0.20811413
+    sh[19]: 0.019835074
+    sh[20]: 0.043465093
+    sh[21]: 0.001033182
+    sh[22]: 0.004124232
+    sh[23]: 0.034963705
+    sh[24]: 0.012502601
+    sh[25]: 0.010444804
+    sh[26]: 0.044698298
+  - sh[ 0]: 0.12558609
+    sh[ 1]: -0.038435534
+    sh[ 2]: 0.020178238
+    sh[ 3]: 0.005958672
+    sh[ 4]: 0.0011828109
+    sh[ 5]: -0.0030862233
+    sh[ 6]: 0.0042386097
+    sh[ 7]: 0.005246909
+    sh[ 8]: 0.018124986
+    sh[ 9]: 0.15015969
+    sh[10]: -0.02049293
+    sh[11]: 0.023943163
+    sh[12]: 0.009643082
+    sh[13]: 0.0025356112
+    sh[14]: -0.0035640616
+    sh[15]: 0.0069978694
+    sh[16]: 0.0072662723
+    sh[17]: 0.026806572
+    sh[18]: 0.19371085
+    sh[19]: 0.006385605
+    sh[20]: 0.019157017
+    sh[21]: 0.017502228
+    sh[22]: 0.004858924
+    sh[23]: -0.0064215674
+    sh[24]: 0.011415145
+    sh[25]: 0.010541987
+    sh[26]: 0.037836105
+  - sh[ 0]: 0.016837735
+    sh[ 1]: 0.009058166
+    sh[ 2]: -0.00843797
+    sh[ 3]: -0.007161634
+    sh[ 4]: -0.004452118
+    sh[ 5]: -0.0056408863
+    sh[ 6]: -0.00043548603
+    sh[ 7]: 0.0041932594
+    sh[ 8]: -0.0013551891
+    sh[ 9]: 0.032460064
+    sh[10]: 0.015322121
+    sh[11]: -0.016639994
+    sh[12]: -0.014291107
+    sh[13]: -0.007083433
+    sh[14]: -0.009343648
+    sh[15]: -0.00024233838
+    sh[16]: 0.0096770525
+    sh[17]: -0.0013719974
+    sh[18]: 0.074987076
+    sh[19]: 0.030450337
+    sh[20]: -0.03918011
+    sh[21]: -0.033950366
+    sh[22]: -0.012863756
+    sh[23]: -0.017989893
+    sh[24]: 0.00076810364
+    sh[25]: 0.025858723
+    sh[26]: -0.0005971903
+  - sh[ 0]: 0.120151125
+    sh[ 1]: -0.0043310714
+    sh[ 2]: -0.020653889
+    sh[ 3]: 0.004025713
+    sh[ 4]: 0.0023435275
+    sh[ 5]: -0.003899636
+    sh[ 6]: 0.00058173144
+    sh[ 7]: 0.00067346595
+    sh[ 8]: 0.007525114
+    sh[ 9]: 0.18104039
+    sh[10]: 0.041892238
+    sh[11]: -0.02234695
+    sh[12]: 0.018311145
+    sh[13]: 0.012359683
+    sh[14]: 0.0047229724
+    sh[15]: -0.00017165644
+    sh[16]: 0.0046924683
+    sh[17]: 0.005160149
+    sh[18]: 0.34204295
+    sh[19]: 0.17388612
+    sh[20]: -0.004312794
+    sh[21]: 0.06653828
+    sh[22]: 0.046290573
+    sh[23]: 0.036920328
+    sh[24]: -0.005400338
+    sh[25]: 0.016580716
+    sh[26]: -0.010769365
+  - sh[ 0]: 0.1272243
+    sh[ 1]: 0.015991902
+    sh[ 2]: -0.003033072
+    sh[ 3]: 0.008192575
+    sh[ 4]: 0.0060813436
+    sh[ 5]: 0.00064539653
+    sh[ 6]: 0.0033405223
+    sh[ 7]: 0.0076852827
+    sh[ 8]: 0.021751558
+    sh[ 9]: 0.19932106
+    sh[10]: 0.066980325
+    sh[11]: 0.006857464
+    sh[12]: 0.027023152
+    sh[13]: 0.023141144
+    sh[14]: 0.017439842
+    sh[15]: 0.00043150166
+    sh[16]: 0.015742386
+    sh[17]: 0.016640434
+    sh[18]: 0.38485932
+    sh[19]: 0.20971215
+    sh[20]: 0.050305463
+    sh[21]: 0.08679031
+    sh[22]: 0.079987824
+    sh[23]: 0.07353199
+    sh[24]: -0.011298946
+    sh[25]: 0.038029406
+    sh[26]: -0.01543099
+  - sh[ 0]: 0.1441197
+    sh[ 1]: -0.016355423
+    sh[ 2]: -0.013551039
+    sh[ 3]: 0.003723766
+    sh[ 4]: 0.0033280724
+    sh[ 5]: -0.0018145009
+    sh[ 6]: 0.0018168535
+    sh[ 7]: 0.0013946167
+    sh[ 8]: 0.0075854203
+    sh[ 9]: 0.19598737
+    sh[10]: 0.036742453
+    sh[11]: -0.012811573
+    sh[12]: 0.019067908
+    sh[13]: 0.012933302
+    sh[14]: 0.0030661053
+    sh[15]: 0.00088700035
+    sh[16]: 0.0041561187
+    sh[17]: 0.0069664945
+    sh[18]: 0.32913223
+    sh[19]: 0.18091826
+    sh[20]: 0.0063279364
+    sh[21]: 0.06732074
+    sh[22]: 0.04524773
+    sh[23]: 0.022867987
+    sh[24]: -0.005099124
+    sh[25]: 0.014587711
+    sh[26]: -0.0049964013
+  - sh[ 0]: 0.1464011
+    sh[ 1]: -0.02381893
+    sh[ 2]: 0.0070162104
+    sh[ 3]: 0.010514617
+    sh[ 4]: 0.004604538
+    sh[ 5]: 0.00044589696
+    sh[ 6]: 0.006734561
+    sh[ 7]: 0.01028881
+    sh[ 8]: 0.023217194
+    sh[ 9]: 0.18118264
+    sh[10]: 0.004886344
+    sh[11]: 0.012626422
+    sh[12]: 0.01646103
+    sh[13]: 0.008123598
+    sh[14]: 0.0011998594
+    sh[15]: 0.009517798
+    sh[16]: 0.014880607
+    sh[17]: 0.033963237
+    sh[18]: 0.24121961
+    sh[19]: 0.056258757
+    sh[20]: 0.020523438
+    sh[21]: 0.028267356
+    sh[22]: 0.015931886
+    sh[23]: 0.0018458538
+    sh[24]: 0.011794171
+    sh[25]: 0.022034224
+    sh[26]: 0.0461862
+  - sh[ 0]: 0.15240133
+    sh[ 1]: -0.009829055
+    sh[ 2]: 0.010546839
+    sh[ 3]: 0.0048053483
+    sh[ 4]: 0.0038256312
+    sh[ 5]: 0.0048975316
+    sh[ 6]: 0.003564323
+    sh[ 7]: 0.003238113
+    sh[ 8]: 0.010023387
+    sh[ 9]: 0.21569027
+    sh[10]: 0.048428345
+    sh[11]: 0.02931223
+    sh[12]: 0.020930998
+    sh[13]: 0.014777144
+    sh[14]: 0.015996274
+    sh[15]: 0.0035278432
+    sh[16]: 0.007828354
+    sh[17]: 0.010154131
+    sh[18]: 0.3716399
+    sh[19]: 0.20730153
+    sh[20]: 0.08331736
+    sh[21]: 0.074342154
+    sh[22]: 0.050587166
+    sh[23]: 0.051181957
+    sh[24]: -0.0009369488
+    sh[25]: 0.021984315
+    sh[26]: -0.0017134205
+  - sh[ 0]: 0.15057072
+    sh[ 1]: -0.012220358
+    sh[ 2]: 0.008772119
+    sh[ 3]: 0.0035123813
+    sh[ 4]: 0.004296833
+    sh[ 5]: 0.0037128818
+    sh[ 6]: 0.0031716581
+    sh[ 7]: 0.0028025857
+    sh[ 8]: 0.011011508
+    sh[ 9]: 0.21221757
+    sh[10]: 0.044788685
+    sh[11]: 0.025513202
+    sh[12]: 0.018835176
+    sh[13]: 0.014996628
+    sh[14]: 0.014807341
+    sh[15]: 0.0028681257
+    sh[16]: 0.0069049895
+    sh[17]: 0.01161941
+    sh[18]: 0.36463046
+    sh[19]: 0.20041013
+    sh[20]: 0.077812746
+    sh[21]: 0.070327654
+    sh[22]: 0.050636545
+    sh[23]: 0.05027759
+    sh[24]: -0.0017221783
+    sh[25]: 0.02072266
+    sh[26]: 0.00045374918
+  - sh[ 0]: 0.14914869
+    sh[ 1]: -0.019453183
+    sh[ 2]: 0.015067046
+    sh[ 3]: 0.006471029
+    sh[ 4]: 0.006589582
+    sh[ 5]: 0.0036402817
+    sh[ 6]: 0.006376029
+    sh[ 7]: 0.0054164263
+    sh[ 8]: 0.021443304
+    sh[ 9]: 0.18549158
+    sh[10]: 0.013354383
+    sh[11]: 0.022796897
+    sh[12]: 0.011298345
+    sh[13]: 0.011695519
+    sh[14]: 0.00831093
+    sh[15]: 0.008963559
+    sh[16]: 0.008517766
+    sh[17]: 0.03132535
+    sh[18]: 0.2515109
+    sh[19]: 0.07423985
+    sh[20]: 0.03811616
+    sh[21]: 0.025952375
+    sh[22]: 0.02320221
+    sh[23]: 0.018227119
+    sh[24]: 0.011231749
+    sh[25]: 0.015345983
+    sh[26]: 0.041411232
+  - sh[ 0]: 0.14724538
+    sh[ 1]: -0.025298025
+    sh[ 2]: 0.01651173
+    sh[ 3]: 0.011962702
+    sh[ 4]: 0.008237348
+    sh[ 5]: 0.0056982525
+    sh[ 6]: 0.008036164
+    sh[ 7]: 0.0053166277
+    sh[ 8]: 0.027771791
+    sh[ 9]: 0.18204957
+    sh[10]: 0.0066540153
+    sh[11]: 0.024918906
+    sh[12]: 0.018858172
+    sh[13]: 0.01454742
+    sh[14]: 0.010856952
+    sh[15]: 0.011208532
+    sh[16]: 0.008812508
+    sh[17]: 0.04074555
+    sh[18]: 0.24395128
+    sh[19]: 0.06415819
+    sh[20]: 0.03831011
+    sh[21]: 0.035441585
+    sh[22]: 0.028786367
+    sh[23]: 0.02138266
+    sh[24]: 0.014092279
+    sh[25]: 0.015779758
+    sh[26]: 0.055497456
+  - sh[ 0]: 0.13960989
+    sh[ 1]: -0.030803729
+    sh[ 2]: 0.014000338
+    sh[ 3]: 0.004413625
+    sh[ 4]: 0.0035283335
+    sh[ 5]: 0.00563215
+    sh[ 6]: 0.0024942516
+    sh[ 7]: 0.0046304227
+    sh[ 8]: 0.02178954
+    sh[ 9]: 0.16667254
+    sh[10]: 0.00026711583
+    sh[11]: 0.024992047
+    sh[12]: 0.0076781814
+    sh[13]: 0.006220352
+    sh[14]: 0.008563453
+    sh[15]: 0.0027495965
+    sh[16]: 0.008994098
+    sh[17]: 0.032771822
+    sh[18]: 0.21952517
+    sh[19]: 0.056818034
+    sh[20]: 0.04306693
+    sh[21]: 0.015881337
+    sh[22]: 0.011668299
+    sh[23]: 0.012929
+    sh[24]: 0.0006881262
+    sh[25]: 0.01775871
+    sh[26]: 0.044244546
+  - sh[ 0]: 0.10923923
+    sh[ 1]: -0.050408322
+    sh[ 2]: -0.0030861064
+    sh[ 3]: -0.0055294703
+    sh[ 4]: -0.00031630613
+    sh[ 5]: 0.0032332623
+    sh[ 6]: 0.0037109116
+    sh[ 7]: 0.0012660306
+    sh[ 8]: 0.009411152
+    sh[ 9]: 0.12005285
+    sh[10]: -0.040401835
+    sh[11]: -0.0013105995
+    sh[12]: -0.0070910417
+    sh[13]: -0.0005313396
+    sh[14]: 0.0035082912
+    sh[15]: 0.0052708876
+    sh[16]: 0.0024960565
+    sh[17]: 0.014308566
+    sh[18]: 0.13342704
+    sh[19]: -0.031106513
+    sh[20]: 0.0029518276
+    sh[21]: -0.008890675
+    sh[22]: -0.00080839294
+    sh[23]: 0.004329667
+    sh[24]: 0.006563393
+    sh[25]: 0.0045020706
+    sh[26]: 0.019390617
+  - sh[ 0]: 0.15225542
+    sh[ 1]: -0.006227954
+    sh[ 2]: 0.0073727486
+    sh[ 3]: 0.00991691
+    sh[ 4]: 0.004291511
+    sh[ 5]: 0.006337812
+    sh[ 6]: 0.0044445544
+    sh[ 7]: 0.005468549
+    sh[ 8]: 0.013118582
+    sh[ 9]: 0.21882242
+    sh[10]: 0.05492156
+    sh[11]: 0.027311113
+    sh[12]: 0.027557718
+    sh[13]: 0.018377822
+    sh[14]: 0.017213218
+    sh[15]: 0.0045447117
+    sh[16]: 0.011934202
+    sh[17]: 0.011111806
+    sh[18]: 0.3838247
+    sh[19]: 0.22175962
+    sh[20]: 0.08629513
+    sh[21]: 0.08406007
+    sh[22]: 0.0645398
+    sh[23]: 0.054681648
+    sh[24]: -0.00097196264
+    sh[25]: 0.030566184
+    sh[26]: -0.009641223
+  - sh[ 0]: 0.13894986
+    sh[ 1]: 0.00822754
+    sh[ 2]: 0.00007374899
+    sh[ 3]: 0.0030255246
+    sh[ 4]: 0.0017011118
+    sh[ 5]: 0.0071118963
+    sh[ 6]: 0.0060208417
+    sh[ 7]: 0.0046625254
+    sh[ 8]: 0.020405183
+    sh[ 9]: 0.21099593
+    sh[10]: 0.06363493
+    sh[11]: 0.01893806
+    sh[12]: 0.017330205
+    sh[13]: 0.019227877
+    sh[14]: 0.022449367
+    sh[15]: 0.0048086112
+    sh[16]: 0.012549502
+    sh[17]: 0.01568681
+    sh[18]: 0.39243853
+    sh[19]: 0.21695465
+    sh[20]: 0.075790375
+    sh[21]: 0.06848727
+    sh[22]: 0.07782708
+    sh[23]: 0.075051926
+    sh[24]: -0.0051457337
+    sh[25]: 0.035602644
+    sh[26]: -0.014966212
+  - sh[ 0]: 0.14931113
+    sh[ 1]: -0.0109875295
+    sh[ 2]: 0.008501203
+    sh[ 3]: 0.0050942246
+    sh[ 4]: 0.004189972
+    sh[ 5]: -0.00026472812
+    sh[ 6]: 0.0027293083
+    sh[ 7]: 0.0023990711
+    sh[ 8]: 0.0109849265
+    sh[ 9]: 0.2186736
+    sh[10]: 0.045772173
+    sh[11]: 0.013415491
+    sh[12]: 0.022282816
+    sh[13]: 0.016791053
+    sh[14]: 0.015845433
+    sh[15]: 0.0030589618
+    sh[16]: 0.008685167
+    sh[17]: 0.010338754
+    sh[18]: 0.3897164
+    sh[19]: 0.20329957
+    sh[20]: 0.041378364
+    sh[21]: 0.07478196
+    sh[22]: 0.058872398
+    sh[23]: 0.06389353
+    sh[24]: -0.0013126722
+    sh[25]: 0.027202329
+    sh[26]: -0.0057783145
+  - sh[ 0]: 0.12978522
+    sh[ 1]: 0.023236016
+    sh[ 2]: 0.017086081
+    sh[ 3]: 0.01135843
+    sh[ 4]: 0.0062065255
+    sh[ 5]: -0.0035316339
+    sh[ 6]: 0.007940985
+    sh[ 7]: 0.005421613
+    sh[ 8]: 0.022958515
+    sh[ 9]: 0.21271402
+    sh[10]: 0.0719794
+    sh[11]: 0.027576689
+    sh[12]: 0.02961747
+    sh[13]: 0.027766975
+    sh[14]: 0.01914749
+    sh[15]: 0.0065887943
+    sh[16]: 0.014882391
+    sh[17]: 0.01926399
+    sh[18]: 0.41654283
+    sh[19]: 0.21000475
+    sh[20]: 0.0667661
+    sh[21]: 0.08622756
+    sh[22]: 0.097956076
+    sh[23]: 0.0901443
+    sh[24]: -0.0043178634
+    sh[25]: 0.042158253
+    sh[26]: -0.012294022
+  - sh[ 0]: 0.12500845
+    sh[ 1]: 0.027634002
+    sh[ 2]: 0.003919706
+    sh[ 3]: 0.009753143
+    sh[ 4]: 0.0032570965
+    sh[ 5]: 0.007258777
+    sh[ 6]: 0.008281133
+    sh[ 7]: 0.007860221
+    sh[ 8]: 0.021929014
+    sh[ 9]: 0.21043122
+    sh[10]: 0.07224792
+    sh[11]: 0.02292345
+    sh[12]: 0.024543557
+    sh[13]: 0.023341367
+    sh[14]: 0.024222314
+    sh[15]: 0.007314948
+    sh[16]: 0.017797934
+    sh[17]: 0.017281301
+    sh[18]: 0.4200663
+    sh[19]: 0.19914487
+    sh[20]: 0.07765579
+    sh[21]: 0.07213946
+    sh[22]: 0.08980619
+    sh[23]: 0.08232801
+    sh[24]: -0.0033407663
+    sh[25]: 0.041282944
+    sh[26]: -0.016112888
+  - sh[ 0]: 0.14333753
+    sh[ 1]: 0.0049689524
+    sh[ 2]: 0.011058774
+    sh[ 3]: 0.0008070204
+    sh[ 4]: 0.0024770726
+    sh[ 5]: 0.0009825656
+    sh[ 6]: 0.0048312107
+    sh[ 7]: 0.006743952
+    sh[ 8]: 0.020658968
+    sh[ 9]: 0.21785975
+    sh[10]: 0.060088187
+    sh[11]: 0.030505717
+    sh[12]: 0.013564594
+    sh[13]: 0.020034153
+    sh[14]: 0.017212063
+    sh[15]: 0.0047510155
+    sh[16]: 0.014924871
+    sh[17]: 0.017839482
+    sh[18]: 0.39845037
+    sh[19]: 0.21524023
+    sh[20]: 0.08275095
+    sh[21]: 0.06584394
+    sh[22]: 0.077577315
+    sh[23]: 0.07356047
+    sh[24]: -0.002324736
+    sh[25]: 0.037660476
+    sh[26]: -0.008961855
+  - sh[ 0]: 0.14220615
+    sh[ 1]: 0.0022551653
+    sh[ 2]: -0.0052442364
+    sh[ 3]: 0.0018910433
+    sh[ 4]: 0.0038752055
+    sh[ 5]: 0.009526258
+    sh[ 6]: 0.0055143517
+    sh[ 7]: 0.0064713815
+    sh[ 8]: 0.015129207
+    sh[ 9]: 0.21284033
+    sh[10]: 0.06054471
+    sh[11]: 0.013778553
+    sh[12]: 0.017183093
+    sh[13]: 0.020308947
+    sh[14]: 0.021071471
+    sh[15]: 0.005020993
+    sh[16]: 0.013770612
+    sh[17]: 0.011223023
+    sh[18]: 0.39215207
+    sh[19]: 0.22074124
+    sh[20]: 0.07254716
+    sh[21]: 0.070199475
+    sh[22]: 0.074988164
+    sh[23]: 0.06387291
+    sh[24]: -0.002716134
+    sh[25]: 0.034288324
+    sh[26]: -0.015552675
+  - sh[ 0]: 0.14962466
+    sh[ 1]: -0.00053851196
+    sh[ 2]: 0.0076495274
+    sh[ 3]: 0.0072699813
+    sh[ 4]: 0.004814324
+    sh[ 5]: 0.006493113
+    sh[ 6]: 0.0053850748
+    sh[ 7]: 0.008290578
+    sh[ 8]: 0.015621635
+    sh[ 9]: 0.22011942
+    sh[10]: 0.05888033
+    sh[11]: 0.02882185
+    sh[12]: 0.024479419
+    sh[13]: 0.020355957
+    sh[14]: 0.018200722
+    sh[15]: 0.0052861315
+    sh[16]: 0.015621209
+    sh[17]: 0.0132257175
+    sh[18]: 0.3926844
+    sh[19]: 0.22291812
+    sh[20]: 0.08749096
+    sh[21]: 0.07934473
+    sh[22]: 0.07145787
+    sh[23]: 0.060500547
+    sh[24]: -0.0014735517
+    sh[25]: 0.036264353
+    sh[26]: -0.009761424
+  - sh[ 0]: 0.14195305
+    sh[ 1]: -0.000505386
+    sh[ 2]: -0.008476371
+    sh[ 3]: 0.007500202
+    sh[ 4]: 0.0034060802
+    sh[ 5]: 0.0071589616
+    sh[ 6]: 0.00186303
+    sh[ 7]: 0.006188591
+    sh[ 8]: 0.0132602025
+    sh[ 9]: 0.20955327
+    sh[10]: 0.05651914
+    sh[11]: 0.008683644
+    sh[12]: 0.023543337
+    sh[13]: 0.016583584
+    sh[14]: 0.01416368
+    sh[15]: 0.0010036319
+    sh[16]: 0.0120549565
+    sh[17]: 0.011682423
+    sh[18]: 0.37987947
+    sh[19]: 0.21449527
+    sh[20]: 0.066256456
+    sh[21]: 0.07475997
+    sh[22]: 0.060524907
+    sh[23]: 0.04230758
+    sh[24]: -0.0050261263
+    sh[25]: 0.028331272
+    sh[26]: -0.0069359504
+  - sh[ 0]: 0.02608669
+    sh[ 1]: 0.012228215
+    sh[ 2]: -0.0039484645
+    sh[ 3]: 0.0064519173
+    sh[ 4]: 0.0021823607
+    sh[ 5]: -0.0018886572
+    sh[ 6]: -0.0008204078
+    sh[ 7]: -0.0012059666
+    sh[ 8]: -0.0020851283
+    sh[ 9]: 0.086241946
+    sh[10]: 0.041069247
+    sh[11]: -0.005620275
+    sh[12]: 0.019728936
+    sh[13]: 0.01049404
+    sh[14]: 0.008665099
+    sh[15]: -0.0028989413
+    sh[16]: 0.0020580518
+    sh[17]: -0.0079265945
+    sh[18]: 0.2807182
+    sh[19]: 0.13436642
+    sh[20]: -0.008621886
+    sh[21]: 0.06221867
+    sh[22]: 0.038495578
+    sh[23]: 0.04774023
+    sh[24]: -0.009712191
+    sh[25]: 0.0146350935
+    sh[26]: -0.027252749
+  - sh[ 0]: 0.15230817
+    sh[ 1]: -0.013968764
+    sh[ 2]: 0.019275164
+    sh[ 3]: 0.0071227546
+    sh[ 4]: 0.005792063
+    sh[ 5]: 0.0039763404
+    sh[ 6]: 0.0019290148
+    sh[ 7]: -0.00023334041
+    sh[ 8]: 0.011182509
+    sh[ 9]: 0.21239643
+    sh[10]: 0.046068043
+    sh[11]: 0.039605983
+    sh[12]: 0.025955273
+    sh[13]: 0.01798027
+    sh[14]: 0.01690419
+    sh[15]: 0.0011064886
+    sh[16]: 0.0035066863
+    sh[17]: 0.010976974
+    sh[18]: 0.3624822
+    sh[19]: 0.20903656
+    sh[20]: 0.09492722
+    sh[21]: 0.08169053
+    sh[22]: 0.058033064
+    sh[23]: 0.057822708
+    sh[24]: -0.0051105237
+    sh[25]: 0.018128261
+    sh[26]: -0.0035545593
+  - sh[ 0]: 0.13323385
+    sh[ 1]: -0.039995458
+    sh[ 2]: 0.014455503
+    sh[ 3]: 0.0029123786
+    sh[ 4]: 0.0022476262
+    sh[ 5]: 0.0113903545
+    sh[ 6]: 0.00418231
+    sh[ 7]: -0.005924633
+    sh[ 8]: 0.024262812
+    sh[ 9]: 0.15991256
+    sh[10]: -0.015959958
+    sh[11]: 0.022585094
+    sh[12]: 0.005831044
+    sh[13]: 0.0043606125
+    sh[14]: 0.01913057
+    sh[15]: 0.0066697416
+    sh[16]: -0.0074913143
+    sh[17]: 0.036199093
+    sh[18]: 0.20850264
+    sh[19]: 0.022735061
+    sh[20]: 0.038480137
+    sh[21]: 0.012379012
+    sh[22]: 0.008904855
+    sh[23]: 0.037072927
+    sh[24]: 0.010090899
+    sh[25]: -0.009503573
+    sh[26]: 0.05112553
+  - sh[ 0]: 0.12662628
+    sh[ 1]: -0.038307067
+    sh[ 2]: 0.018892642
+    sh[ 3]: 0.009080678
+    sh[ 4]: 0.0035406828
+    sh[ 5]: -0.0025901133
+    sh[ 6]: 0.004547821
+    sh[ 7]: 0.0022361751
+    sh[ 8]: 0.018172618
+    sh[ 9]: 0.15152875
+    sh[10]: -0.020306181
+    sh[11]: 0.023689222
+    sh[12]: 0.014366247
+    sh[13]: 0.0059833815
+    sh[14]: -0.0028528254
+    sh[15]: 0.0075394087
+    sh[16]: 0.0029327893
+    sh[17]: 0.026757926
+    sh[18]: 0.19556485
+    sh[19]: 0.006591084
+    sh[20]: 0.020332526
+    sh[21]: 0.024228524
+    sh[22]: 0.011190245
+    sh[23]: -0.00506728
+    sh[24]: 0.012396731
+    sh[25]: 0.0053786794
+    sh[26]: 0.037466977
+  - sh[ 0]: 0.020528793
+    sh[ 1]: 0.010327217
+    sh[ 2]: -0.010131226
+    sh[ 3]: 0.0065928893
+    sh[ 4]: 0.004738383
+    sh[ 5]: -0.008662606
+    sh[ 6]: 0.00018646286
+    sh[ 7]: -0.004507699
+    sh[ 8]: -0.0022966412
+    sh[ 9]: 0.043047495
+    sh[10]: 0.017339805
+    sh[11]: -0.022057526
+    sh[12]: 0.0105183665
+    sh[13]: 0.006650136
+    sh[14]: -0.01283388
+    sh[15]: 0.0018882247
+    sh[16]: -0.007141221
+    sh[17]: -0.003386613
+    sh[18]: 0.1072586
+    sh[19]: 0.03410765
+    sh[20]: -0.056471936
+    sh[21]: 0.019382784
+    sh[22]: 0.00979291
+    sh[23]: -0.020707404
+    sh[24]: 0.007703306
+    sh[25]: -0.01284862
+    sh[26]: -0.0056259898
+  - sh[ 0]: 0.1223046
+    sh[ 1]: -0.006435647
+    sh[ 2]: -0.017895585
+    sh[ 3]: 0.003090981
+    sh[ 4]: 0.0000897868
+    sh[ 5]: -0.0040412648
+    sh[ 6]: -0.000022563532
+    sh[ 7]: -0.00023373103
+    sh[ 8]: 0.006106394
+    sh[ 9]: 0.1832907
+    sh[10]: 0.04218558
+    sh[11]: -0.018416937
+    sh[12]: 0.014804855
+    sh[13]: 0.010154475
+    sh[14]: 0.0050471807
+    sh[15]: -0.00099079
+    sh[16]: 0.0030657197
+    sh[17]: 0.0037120385
+    sh[18]: 0.34616655
+    sh[19]: 0.17851563
+    sh[20]: 0.00018850481
+    sh[21]: 0.056178052
+    sh[22]: 0.044921853
+    sh[23]: 0.037901454
+    sh[24]: -0.0066279285
+    sh[25]: 0.015701052
+    sh[26]: -0.012245238
+  - sh[ 0]: 0.13018635
+    sh[ 1]: 0.014148695
+    sh[ 2]: -0.0041100415
+    sh[ 3]: 0.00511456
+    sh[ 4]: 0.0024852378
+    sh[ 5]: 0.0014659711
+    sh[ 6]: 0.0045862165
+    sh[ 7]: 0.0076467358
+    sh[ 8]: 0.021270439
+    sh[ 9]: 0.20455131
+    sh[10]: 0.06482281
+    sh[11]: 0.0054604863
+    sh[12]: 0.01941517
+    sh[13]: 0.021394122
+    sh[14]: 0.019219715
+    sh[15]: 0.0019406079
+    sh[16]: 0.016693534
+    sh[17]: 0.016226463
+    sh[18]: 0.39393353
+    sh[19]: 0.20652734
+    sh[20]: 0.05088148
+    sh[21]: 0.07008556
+    sh[22]: 0.08403988
+    sh[23]: 0.07804641
+    sh[24]: -0.009868138
+    sh[25]: 0.041271295
+    sh[26]: -0.016641062
+  - sh[ 0]: 0.14684977
+    sh[ 1]: -0.013613146
+    sh[ 2]: 0.0011885212
+    sh[ 3]: 0.005581521
+    sh[ 4]: 0.0027675254
+    sh[ 5]: -0.0029626694
+    sh[ 6]: 0.0019667314
+    sh[ 7]: 0.0025170587
+    sh[ 8]: 0.0084823705
+    sh[ 9]: 0.20071128
+    sh[10]: 0.039732747
+    sh[11]: 0.0055140797
+    sh[12]: 0.021238092
+    sh[13]: 0.012764558
+    sh[14]: 0.0019430179
+    sh[15]: 0.0009896145
+    sh[16]: 0.0062545114
+    sh[17]: 0.008071171
+    sh[18]: 0.33513802
+    sh[19]: 0.18561184
+    sh[20]: 0.025963902
+    sh[21]: 0.07221962
+    sh[22]: 0.045852583
+    sh[23]: 0.02180277
+    sh[24]: -0.005088476
+    sh[25]: 0.018240178
+    sh[26]: -0.0044116327
+  - sh[ 0]: 0.13980965
+    sh[ 1]: -0.03276192
+    sh[ 2]: -0.00043969258
+    sh[ 3]: 0.00651011
+    sh[ 4]: 0.0033266197
+    sh[ 5]: 0.0035367596
+    sh[ 6]: 0.006247269
+    sh[ 7]: 0.0031255453
+    sh[ 8]: 0.021981927
+    sh[ 9]: 0.1687543
+    sh[10]: -0.0040129614
+    sh[11]: 0.0034135878
+    sh[12]: 0.010121824
+    sh[13]: 0.007598628
+    sh[14]: 0.0045536994
+    sh[15]: 0.00824468
+    sh[16]: 0.0049713408
+    sh[17]: 0.03329259
+    sh[18]: 0.22341618
+    sh[19]: 0.046451133
+    sh[20]: 0.010844095
+    sh[21]: 0.021148335
+    sh[22]: 0.016730266
+    sh[23]: 0.006254462
+    sh[24]: 0.009683002
+    sh[25]: 0.009271758
+    sh[26]: 0.047548108
+  - sh[ 0]: 0.14952011
+    sh[ 1]: -0.013530861
+    sh[ 2]: 0.008699383
+    sh[ 3]: 0.00017899777
+    sh[ 4]: 0.002319109
+    sh[ 5]: 0.003192144
+    sh[ 6]: 0.0024826385
+    sh[ 7]: 0.0043927766
+    sh[ 8]: 0.009464181
+    sh[ 9]: 0.20945497
+    sh[10]: 0.043518603
+    sh[11]: 0.024404693
+    sh[12]: 0.014033992
+    sh[13]: 0.011921381
+    sh[14]: 0.0134071885
+    sh[15]: 0.0019073526
+    sh[16]: 0.009681122
+    sh[17]: 0.0096781915
+    sh[18]: 0.36249554
+    sh[19]: 0.1988989
+    sh[20]: 0.07284335
+    sh[21]: 0.062431168
+    sh[22]: 0.04419384
+    sh[23]: 0.046263438
+    sh[24]: -0.0025232304
+    sh[25]: 0.023511196
+    sh[26]: -0.0014172988
+  - sh[ 0]: 0.14851885
+    sh[ 1]: -0.014904955
+    sh[ 2]: 0.0038650706
+    sh[ 3]: 0.006376364
+    sh[ 4]: 0.0027307111
+    sh[ 5]: 0.006070857
+    sh[ 6]: 0.003129457
+    sh[ 7]: 0.0014100295
+    sh[ 8]: 0.010208178
+    sh[ 9]: 0.20842195
+    sh[10]: 0.04244116
+    sh[11]: 0.020636851
+    sh[12]: 0.022329774
+    sh[13]: 0.01397506
+    sh[14]: 0.016636698
+    sh[15]: 0.0026943078
+    sh[16]: 0.006089786
+    sh[17]: 0.010732205
+    sh[18]: 0.35982382
+    sh[19]: 0.19870399
+    sh[20]: 0.07106202
+    sh[21]: 0.074722745
+    sh[22]: 0.050662972
+    sh[23]: 0.0516618
+    sh[24]: -0.0022174942
+    sh[25]: 0.020380305
+    sh[26]: -0.00033168224
+  - sh[ 0]: 0.14814492
+    sh[ 1]: -0.01597005
+    sh[ 2]: 0.014044506
+    sh[ 3]: 0.005678067
+    sh[ 4]: 0.004396796
+    sh[ 5]: 0.0015704551
+    sh[ 6]: 0.0027324175
+    sh[ 7]: 0.0056871846
+    sh[ 8]: 0.012230852
+    sh[ 9]: 0.20680885
+    sh[10]: 0.040935177
+    sh[11]: 0.031831484
+    sh[12]: 0.022369321
+    sh[13]: 0.016193436
+    sh[14]: 0.01273949
+    sh[15]: 0.00238493
+    sh[16]: 0.01128971
+    sh[17]: 0.012729515
+    sh[18]: 0.35508958
+    sh[19]: 0.19676755
+    sh[20]: 0.08243772
+    sh[21]: 0.075791344
+    sh[22]: 0.055164196
+    sh[23]: 0.04859342
+    sh[24]: -0.0024570893
+    sh[25]: 0.026789986
+    sh[26]: 0.0009757653
+  - sh[ 0]: 0.14962189
+    sh[ 1]: -0.019080892
+    sh[ 2]: 0.013028354
+    sh[ 3]: 0.009696823
+    sh[ 4]: 0.0046511022
+    sh[ 5]: 0.0030494102
+    sh[ 6]: 0.0038931412
+    sh[ 7]: 0.0007636869
+    sh[ 8]: 0.016487723
+    sh[ 9]: 0.20920148
+    sh[10]: 0.036053702
+    sh[11]: 0.030270347
+    sh[12]: 0.027994173
+    sh[13]: 0.017916877
+    sh[14]: 0.015143757
+    sh[15]: 0.0038462956
+    sh[16]: 0.00483171
+    sh[17]: 0.018426392
+    sh[18]: 0.3533917
+    sh[19]: 0.18806498
+    sh[20]: 0.081396885
+    sh[21]: 0.08481174
+    sh[22]: 0.061019868
+    sh[23]: 0.054094613
+    sh[24]: -0.0009090064
+    sh[25]: 0.019563368
+    sh[26]: 0.0074369824
+  - sh[ 0]: 0.14270653
+    sh[ 1]: -0.02526572
+    sh[ 2]: 0.014900051
+    sh[ 3]: 0.013254165
+    sh[ 4]: 0.006276423
+    sh[ 5]: 0.0013436362
+    sh[ 6]: 0.0045436807
+    sh[ 7]: 0.005603306
+    sh[ 8]: 0.02287032
+    sh[ 9]: 0.17322874
+    sh[10]: 0.0059743784
+    sh[11]: 0.025919463
+    sh[12]: 0.020386033
+    sh[13]: 0.012056459
+    sh[14]: 0.004984738
+    sh[15]: 0.005975734
+    sh[16]: 0.00796049
+    sh[17]: 0.03420928
+    sh[18]: 0.2277697
+    sh[19]: 0.06252456
+    sh[20]: 0.045078926
+    sh[21]: 0.03613567
+    sh[22]: 0.024708988
+    sh[23]: 0.010362808
+    sh[24]: 0.005373728
+    sh[25]: 0.013882033
+    sh[26]: 0.045149177
+  - sh[ 0]: 0.11563638
+    sh[ 1]: -0.046678375
+    sh[ 2]: 0.0070919795
+    sh[ 3]: 0.0042026783
+    sh[ 4]: -0.00023022568
+    sh[ 5]: -0.000011619132
+    sh[ 6]: 0.005747789
+    sh[ 7]: 0.0014381417
+    sh[ 8]: 0.014667295
+    sh[ 9]: 0.13114274
+    sh[10]: -0.036990236
+    sh[11]: 0.00988689
+    sh[12]: 0.0053318515
+    sh[13]: 0.00062185666
+    sh[14]: 0.0009962501
+    sh[15]: 0.008227988
+    sh[16]: 0.0016791658
+    sh[17]: 0.02094006
+    sh[18]: 0.14628586
+    sh[19]: -0.02784657
+    sh[20]: 0.015572848
+    sh[21]: 0.009452479
+    sh[22]: 0.0019796148
+    sh[23]: 0.0025641262
+    sh[24]: 0.010270106
+    sh[25]: 0.0024225838
+    sh[26]: 0.026554644
+  - sh[ 0]: 0.1499963
+    sh[ 1]: -0.008114642
+    sh[ 2]: 0.00054386246
+    sh[ 3]: 0.003406749
+    sh[ 4]: 0.0019546144
+    sh[ 5]: 0.0065097916
+    sh[ 6]: 0.003576386
+    sh[ 7]: 0.0037441188
+    sh[ 8]: 0.010832301
+    sh[ 9]: 0.2146992
+    sh[10]: 0.050503783
+    sh[11]: 0.017607287
+    sh[12]: 0.017390072
+    sh[13]: 0.013716358
+    sh[14]: 0.015709674
+    sh[15]: 0.0032229589
+    sh[16]: 0.010009938
+    sh[17]: 0.009693659
+    sh[18]: 0.37805197
+    sh[19]: 0.20994118
+    sh[20]: 0.06923921
+    sh[21]: 0.06572799
+    sh[22]: 0.053061847
+    sh[23]: 0.048511297
+    sh[24]: -0.002512789
+    sh[25]: 0.026827356
+    sh[26]: -0.006136811
+  - sh[ 0]: 0.13743539
+    sh[ 1]: 0.007354615
+    sh[ 2]: 0.0013353443
+    sh[ 3]: 0.00823755
+    sh[ 4]: -0.0020969193
+    sh[ 5]: 0.0047050104
+    sh[ 6]: 0.005484278
+    sh[ 7]: 0.0060529537
+    sh[ 8]: 0.01731648
+    sh[ 9]: 0.20904921
+    sh[10]: 0.063578196
+    sh[11]: 0.01848855
+    sh[12]: 0.020786462
+    sh[13]: 0.016769644
+    sh[14]: 0.01861092
+    sh[15]: 0.004010745
+    sh[16]: 0.013282261
+    sh[17]: 0.012933864
+    sh[18]: 0.39166957
+    sh[19]: 0.2186889
+    sh[20]: 0.07059344
+    sh[21]: 0.06708673
+    sh[22]: 0.07784829
+    sh[23]: 0.06746694
+    sh[24]: -0.0059431223
+    sh[25]: 0.03547014
+    sh[26]: -0.015627403
+  - sh[ 0]: 0.1507605
+    sh[ 1]: -0.005824574
+    sh[ 2]: 0.011334929
+    sh[ 3]: 0.0024306744
+    sh[ 4]: 0.0034052664
+    sh[ 5]: -0.0012700794
+    sh[ 6]: 0.002601087
+    sh[ 7]: 0.0014333117
+    sh[ 8]: 0.011217823
+    sh[ 9]: 0.2215712
+    sh[10]: 0.05002382
+    sh[11]: 0.0171494
+    sh[12]: 0.0146593945
+    sh[13]: 0.015899919
+    sh[14]: 0.013343417
+    sh[15]: 0.0028593796
+    sh[16]: 0.0070176064
+    sh[17]: 0.010534588
+    sh[18]: 0.39461753
+    sh[19]: 0.20503445
+    sh[20]: 0.04500545
+    sh[21]: 0.06091097
+    sh[22]: 0.0563362
+    sh[23]: 0.0572255
+    sh[24]: -0.0008383354
+    sh[25]: 0.023240184
+    sh[26]: -0.0047770906
+  - sh[ 0]: 0.13414083
+    sh[ 1]: 0.020360947
+    sh[ 2]: 0.02373046
+    sh[ 3]: 0.009405099
+    sh[ 4]: 0.0012730045
+    sh[ 5]: -0.0035426677
+    sh[ 6]: 0.0073899888
+    sh[ 7]: 0.0012809759
+    sh[ 8]: 0.023272783
+    sh[ 9]: 0.21549968
+    sh[10]: 0.07015232
+    sh[11]: 0.036541004
+    sh[12]: 0.021478051
+    sh[13]: 0.022539688
+    sh[14]: 0.017536957
+    sh[15]: 0.0062580258
+    sh[16]: 0.010109456
+    sh[17]: 0.0199973
+    sh[18]: 0.4132211
+    sh[19]: 0.2118624
+    sh[20]: 0.07825885
+    sh[21]: 0.06788707
+    sh[22]: 0.09123702
+    sh[23]: 0.08372854
+    sh[24]: -0.0036526725
+    sh[25]: 0.03714444
+    sh[26]: -0.009745177
+  - sh[ 0]: 0.121500425
+    sh[ 1]: 0.02762857
+    sh[ 2]: -0.0012179791
+    sh[ 3]: 0.011552384
+    sh[ 4]: 0.0029563967
+    sh[ 5]: 0.0056890505
+    sh[ 6]: 0.004926084
+    sh[ 7]: 0.0022933444
+    sh[ 8]: 0.022543617
+    sh[ 9]: 0.20303291
+    sh[10]: 0.07525406
+    sh[11]: 0.01586344
+    sh[12]: 0.02628829
+    sh[13]: 0.023967287
+    sh[14]: 0.021604888
+    sh[15]: 0.002683051
+    sh[16]: 0.008351582
+    sh[17]: 0.019180961
+    sh[18]: 0.4068353
+    sh[19]: 0.21103038
+    sh[20]: 0.07111786
+    sh[21]: 0.07372683
+    sh[22]: 0.09203015
+    sh[23]: 0.07633396
+    sh[24]: -0.008880788
+    sh[25]: 0.029427145
+    sh[26]: -0.009503886
+  - sh[ 0]: 0.13913547
+    sh[ 1]: 0.0041122315
+    sh[ 2]: -0.0057970644
+    sh[ 3]: 0.008669153
+    sh[ 4]: -0.00125908
+    sh[ 5]: 0.0030975672
+    sh[ 6]: 0.0034698476
+    sh[ 7]: 0.00686124
+    sh[ 8]: 0.015678942
+    sh[ 9]: 0.2126797
+    sh[10]: 0.059229277
+    sh[11]: 0.009174862
+    sh[12]: 0.020889621
+    sh[13]: 0.01638288
+    sh[14]: 0.018162133
+    sh[15]: 0.003003794
+    sh[16]: 0.014758934
+    sh[17]: 0.012622383
+    sh[18]: 0.39594847
+    sh[19]: 0.21318647
+    sh[20]: 0.05849837
+    sh[21]: 0.06532536
+    sh[22]: 0.07317464
+    sh[23]: 0.07065624
+    sh[24]: -0.0038644653
+    sh[25]: 0.037102252
+    sh[26]: -0.012618584
+  - sh[ 0]: 0.14427783
+    sh[ 1]: 0.00096303015
+    sh[ 2]: 0.010442301
+    sh[ 3]: 0.008102588
+    sh[ 4]: 0.0016022737
+    sh[ 5]: 0.005778284
+    sh[ 6]: 0.0050177216
+    sh[ 7]: 0.007282969
+    sh[ 8]: 0.017304402
+    sh[ 9]: 0.21468012
+    sh[10]: 0.05864394
+    sh[11]: 0.031457826
+    sh[12]: 0.023299485
+    sh[13]: 0.019423598
+    sh[14]: 0.018323582
+    sh[15]: 0.004892327
+    sh[16]: 0.013146956
+    sh[17]: 0.014246429
+    sh[18]: 0.38806337
+    sh[19]: 0.21781005
+    sh[20]: 0.091013364
+    sh[21]: 0.07542464
+    sh[22]: 0.07725003
+    sh[23]: 0.061995525
+    sh[24]: -0.0024405895
+    sh[25]: 0.0314525
+    sh[26]: -0.011564934
+  - sh[ 0]: 0.14967874
+    sh[ 1]: -0.0003850657
+    sh[ 2]: 0.005776527
+    sh[ 3]: 0.008521586
+    sh[ 4]: 0.0025424971
+    sh[ 5]: 0.0040432047
+    sh[ 6]: 0.0058129327
+    sh[ 7]: 0.0059879147
+    sh[ 8]: 0.014148608
+    sh[ 9]: 0.22019042
+    sh[10]: 0.058307104
+    sh[11]: 0.025099548
+    sh[12]: 0.02385421
+    sh[13]: 0.017878218
+    sh[14]: 0.01521111
+    sh[15]: 0.006147825
+    sh[16]: 0.01134834
+    sh[17]: 0.012562016
+    sh[18]: 0.3921106
+    sh[19]: 0.21945384
+    sh[20]: 0.08112734
+    sh[21]: 0.07623642
+    sh[22]: 0.067054994
+    sh[23]: 0.054103207
+    sh[24]: 0.00082121487
+    sh[25]: 0.028344639
+    sh[26]: -0.007369171
+  - sh[ 0]: 0.14210169
+    sh[ 1]: -0.008467028
+    sh[ 2]: -0.013612943
+    sh[ 3]: 0.013462746
+    sh[ 4]: -0.00042773059
+    sh[ 5]: 0.011323958
+    sh[ 6]: 0.0021168836
+    sh[ 7]: 0.0062094396
+    sh[ 8]: 0.012657714
+    sh[ 9]: 0.20618092
+    sh[10]: 0.050518364
+    sh[11]: 0.003870459
+    sh[12]: 0.029223181
+    sh[13]: 0.014900002
+    sh[14]: 0.019746095
+    sh[15]: 0.0011535034
+    sh[16]: 0.011933166
+    sh[17]: 0.011149685
+    sh[18]: 0.37194687
+    sh[19]: 0.21211259
+    sh[20]: 0.063579604
+    sh[21]: 0.07912789
+    sh[22]: 0.06411444
+    sh[23]: 0.052891575
+    sh[24]: -0.0057034325
+    sh[25]: 0.028276397
+    sh[26]: -0.007788253
+  - sh[ 0]: 0.030444399
+    sh[ 1]: 0.012861366
+    sh[ 2]: -0.0026532537
+    sh[ 3]: -0.0007951021
+    sh[ 4]: -0.000058937396
+    sh[ 5]: -0.0016353602
+    sh[ 6]: -0.0005693898
+    sh[ 7]: -0.00017885669
+    sh[ 8]: -0.003268668
+    sh[ 9]: 0.092033386
+    sh[10]: 0.041606147
+    sh[11]: -0.00083514856
+    sh[12]: 0.0070241466
+    sh[13]: 0.011706108
+    sh[14]: 0.0120626185
+    sh[15]: -0.002625652
+    sh[16]: 0.004974174
+    sh[17]: -0.011398507
+    sh[18]: 0.28851676
+    sh[19]: 0.13409483
+    sh[20]: 0.007946554
+    sh[21]: 0.035692375
+    sh[22]: 0.05381616
+    sh[23]: 0.06233631
+    sh[24]: -0.009562832
+    sh[25]: 0.023397725
+    sh[26]: -0.03809109
+  - sh[ 0]: 0.14726888
+    sh[ 1]: -0.01485837
+    sh[ 2]: 0.008376148
+    sh[ 3]: 0.0030576284
+    sh[ 4]: 0.003406091
+    sh[ 5]: 0.005519233
+    sh[ 6]: 0.0020045463
+    sh[ 7]: 0.0027198347
+    sh[ 8]: 0.007934781
+    sh[ 9]: 0.205015
+    sh[10]: 0.04413295
+    sh[11]: 0.025383769
+    sh[12]: 0.018754125
+    sh[13]: 0.01396195
+    sh[14]: 0.017208237
+    sh[15]: 0.0009837907
+    sh[16]: 0.007657295
+    sh[17]: 0.007454487
+    sh[18]: 0.3560159
+    sh[19]: 0.20491378
+    sh[20]: 0.07782495
+    sh[21]: 0.06984604
+    sh[22]: 0.04941501
+    sh[23]: 0.054456152
+    sh[24]: -0.0050800075
+    sh[25]: 0.02177067
+    sh[26]: -0.005688027
+  - sh[ 0]: 0.13259669
+    sh[ 1]: -0.037890006
+    sh[ 2]: 0.015817465
+    sh[ 3]: 0.0074998876
+    sh[ 4]: 0.009159607
+    sh[ 5]: 0.014077624
+    sh[ 6]: 0.00610863
+    sh[ 7]: -0.0009818611
+    sh[ 8]: 0.020600114
+    sh[ 9]: 0.15924077
+    sh[10]: -0.01282531
+    sh[11]: 0.025103219
+    sh[12]: 0.014014919
+    sh[13]: 0.014181537
+    sh[14]: 0.022314792
+    sh[15]: 0.008967045
+    sh[16]: -0.00013823976
+    sh[17]: 0.03122137
+    sh[18]: 0.20973256
+    sh[19]: 0.028600758
+    sh[20]: 0.044367343
+    sh[21]: 0.029688217
+    sh[22]: 0.02585318
+    sh[23]: 0.041462254
+    sh[24]: 0.013425695
+    sh[25]: 0.002128552
+    sh[26]: 0.04415683
+  - sh[ 0]: 0.12486534
+    sh[ 1]: -0.04432741
+    sh[ 2]: 0.009781626
+    sh[ 3]: 0.00722594
+    sh[ 4]: 0.007949348
+    sh[ 5]: -0.0029016996
+    sh[ 6]: 0.00289229
+    sh[ 7]: 0.0035616558
+    sh[ 8]: 0.023124676
+    sh[ 9]: 0.148607
+    sh[10]: -0.022011386
+    sh[11]: 0.01041711
+    sh[12]: 0.012216248
+    sh[13]: 0.014060398
+    sh[14]: -0.004203608
+    sh[15]: 0.005555895
+    sh[16]: 0.0070322575
+    sh[17]: 0.035246585
+    sh[18]: 0.19358155
+    sh[19]: 0.012698806
+    sh[20]: 0.0023831925
+    sh[21]: 0.025525864
+    sh[22]: 0.028075028
+    sh[23]: -0.008272828
+    sh[24]: 0.00987046
+    sh[25]: 0.0149953775
+    sh[26]: 0.050755497
+  - sh[ 0]: 0.021599047
+    sh[ 1]: 0.012279872
+    sh[ 2]: -0.010989679
+    sh[ 3]: 0.0010026856
+    sh[ 4]: 0.0019262356
+    sh[ 5]: -0.0075824065
+    sh[ 6]: -0.00019060879
+    sh[ 7]: 0.0005972426
+    sh[ 8]: -0.003133349
+    sh[ 9]: 0.044627186
+    sh[10]: 0.02021131
+    sh[11]: -0.022859264
+    sh[12]: -0.0011774095
+    sh[13]: 0.0027112025
+    sh[14]: -0.010472272
+    sh[15]: 0.0011031124
+    sh[16]: 0.0031954413
+    sh[17]: -0.004081388
+    sh[18]: 0.11008127
+    sh[19]: 0.038964313
+    sh[20]: -0.056486513
+    sh[21]: -0.009689952
+    sh[22]: 0.0040461738
+    sh[23]: -0.014642976
+    sh[24]: 0.0057331244
+    sh[25]: 0.011890833
+    sh[26]: -0.0052264133
+  - sh[ 0]: 0.123246916
+    sh[ 1]: -0.004659195
+    sh[ 2]: -0.019519309
+    sh[ 3]: 0.0025180867
+    sh[ 4]: 0.0011208967
+    sh[ 5]: -0.0033784825
+    sh[ 6]: 0.0003177162
+    sh[ 7]: -0.0018367326
+    sh[ 8]: 0.006443423
+    sh[ 9]: 0.18565445
+    sh[10]: 0.04343896
+    sh[11]: -0.020114118
+    sh[12]: 0.014087473
+    sh[13]: 0.0124761695
+    sh[14]: 0.005012064
+    sh[15]: -0.00054892944
+    sh[16]: 0.00251653
+    sh[17]: 0.004103918
+    sh[18]: 0.34939983
+    sh[19]: 0.17950355
+    sh[20]: -0.0014582267
+    sh[21]: 0.056294583
+    sh[22]: 0.04976652
+    sh[23]: 0.03665531
+    sh[24]: -0.005909733
+    sh[25]: 0.017062536
+    sh[26]: -0.012110506
+  - sh[ 0]: 0.12916897
+    sh[ 1]: 0.011917024
+    sh[ 2]: -0.0035652367
+    sh[ 3]: 0.015101445
+    sh[ 4]: -0.000120332086
+    sh[ 5]: -0.0014115429
+    sh[ 6]: 0.0036860574
+    sh[ 7]: 0.0077436077
+    sh[ 8]: 0.019502815
+    sh[ 9]: 0.20063372
+    sh[10]: 0.062606096
+    sh[11]: 0.0050442247
+    sh[12]: 0.029614924
+    sh[13]: 0.019813502
+    sh[14]: 0.014029892
+    sh[15]: 0.0011485177
+    sh[16]: 0.016577635
+    sh[17]: 0.015402842
+    sh[18]: 0.38407764
+    sh[19]: 0.2039737
+    sh[20]: 0.047726013
+    sh[21]: 0.07727324
+    sh[22]: 0.083247334
+    sh[23]: 0.06554415
+    sh[24]: -0.009523423
+    sh[25]: 0.039502896
+    sh[26]: -0.013223804
+  - sh[ 0]: 0.14357424
+    sh[ 1]: -0.013088961
+    sh[ 2]: -0.005282118
+    sh[ 3]: 0.0068755834
+    sh[ 4]: 0.0041952464
+    sh[ 5]: -0.0020349557
+    sh[ 6]: 0.001023951
+    sh[ 7]: 0.0065250085
+    sh[ 8]: 0.008849077
+    sh[ 9]: 0.19808759
+    sh[10]: 0.04101763
+    sh[11]: -0.0012793415
+    sh[12]: 0.024145924
+    sh[13]: 0.014651246
+    sh[14]: 0.0031883654
+    sh[15]: -0.0003172508
+    sh[16]: 0.011760875
+    sh[17]: 0.00877462
+    sh[18]: 0.33674103
+    sh[19]: 0.18914858
+    sh[20]: 0.02190193
+    sh[21]: 0.07719261
+    sh[22]: 0.04878644
+    sh[23]: 0.024181342
+    sh[24]: -0.00683817
+    sh[25]: 0.02501228
+    sh[26]: -0.0027424933
+  - sh[ 0]: 0.14083296
+    sh[ 1]: -0.026062008
+    sh[ 2]: 0.00076408003
+    sh[ 3]: 0.005227384
+    sh[ 4]: 0.0052828128
+    sh[ 5]: 0.0024954875
+    sh[ 6]: 0.003824468
+    sh[ 7]: 0.00007003505
+    sh[ 8]: 0.012411157
+    sh[ 9]: 0.19415829
+    sh[10]: 0.028413046
+    sh[11]: 0.01623285
+    sh[12]: 0.022666689
+    sh[13]: 0.018794624
+    sh[14]: 0.01298907
+    sh[15]: 0.0033202611
+    sh[16]: 0.0050719366
+    sh[17]: 0.013719313
+    sh[18]: 0.33270746
+    sh[19]: 0.17889693
+    sh[20]: 0.063842066
+    sh[21]: 0.07731989
+    sh[22]: 0.06312307
+    sh[23]: 0.048427477
+    sh[24]: -0.002105847
+    sh[25]: 0.022012295
+    sh[26]: 0.00271649
+  - sh[ 0]: 0.15369473
+    sh[ 1]: -0.015665071
+    sh[ 2]: 0.0057943603
+    sh[ 3]: 0.006438847
+    sh[ 4]: 0.005272287
+    sh[ 5]: 0.00460253
+    sh[ 6]: 0.0038957014
+    sh[ 7]: 0.0027483255
+    sh[ 8]: 0.01087465
+    sh[ 9]: 0.21480623
+    sh[10]: 0.04338133
+    sh[11]: 0.022086235
+    sh[12]: 0.024444098
+    sh[13]: 0.017191902
+    sh[14]: 0.016405018
+    sh[15]: 0.003867744
+    sh[16]: 0.007183859
+    sh[17]: 0.01110716
+    sh[18]: 0.36612558
+    sh[19]: 0.20413585
+    sh[20]: 0.07414906
+    sh[21]: 0.07910659
+    sh[22]: 0.05668682
+    sh[23]: 0.05453884
+    sh[24]: -0.0012892276
+    sh[25]: 0.021911437
+    sh[26]: -0.0017594504
+  - sh[ 0]: 0.14916424
+    sh[ 1]: -0.02022537
+    sh[ 2]: 0.0024927033
+    sh[ 3]: 0.010507834
+    sh[ 4]: 0.0034830808
+    sh[ 5]: 0.0069445986
+    sh[ 6]: 0.0029445973
+    sh[ 7]: 0.0022354457
+    sh[ 8]: 0.010540143
+    sh[ 9]: 0.20659295
+    sh[10]: 0.038791854
+    sh[11]: 0.019686237
+    sh[12]: 0.028986853
+    sh[13]: 0.015360218
+    sh[14]: 0.019317932
+    sh[15]: 0.0022657472
+    sh[16]: 0.0074408795
+    sh[17]: 0.010889797
+    sh[18]: 0.35639754
+    sh[19]: 0.19887802
+    sh[20]: 0.073924445
+    sh[21]: 0.08229953
+    sh[22]: 0.054700498
+    sh[23]: 0.059156522
+    sh[24]: -0.0032072475
+    sh[25]: 0.022939933
+    sh[26]: -0.0012418786
+  - sh[ 0]: 0.1473356
+    sh[ 1]: -0.022751573
+    sh[ 2]: 0.0062790946
+    sh[ 3]: 0.0033363788
+    sh[ 4]: 0.0018402034
+    sh[ 5]: 0.0029964622
+    sh[ 6]: 0.0036468348
+    sh[ 7]: -0.00036900572
+    sh[ 8]: 0.010597556
+    sh[ 9]: 0.20319574
+    sh[10]: 0.03504009
+    sh[11]: 0.021964375
+    sh[12]: 0.017001813
+    sh[13]: 0.013757954
+    sh[14]: 0.014528067
+    sh[15]: 0.0031474591
+    sh[16]: 0.00406719
+    sh[17]: 0.011083694
+    sh[18]: 0.34836435
+    sh[19]: 0.1926553
+    sh[20]: 0.07273371
+    sh[21]: 0.065901816
+    sh[22]: 0.05379388
+    sh[23]: 0.05217755
+    sh[24]: -0.002493229
+    sh[25]: 0.018718392
+    sh[26]: -0.0011191079
+  - sh[ 0]: 0.14637405
+    sh[ 1]: -0.02126031
+    sh[ 2]: 0.012819767
+    sh[ 3]: 0.0120954765
+    sh[ 4]: 0.0066181724
+    sh[ 5]: 0.0022780425
+    sh[ 6]: 0.0039930893
+    sh[ 7]: 0.0012053205
+    sh[ 8]: 0.013431988
+    sh[ 9]: 0.20375669
+    sh[10]: 0.03499218
+    sh[11]: 0.030606175
+    sh[12]: 0.031981315
+    sh[13]: 0.020823214
+    sh[14]: 0.0144318985
+    sh[15]: 0.0037788919
+    sh[16]: 0.0056506204
+    sh[17]: 0.014608772
+    sh[18]: 0.3479719
+    sh[19]: 0.1895432
+    sh[20]: 0.08183393
+    sh[21]: 0.09135003
+    sh[22]: 0.066453695
+    sh[23]: 0.05344486
+    sh[24]: -0.0015150807
+    sh[25]: 0.020718316
+    sh[26]: 0.0031576895
+  - sh[ 0]: 0.14165702
+    sh[ 1]: -0.018162925
+    sh[ 2]: 0.013446962
+    sh[ 3]: 0.004087126
+    sh[ 4]: 0.003944363
+    sh[ 5]: -0.00015825075
+    sh[ 6]: 0.0016253414
+    sh[ 7]: 0.0032739213
+    sh[ 8]: 0.010664956
+    sh[ 9]: 0.19572085
+    sh[10]: 0.03715015
+    sh[11]: 0.032775667
+    sh[12]: 0.020037908
+    sh[13]: 0.016409002
+    sh[14]: 0.010164318
+    sh[15]: 0.00036239848
+    sh[16]: 0.007969646
+    sh[17]: 0.011022641
+    sh[18]: 0.3335348
+    sh[19]: 0.18930317
+    sh[20]: 0.08594678
+    sh[21]: 0.07490111
+    sh[22]: 0.057550956
+    sh[23]: 0.044078402
+    sh[24]: -0.006456732
+    sh[25]: 0.02302637
+    sh[26]: -0.0016773284
+  - sh[ 0]: 0.11538334
+    sh[ 1]: -0.045972683
+    sh[ 2]: 0.008258264
+    sh[ 3]: 0.010714759
+    sh[ 4]: 0.004147578
+    sh[ 5]: 0.0005388197
+    sh[ 6]: 0.0041465275
+    sh[ 7]: -0.0017701958
+    sh[ 8]: 0.01262174
+    sh[ 9]: 0.13091448
+    sh[10]: -0.035308115
+    sh[11]: 0.012262707
+    sh[12]: 0.01849686
+    sh[13]: 0.005899123
+    sh[14]: 0.00141455
+    sh[15]: 0.0058707604
+    sh[16]: -0.0023390264
+    sh[17]: 0.018695489
+    sh[18]: 0.14939508
+    sh[19]: -0.02413239
+    sh[20]: 0.018097835
+    sh[21]: 0.031549223
+    sh[22]: 0.009409436
+    sh[23]: 0.0029618184
+    sh[24]: 0.0071697948
+    sh[25]: -0.0018710237
+    sh[26]: 0.02510232
+  l_light:
+  - {fileID: 2800000, guid: eacf3085dbe7fc140ac0f527a3a49561, type: 3}
+  - {fileID: 2800000, guid: 1ee3dfd33c362d249a5c2272e9b51de1, type: 3}
+  - {fileID: 2800000, guid: 51a3b634d77b156479e6fa0c0f6c2831, type: 3}
+  - {fileID: 2800000, guid: cf2ab418416c93449a55aa1c2ec2f8cc, type: 3}
+  l_dir:
+  - {fileID: 2800000, guid: 0db712d86598e714297503b1ed8886de, type: 3}
+  - {fileID: 2800000, guid: 06da3f924c1c3ca4f8258e6e803ae99f, type: 3}
+  - {fileID: 2800000, guid: 069d693798123704b915929665be0214, type: 3}
+  - {fileID: 2800000, guid: 974b68a647d13f148a3d9af9055b4ffa, type: 3}
+  Final_L_Lights:
+  - {fileID: 2800000, guid: eacf3085dbe7fc140ac0f527a3a49561, type: 3}
+  - {fileID: 2800000, guid: 1ee3dfd33c362d249a5c2272e9b51de1, type: 3}
+  - {fileID: 2800000, guid: 51a3b634d77b156479e6fa0c0f6c2831, type: 3}
+  - {fileID: 2800000, guid: cf2ab418416c93449a55aa1c2ec2f8cc, type: 3}
+  Final_L_Dir:
+  - {fileID: 2800000, guid: 0db712d86598e714297503b1ed8886de, type: 3}
+  - {fileID: 2800000, guid: 06da3f924c1c3ca4f8258e6e803ae99f, type: 3}
+  - {fileID: 2800000, guid: 069d693798123704b915929665be0214, type: 3}
+  - {fileID: 2800000, guid: 974b68a647d13f148a3d9af9055b4ffa, type: 3}
+--- !u!114 &4931218028019239934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2193423312438391474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86819987a95ea3742b84cf1b34384f9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentLightState: 0
+  linkedLightProbes: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000012000000130000001400000015000000160000001700000018000000190000001a0000001b0000001c0000001d0000001e0000001f000000200000002100000022000000230000002400000025000000260000002700000028000000290000002a0000002b0000002c0000002d0000002e0000002f000000300000003100000032000000330000003400000035000000360000003700000038000000390000003a0000003b0000003c0000003d0000003e0000003f000000400000004100000042000000430000004400000045000000460000004700000048000000490000004a0000004b0000004c0000004d0000004e0000004f000000500000005100000052000000530000005400000055000000560000005700000058000000590000005a0000005b0000005c0000005d0000005e0000005f000000600000006100000062000000630000006400000065000000660000006700000068000000690000006a0000006b0000006c0000006d0000006e0000006f000000700000007100000072000000730000007400000075000000760000007700000078000000790000007a0000007b0000007c0000007d0000007e0000007f000000800000008100000082000000830000008400000085000000860000008700000088000000890000008a0000008b0000008c0000008d0000008e0000008f000000900000009100000092000000930000009400000095000000960000009700000098000000990000009a0000009b0000009c0000009d0000009e0000009f000000a0000000a1000000a2000000a3000000a4000000a5000000a6000000a7000000a8000000a9000000aa000000ab000000ac000000ad000000ae000000af000000b0000000b1000000b2000000b3000000b4000000b5000000b6000000b7000000b8000000b9000000ba000000bb000000bc000000bd000000be000000bf000000
+  pasado: 0
+  final: 5
+  inRangeProbes: 
+  tempList: 
