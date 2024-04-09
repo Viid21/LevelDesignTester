@@ -15,30 +15,34 @@ public class WeaponsSO : ScriptableObject
 
         public string name;
         public string description;
-
         public Sprite icon;
 
         public float damage;
         public float speed;
         public Mesh mesh;
+        public Mesh projectileMesh;
     }
     [Header("Weapon info")]
     public Info weaponInfo;
 
-    public class Modifiers : ScriptableObject
+    public abstract class Modifiers : ScriptableObject
     {
 
     }
 }
 
-public class Weapons : Projectile
+public abstract class Weapons : Projectile
 {
     public WeaponsSO weaponsSO;
-    private void Start()
+    
+    public override void SetWeaponType()
     {
-        if (weaponsSO.weaponInfo.WeaponType == WeaponsSO.Info.E_WEAPONTYPE.PISTOL) 
+        if (weaponsSO.weaponInfo.WeaponType == WeaponsSO.Info.E_WEAPONTYPE.PISTOL)
         {
-            
+            MoveMode = E_ATTACKMOVEMENT.FORWARD;
+            damage = weaponsSO.weaponInfo.damage;
+            velocity = weaponsSO.weaponInfo.speed;
+            mesh = weaponsSO.weaponInfo.projectileMesh;
         }
     }
 }
