@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -14,7 +13,9 @@ public abstract class Projectile : MonoBehaviour
     [SerializeField]
     private E_DAMAGEMODE damageMode;
 
-    public UnityEvent hitEvent;
+    enum E_PROJECTILETYPE { PROJECTILE, HITSCAN }
+    [SerializeField]
+    private E_PROJECTILETYPE projectilileType;    
 
     public float damage;
     protected float damageReactionRadius;
@@ -25,14 +26,20 @@ public abstract class Projectile : MonoBehaviour
     private Rigidbody rb;
     protected Mesh mesh;
 
-    // Start is called before the first frame update
+    private void OnEnable()
+    {
+        
+    }
+    private void OnDisable()
+    {
+        EventManager.StopListening("ImpactEvent", OnImpact);
+    }
     void Start()
     {
         Destroy(gameObject, timeToDestroy);
         rb = GetComponent<Rigidbody>();
         col = GetComponent<Collider>();
         mesh = GetComponent<Mesh>();
-        hitEvent = new UnityEvent();
         SetWeaponType();
     }
     protected private void FixedUpdate()
@@ -46,12 +53,16 @@ public abstract class Projectile : MonoBehaviour
     }
     public virtual void SetWeaponType()
     {
-        
+
+    }
+    public virtual void OnImpact()
+    {
+
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        hitEvent.Invoke();
+        EventManager.TriggerEvent("ImpactEvent");
 
         if (avoidTags.Contains(other.tag))
         {
@@ -65,13 +76,13 @@ public abstract class Projectile : MonoBehaviour
                 other.GetComponent<PlayerControllerDRM>().health -= damage;
                 Destroy(gameObject);
             }
-            if(other.GetComponent<Enemy>() != null)
+            if (other.GetComponent<Enemy>() != null)
             {
                 other.GetComponent<Enemy>().health -= damage;
             }
         }
         else if (damageMode == E_DAMAGEMODE.REACTION)
-        {            
+        {
             Destroy(col);
             SphereCollider newCol = gameObject.AddComponent(typeof(SphereCollider)) as SphereCollider;
             newCol.isTrigger = true;
@@ -81,5 +92,20 @@ public abstract class Projectile : MonoBehaviour
             //TODO: ACTIVAR SISTEMA DE PARTICULAS DE EXPLOSION
         }
     }
-    public class HitEvent : UnityEvent<Projectile> { }
+
+    public abstract class Weapons : Projectile
+    {
+        public WeaponsSO weaponsSO;
+
+        public override void SetWeaponType()
+        {
+            if (weaponsSO.weaponInfo.WeaponType == WeaponsSO.Info.E_WEAPONTYPE.PISTOL)
+            {
+                MoveMode = E_ATTACKMOVEMENT.FORWARD;
+                damage = weaponsSO.weaponInfo.damage;
+                velocity = weaponsSO.weaponInfo.speed;
+                mesh = weaponsSO.weaponInfo.projectileMesh;
+            }
+        }
+    }
 }

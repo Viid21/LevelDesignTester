@@ -33,22 +33,6 @@ public class WeaponsSO : ScriptableObject
     }
 }
 
-public abstract class Weapons : Projectile
-{
-    public WeaponsSO weaponsSO;
-    
-    public override void SetWeaponType()
-    {
-        if (weaponsSO.weaponInfo.WeaponType == WeaponsSO.Info.E_WEAPONTYPE.PISTOL)
-        {
-            MoveMode = E_ATTACKMOVEMENT.FORWARD;
-            damage = weaponsSO.weaponInfo.damage;
-            velocity = weaponsSO.weaponInfo.speed;
-            mesh = weaponsSO.weaponInfo.projectileMesh;
-        }
-    }
-}
-
 #if UNITY_EDITOR
 [CustomEditor(typeof(WeaponsSO))]
 public class WeaponEditor : Editor

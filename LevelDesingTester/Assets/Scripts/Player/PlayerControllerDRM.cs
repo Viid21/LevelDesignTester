@@ -41,7 +41,7 @@ public class PlayerControllerDRM : MonoBehaviour
     public string shaderVarRef;
 
     //[SerializeField] LayerMask terrainLayerMask = new LayerMask();
-    [SerializeField] Transform aimTransform, lastPosition/*, spawnBulletString*/;
+    [SerializeField] Transform aimTransform, lastPosition, spawnBulletString;
 
     GameObject objPivot;
 
@@ -195,11 +195,11 @@ public class PlayerControllerDRM : MonoBehaviour
         {
             EventManager.TriggerEvent("ShootEvent");
             //shootEvent.Invoke();
-            /*spawnBulletString = RecursiveFindChild(transform, "SpawnBullet");
-            Instantiate(bulletPrefab, spawnBulletString.position, transform.rotation);*/
+            spawnBulletString = RecursiveFindChild(transform, "SpawnBullet");
+            Instantiate(bulletPrefab, spawnBulletString.position, transform.rotation);
         }
 
-        /*Transform RecursiveFindChild(Transform parent, string childName)
+        Transform RecursiveFindChild(Transform parent, string childName)
         {
             foreach (Transform child in parent)
             {
@@ -217,7 +217,7 @@ public class PlayerControllerDRM : MonoBehaviour
                 }
             }
             return null;
-        }*/
+        }
 
         //bullet.get
 
