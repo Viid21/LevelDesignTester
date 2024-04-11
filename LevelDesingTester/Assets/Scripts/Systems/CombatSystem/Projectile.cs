@@ -49,9 +49,10 @@ public abstract class Projectile : MonoBehaviour
         
     }
 
-    protected private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
         hitEvent.Invoke();
+
         if (avoidTags.Contains(other.tag))
         {
             return;
@@ -81,6 +82,4 @@ public abstract class Projectile : MonoBehaviour
         }
     }
     public class HitEvent : UnityEvent<Projectile> { }
-
-    //tengo k juntar el script de proyectil de jordi junto al quest manager con scriptable object haciendo k las armas y los modifiers sean como las goals de ese script
 }

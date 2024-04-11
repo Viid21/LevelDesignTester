@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.InputSystem;
 
 public class PlayerControllerDRM : MonoBehaviour
@@ -39,12 +40,14 @@ public class PlayerControllerDRM : MonoBehaviour
     public Transform spawnClones;
     public string shaderVarRef;
 
-    [SerializeField] LayerMask terrainLayerMask = new LayerMask();
-    [SerializeField] Transform aimTransform, lastPosition;
+    //[SerializeField] LayerMask terrainLayerMask = new LayerMask();
+    [SerializeField] Transform aimTransform, lastPosition/*, spawnBulletString*/;
 
     GameObject objPivot;
 
+    //private const string EVENT_SHOOT = "ShootEvent";
     [SerializeField] GameObject bulletPrefab;
+
 
     private void Awake()
     {
@@ -190,8 +193,31 @@ public class PlayerControllerDRM : MonoBehaviour
         
         if (shoot.triggered && grounded)
         {
-            Instantiate(bulletPrefab, transform.Find("SpawnBullet").position, transform.rotation);
+            EventManager.TriggerEvent("ShootEvent");
+            //shootEvent.Invoke();
+            /*spawnBulletString = RecursiveFindChild(transform, "SpawnBullet");
+            Instantiate(bulletPrefab, spawnBulletString.position, transform.rotation);*/
         }
+
+        /*Transform RecursiveFindChild(Transform parent, string childName)
+        {
+            foreach (Transform child in parent)
+            {
+                if (child.name == childName)
+                {
+                    return child;
+                }
+                else
+                {
+                    Transform found = RecursiveFindChild(child, childName);
+                    if (found != null)
+                    {
+                        return found;
+                    }
+                }
+            }
+            return null;
+        }*/
 
         //bullet.get
 
@@ -258,4 +284,5 @@ public class PlayerControllerDRM : MonoBehaviour
     {
         stunned = false;
     }
+    public class ShootEvent : UnityEvent<PlayerControllerDRM> { }
 }

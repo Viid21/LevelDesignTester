@@ -10,6 +10,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] Button[] weaponsHolders;
     [SerializeField] Button weaponSelected;
     [SerializeField] GameObject weaponsPanel;
+    [SerializeField] ScriptableObject[] weaponsSO;
 
     //InputAction
     PlayerInput playerInput;
