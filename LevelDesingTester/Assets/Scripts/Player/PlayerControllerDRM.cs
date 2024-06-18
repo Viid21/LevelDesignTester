@@ -40,6 +40,8 @@ public class PlayerControllerDRM : MonoBehaviour
     public Transform spawnClones;
     public string shaderVarRef;
 
+    Quaternion startRotation;
+
     //[SerializeField] LayerMask terrainLayerMask = new LayerMask();
     [SerializeField] Transform aimTransform, lastPosition, spawnBulletString;
 
@@ -63,6 +65,8 @@ public class PlayerControllerDRM : MonoBehaviour
         jump = playerInput.currentActionMap["Jump"];
         dash = playerInput.currentActionMap["Dash"];
         shoot = playerInput.currentActionMap["Shoot"];
+        //GUARDAR LA ROTACION INICIAL
+        transform.rotation = startRotation;
     }
     private void OnEnable()
     {
@@ -118,10 +122,18 @@ public class PlayerControllerDRM : MonoBehaviour
         controller.Move(finalMovement * speed * Time.deltaTime);
 
         //Player animations
+
         if (aimming)
         {
-            anim.SetFloat("DirectionX", inputMovement.x);
-            anim.SetFloat("DirectionY", inputMovement.z);
+            if (transform.rotation.y < 0.45f || transform.rotation.y < -0.45f) 
+            {
+                anim.SetFloat("DirectionX", inputMovement.x * transform.rotation.y * 10);
+                anim.SetFloat("DirectionY", inputMovement.z * transform.rotation.y * 10);
+            }else if (transform.rotation.y < 2.25f || transform.rotation.y < -2.25f)
+            {
+                anim.SetFloat("DirectionX", inputMovement.x * transform.rotation.y * -10);
+                anim.SetFloat("DirectionY", inputMovement.z * transform.rotation.y * -10);
+            }
         }else
         {
             anim.SetFloat("DirectionX", 0f);
@@ -194,7 +206,8 @@ public class PlayerControllerDRM : MonoBehaviour
         if (shoot.triggered && grounded)
         {
             EventManager.TriggerEvent("ShootEvent");
-            //shootEvent.Invoke();
+
+            anim.SetTrigger("shooting"); 
             spawnBulletString = RecursiveFindChild(transform, "SpawnBullet");
             Instantiate(bulletPrefab, spawnBulletString.position, transform.rotation);
         }
@@ -284,5 +297,14 @@ public class PlayerControllerDRM : MonoBehaviour
     {
         stunned = false;
     }
-    public class ShootEvent : UnityEvent<PlayerControllerDRM> { }
+    
+    public void Aim()
+    {
+        aimming = true;
+    }
+
+    public void StopAim()
+    {
+        aimming = false;
+    }
 }
